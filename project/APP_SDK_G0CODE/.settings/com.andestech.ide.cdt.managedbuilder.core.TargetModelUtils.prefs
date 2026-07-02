@@ -1,0 +1,8 @@
+autoBuildEnable=true
+connectType=ICE
+eclipse.preferences.version=1
+iceman.misc.args=
+name=SG9081
+target.project.build.selection=false
+target.project.clean.selection=false
+targetURI=rse\://LOCALHOST/~target/SG9081

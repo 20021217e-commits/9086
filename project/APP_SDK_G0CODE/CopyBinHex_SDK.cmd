@@ -1,0 +1,1 @@
+pwd;nds32le-elf-objcopy -O binary -j .nds32_init -j .text -j .rodata -j .data -j .IDENTIFY_C -j .SMART_DATA "APP_SDK_G0CODE.adx" APP_SDK_G0CODE.bin;nds32le-elf-objcopy -O ihex -j .nds32_init -j .text -j .rodata -j .data -j .IDENTIFY_C -j .SMART_DATA "APP_SDK_G0CODE.adx" APP_SDK_G0CODE.hex;
