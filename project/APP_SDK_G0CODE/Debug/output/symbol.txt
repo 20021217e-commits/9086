@@ -1,0 +1,407 @@
+00000000 a EXEC1_SIZE
+00000000 W _RELAX_END_	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G0CODE/Debug/../src/main.c:39
+00000000 t exception_vector	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G0CODE/Debug/../src/main.c:39
+000000a4 A LOAD_AREA1_SIZE
+00000230 a RAM_SIZE
+00001000 A _stack_size
+0000210c a COMRAM3_SIZE
+00004d14 a EXEC0_SIZE
+00007058 A EILM_SIZE
+00400000 a LOAD_AREA1_BEGIN
+00400000 a NDS_SAG_LMA_LOAD_AREA1
+00400000 A __VECTOR_ADDR
+004000a4 T ATACmd_ParseCmd	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/ata_cmd/ata_cmd_list.c:231
+004000a4 a EILM_BEGIN
+004000a4 t EXEC0_BEGIN	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/ata_cmd/ata_cmd_list.c:232
+004000a4 a NDS_SAG_LMA_EILM
+004000a4 A __init_lmaend
+004000c4 T ATACmd_FpdmaRwTaskComplete	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/ata_cmd/ata_fpdma.c:37
+004000c6 T ATACmd_GetFpdmaLba
+0040011e t ATACmd_RWFpdmaQueued	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/ata_cmd/ata_fpdma.c:108
+004001d0 T ATACmd_WriteFpdmaQueued	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/ata_cmd/ata_fpdma.c:170
+004001da T ATACmd_ReadFpdmaQueued	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/ata_cmd/ata_fpdma.c:185
+004001e4 T ATACmd_Chs2Lba	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/ata_cmd/ata_general.c:42
+00400234 T ATACmd_GetCountLba28	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/ata_cmd/ata_general.c:91
+0040027e T ATACmd_GetCountLba48
+004002d0 T ATACmd_ExeDevDiagnostic	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/ata_cmd/ata_general.c:199
+004002d2 T ATACmd_Identify	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/ata_cmd/ata_general.c:211
+00400324 T ATACmd_ReleaseCommand	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/ata_cmd/ata_general.c:1632
+0040035c T ATACmd_DataSetManagement	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/ata_cmd/ata_general.c:242
+0040039c T ATACmd_InitDevParam	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/ata_cmd/ata_general.c:272
+004003fc T ATACmd_FlushCache	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/ata_cmd/ata_general.c:346
+0040040e T ATACmd_LegacyCmdSupport	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/ata_cmd/ata_general.c:408
+00400426 T ATACmd_SetMultipleMode	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/ata_cmd/ata_general.c:837
+0040045c T ATACmd_CreatePioTask	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/ata_cmd/ata_general.c:1027
+00400526 T ATACmd_PioTaskComplete
+0040057a T ATACmd_PioRdTaskComplete	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/ata_cmd/ata_general.c:967
+0040058c T ATACmd_PioWrTaskComplete	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/ata_cmd/ata_general.c:981
+0040059e T ATACmd_ReadMultiple	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/ata_cmd/ata_general.c:1192
+004005b0 T ATACmd_ReadBuff	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/ata_cmd/ata_general.c:1209
+004005d6 T ATACmd_WriteBuff	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/ata_cmd/ata_general.c:1250
+004005fc T ATACmd_ReadMultipleExt	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/ata_cmd/ata_general.c:1359
+0040060e T ATACmd_WriteMultiple	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/ata_cmd/ata_general.c:1374
+00400620 T ATACmd_WriteMultipleExt	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/ata_cmd/ata_general.c:1390
+00400632 T ATACmd_WriteMultipleFuaExt	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/ata_cmd/ata_general.c:1406
+00400654 T ATACmd_DmaRwTaskComplete
+00400678 T ATACmd_CreateDmaTask	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/ata_cmd/ata_general.c:1454
+004006e2 T ATACmd_ReadBuffDma	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/ata_cmd/ata_general.c:1287
+0040070a T ATACmd_WriteBuffDma	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/ata_cmd/ata_general.c:1322
+00400732 T ATACmd_WriteDma	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/ata_cmd/ata_general.c:1500
+0040074a T ATACmd_ReadDma	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/ata_cmd/ata_general.c:1518
+00400762 T ATACmd_WriteDmaExt	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/ata_cmd/ata_general.c:1536
+0040077a T ATACmd_WriteDmaFuaExt	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/ata_cmd/ata_general.c:1553
+004007a2 T ATACmd_ReadDmaExt	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/ata_cmd/ata_general.c:1571
+004007ba T ATACmd_Refuse	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/ata_cmd/ata_general.c:1652
+004007cc T ATACmd_LogAddr2Lba	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/ata_cmd/ata_gpl.c:2062
+004007f4 T ATACmd_WriteLogExt	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/ata_cmd/ata_gpl.c:2115
+0040080a T ATACmd_ReadLogDmaExt	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/ata_cmd/ata_gpl.c:2131
+00400826 T ATACmd_WriteLogDmaExt	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/ata_cmd/ata_gpl.c:2148
+00400842 T Update_IdfyParam	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/ata_cmd/ata_identify.c:1057
+004008e0 T UpdateCheckSum	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/ata_cmd/ata_identify.c:1206
+004008f0 T ATACmd_CheckPowerMode	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/ata_cmd/ata_power_mg.c:50
+00400910 T UpdateStanbyTimerCount	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/ata_cmd/ata_power_mg.c:113
+004009b8 T ATACmd_Idle	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/ata_cmd/ata_power_mg.c:198
+004009d0 T ATACmd_IdleImmediate	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/ata_cmd/ata_power_mg.c:227
+004009e0 T ATACmd_Sleep	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/ata_cmd/ata_power_mg.c:248
+004009fa T ATACmd_Standby	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/ata_cmd/ata_power_mg.c:269
+00400a10 T ATACmd_StandbyImmediate	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/ata_cmd/ata_power_mg.c:299
+00400a20 T ATACmd_SecurityFreezeLock	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/ata_cmd/ata_security.c:712
+00400a40 T DMAC_DMA1Init	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/driver/dma1c.c:13
+00400aac T DMAC_DMA1WaitDone	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/driver/dma1c.c:27
+00400ad0 T WaitBuffStatusClr	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/driver/dma1c.c:81
+00400b02 T DMAC_DMA1Start	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/driver/dma1c.c:97
+00400ba2 T StanbyEventDone	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/driver/dsata.c:478
+00400bc2 T DSATA_Init	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/driver/dsata.c:95
+00400e14 T DSATA_ExbuffAndCheckPoit_Ctrl	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/driver/dsata.c:337
+00400e24 T DSATA_ModuleInit	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/driver/dsata.c:397
+00400ec2 T DSATA_SysTickProcess	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/driver/dsata.c:498
+00400f46 T DSATA_G3_TaskRouter
+00400f84 T DSATA_ModuleProcess	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/driver/dsata.c:787
+00400fa6 T DSATA_UpdateSystemClockInfo	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/driver/dsata.c:829
+00400fc2 T DSATA_RegisteInterfaceInfo	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/driver/dsata.c:842
+00401080 T DSATA_StartupEnable	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/driver/dsata.c:1041
+004010ca T DSATA_LinkCheck	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/driver/dsata.c:1069
+004010f6 T DSATA_ClearFsmBuff	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/driver/dsata.c:1095
+0040110a T DSATA_BuildD2HFis	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/driver/dsata.c:1122
+00401136 T DSATA_BulidSDBFis	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/driver/dsata.c:1179
+0040117e T DSATA_BulidPioSetUpFis	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/driver/dsata.c:1204
+0040121a T DSATA_BuildPrd	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/driver/dsata.c:1267
+00401272 T DSATA_SetCmdHead	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/driver/dsata.c:1294
+004012c0 T HW20_ISR	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/driver/dsata.c:1403
+0040131a T DSATA_ExceptionHandler	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/driver/dsata.c:1623
+0040169c T comreset	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/driver/dsata.c:1909
+0040172c T linkchange	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/driver/dsata.c:2003
+00401848 T DSATA_CmdReorderRestart
+00401974 T DSATA_Update_rPCMDR	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/driver/dsata.c:2654
+00401998 T DSATA_TrigeSendFis
+00401a34 T DSATA_SendD2HFis	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/driver/dsata.c:1151
+00401a42 T DSATA_TransferStart	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/driver/dsata.c:2669
+00401a58 T DSATA_GetCurrentCmdSlot	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/driver/dsata.c:2713
+00401a66 T DSATA_GetPrdRemainItems
+00401a70 T DSATA_IsAutoSendEnabled	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/driver/dsata.c:2749
+00401a7e T DSATA_EnableAutoSend	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/driver/dsata.c:2785
+00401a94 T DSATA_DisableAutoSend	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/driver/dsata.c:2798
+00401aae T DSATA_EnableRxFis	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/driver/dsata.c:2811
+00401aba T HW4_ISR	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/driver/dsata.c:2340
+00401cdc T SATA_DI_StateMachine	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/sata_protocol/sata_dev_idle.c:431
+00401d90 T SATA_DI_IntEventHandler	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/sata_protocol/sata_dev_idle.c:476
+00401e68 T SATA_DDMAI_DataTransferReq	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/sata_protocol/sata_dma_in.c:66
+00401f16 T SATA_DDMAI_StateMachine	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/sata_protocol/sata_dma_in.c:152
+00401f18 T SATA_DDMAI_IntEventHandler	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/sata_protocol/sata_dma_in.c:178
+00401f36 T SATA_DDMAO_DataTransferReq	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/sata_protocol/sata_dma_out.c:79
+00401ff8 T SATA_DDMAO_StateMachine	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/sata_protocol/sata_dma_out.c:172
+00401ffa T SATA_DDMAO_IntEventHandler	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/sata_protocol/sata_dma_out.c:201
+00402038 T BrokenHost_ClearBusy	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/sata_protocol/sata_fpdma.c:36
+00402068 T AddCommandToQueue	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/sata_protocol/sata_fpdma.c:129
+004020ae T fpdmaq_error	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/sata_protocol/sata_fpdma.c:215
+004020d4 T SendQueue_CleanACK	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/sata_protocol/sata_fpdma.c:281
+004020f4 T SATA_DFPDMAQ_DataTransferReq	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/sata_protocol/sata_fpdma.c:310
+00402114 T SATA_DFPDMAQ_StateMachine	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/sata_protocol/sata_fpdma.c:359
+00402132 T SATA_DFPDMAQ_IntEventHandler	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/sata_protocol/sata_fpdma.c:423
+00402392 T SATA_DevCtx_Init	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/sata_protocol/sata_misc.c:48
+004024f0 T SATA_ChangeState	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/sata_protocol/sata_misc.c:224
+0040251c T error_print	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/sata_protocol/sata_misc.c:260
+0040252c T SATA_Non_Fatal_Error_Handler	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/sata_protocol/sata_misc.c:329
+0040254a T SATA_PrdDoneEventHandler	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/sata_protocol/sata_misc.c:1129
+00402578 T SATA_UpdateRdIdx	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/sata_protocol/sata_misc.c:1159
+004025ac T SATA_SendStatus	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/sata_protocol/sata_misc.c:356
+004025d2 T SATA_Fatal_Error_Handler	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/sata_protocol/sata_misc.c:395
+004026bc T SATA_FTXDS_Handler	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/sata_protocol/sata_misc.c:1188
+004026d8 T SATA_SaveH2DFis	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/sata_protocol/sata_misc.c:1210
+0040274a T SATA_SReset_Handler	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/sata_protocol/sata_misc.c:574
+00402a90 T SATA_SendGoodBadStatus	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/sata_protocol/sata_misc.c:1290
+00402ad8 T SATA_ClearCmd	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/sata_protocol/sata_misc.c:1333
+00402b06 T SATA_DHR_StateMachine	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/sata_protocol/sata_misc.c:1372
+00402b9a T SATA_DHR_IntEventHandler	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/sata_protocol/sata_misc.c:1514
+00402b9c T SATA_DSR_StateMachine	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/sata_protocol/sata_misc.c:1590
+00402bfe T SATA_DSR_IntEventHandler	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/sata_protocol/sata_misc.c:1650
+00402c16 T SATA_DEDD_StateMachine	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/sata_protocol/sata_misc.c:1734
+00402c4e T SATA_DEDD_IntEventHandler	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/sata_protocol/sata_misc.c:1768
+00402c50 T SATA_DND_DataTransferReq	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/sata_protocol/sata_misc.c:1973
+00402c78 T SATA_DND_StateMachine	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/sata_protocol/sata_misc.c:2009
+00402c7a T SATA_DND_IntEventHandler	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/sata_protocol/sata_misc.c:2031
+00402c7c T dpioi2_transmit_data	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/sata_protocol/sata_pio_in.c:45
+00402cac T SATA_DPIOI_DataTransferReq	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/sata_protocol/sata_pio_in.c:92
+00402cfc T SATA_DPIOI_StateMachine	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/sata_protocol/sata_pio_in.c:151
+00402cfe T SATA_DPIOI_IntEventHandler	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/sata_protocol/sata_pio_in.c:180
+00402d42 T dpioo2_receive_data	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/sata_protocol/sata_pio_out.c:47
+00402d72 T SATA_DPIOO_DataTransferReq	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/sata_protocol/sata_pio_out.c:95
+00402de2 T SATA_DPIOO_StateMachine	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/sata_protocol/sata_pio_out.c:160
+00402de4 T SATA_DPIOO_IntEventHandler	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/sata_protocol/sata_pio_out.c:190
+00402e4e T Scsi_RegisteInterfaceInfo	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/scsi/scsi.c:38
+00402e68 T Scsi_CmdHeadVerify	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/scsi/scsi.c:78
+00402ee4 T Scsi_DataHeadCheckSum	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/scsi/scsi.c:127
+00402f14 T Scsi_ScsiModeVerify	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/scsi/scsi.c:137
+00403008 T Scsi_BasisCmdHandle	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/scsi/scsi.c:228
+0040309e T Scsi_RdWrRamHandle
+0040313e T Scsi_CoreSwitchHandle	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/scsi/scsi.c:422
+00403210 T Scsi_IntCmdHandle	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/scsi/scsi.c:499
+00403288 T Scsi_IdleCmdHandle	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/scsi/scsi.c:558
+00403324 T TQM_DiTaskDoneEventHandler	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/task_manage/task_manage.c:235
+004033a2 T TQM_RemoveTask	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/task_manage/task_manage.c:385
+004033e2 T TQM_RemoveMulTask	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/task_manage/task_manage.c:355
+00403416 T TQM_HiTaskDoneEventHandler	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/task_manage/task_manage.c:313
+0040344e T TQM_CheckDiTaskDone
+0040346c T HW24_ISR	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/task_manage/task_manage.c:622
+00403494 T HW23_ISR	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/task_manage/task_manage.c:647
+004035c8 T TQM_GetTask
+004035d6 T NCQ_GetQueueLen	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/task_manage/task_manage.c:1046
+004035f6 T NCQ_QueueInit	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/task_manage/task_manage.c:1090
+00403616 T TQM_Init	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/task_manage/task_manage.c:39
+004036ae T TQM_AbortAllTask	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/task_manage/task_manage.c:498
+004036c2 T NCQ_QueueInquireTail
+004036ec T TQM_AddTask	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/task_manage/task_manage.c:516
+00403792 T TQM_CreateTask	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/task_manage/task_manage.c:87
+00403860 T Save_Uart_Buff_To_Log	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/task_manage/task_manage.c:1464
+00403882 T __getlock	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/task_process/task_process.c:46
+0040389e T __wait4unlocked
+00403902 T __unlock	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/task_process/task_process.c:109
+0040390a T TPM_Init	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/task_process/task_process.c:134
+00403936 T TPM_AsyncEventFromSata
+00403a18 T TPM_SyncEventFromSata
+00403b3c T TPM_StateMachine	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/task_process/task_process.c:956
+00403b5c T printch	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/debug.c:37
+00403b68 T printstr	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/debug.c:46
+00403b7e T printdec
+00403b9c T printhex
+00403bce T PRINT_TIME	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/debug.c:107
+00403c22 T PRINT_TXT	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/debug.c:233
+00403c5a T PRINT_DEC	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/debug.c:243
+00403cc2 T PRINT_HEX	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/debug.c:266
+00403d2a T GIE_ENABLE
+00403d34 T GIE_DISABLE	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/mcu.c:29
+00403d42 T __enable_performance	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/mcu.c:37
+00403d5a T __get_pfm_count
+00403d60 T __disbale_performance
+00403d68 T __get_sda_base	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/mcu.c:58
+00403d76 T __get_PRIMASK	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/mcu.c:83
+00403d82 T __set_PRIMASK	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/mcu.c:90
+00403d9a T NVIC_EnableIRQ	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/mcu.c:230
+00403db0 T NVIC_DisableIRQ	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/mcu.c:235
+00403dc8 T NVIC_ClearPendingIRQ	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/mcu.c:240
+00403dde T HW10_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/system_sg9081.c:95
+00403df8 T GetSysTickCnt
+00403e5a T SysTick_Config	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/system_sg9081.c:147
+00403e84 T UpdateSystemClock	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/system_sg9081.c:171
+00403ea6 T delay_ms	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/system_sg9081.c:273
+00403ed4 T SystemClkRecovery	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/system_sg9081.c:294
+00403ef0 T SystemInit	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/system_sg9081.c:316
+00403f24 T UART_Init	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/uart.c:20
+00403fe8 T UART_SendMsg	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/uart.c:63
+0040401e T Delay	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/uitility.c:46
+0040402a T U32MemCopy	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/uitility.c:93
+0040403c T U32MemSet	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/uitility.c:134
+0040404a T U08MemSet	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/uitility.c:149
+00404058 T U08MemCopy	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/uitility.c:167
+0040406a T U32MemCmp	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/uitility.c:211
+00404086 T GetSum	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/uitility.c:246
+0040409c T Check32Sum	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/uitility.c:264
+004040b4 t exception_handler	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:72
+004040b4 t exception_vector_end	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:72
+004040c0 t ISR_TABLE	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:72
+00404140 t OS_Trap_TLB_Fill	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:121
+00404146 t OS_Trap_PTE_Not_Present	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:128
+0040414c t OS_Trap_TLB_Misc	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:135
+00404152 t OS_Trap_TLB_VLPT_Miss	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:142
+00404158 t OS_Trap_Machine_Error	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:149
+0040415e t OS_Trap_Debug_Related	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:155
+00404164 t OS_Trap_General_Exception	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:160
+004041c2 t OS_Trap_Syscall	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:168
+00404218 t common_ISR_wrapper	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:174
+00404296 t OS_Trap_Interrupt_UNDEF	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:197
+00404298 t OS_Trap_Interrupt_HW0	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+004042a0 t OS_Trap_Interrupt_HW1	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+004042a8 t OS_Trap_Interrupt_HW2	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+004042b0 t OS_Trap_Interrupt_HW3	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+004042b8 t OS_Trap_Interrupt_HW4	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+004042c0 t OS_Trap_Interrupt_HW5	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+004042c8 t OS_Trap_Interrupt_HW6	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+004042d0 t OS_Trap_Interrupt_HW7	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+004042d8 t OS_Trap_Interrupt_HW8	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+004042e0 t OS_Trap_Interrupt_HW9	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+004042e8 t OS_Trap_Interrupt_HW10	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+004042f0 t OS_Trap_Interrupt_HW11	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+004042f8 t OS_Trap_Interrupt_HW12	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+00404300 t OS_Trap_Interrupt_HW13	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+00404308 t OS_Trap_Interrupt_HW14	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+00404310 t OS_Trap_Interrupt_HW15	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+0040431a t OS_Trap_Interrupt_HW16	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+00404324 t OS_Trap_Interrupt_HW17	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+0040432e t OS_Trap_Interrupt_HW18	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+00404338 t OS_Trap_Interrupt_HW19	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+00404342 t OS_Trap_Interrupt_HW20	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+0040434c t OS_Trap_Interrupt_HW21	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+00404356 t OS_Trap_Interrupt_HW22	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+00404360 t OS_Trap_Interrupt_HW23	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+0040436a t OS_Trap_Interrupt_HW24	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+00404374 t OS_Trap_Interrupt_HW25	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+0040437e t OS_Trap_Interrupt_HW26	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+00404388 t OS_Trap_Interrupt_HW27	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+00404392 t OS_Trap_Interrupt_HW28	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+0040439c t OS_Trap_Interrupt_HW29	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+004043a8 T _start	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:228
+004043d8 t Default_Handler	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:126
+004043d8 W HW0_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W HW11_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W HW12_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W HW13_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W HW15_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W HW16_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W HW17_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W HW18_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W HW19_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W HW1_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W HW21_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W HW22_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W HW25_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W HW26_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W HW27_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W HW28_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W HW29_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W HW2_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W HW30_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W HW31_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W HW3_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W HW5_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W HW6_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W HW7_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W HW8_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W HW9_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W SW0_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP0_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP10_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP11_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP12_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP13_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP14_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP15_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP16_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP17_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP18_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP19_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP1_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP20_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP21_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP22_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP23_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP24_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP25_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP26_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP27_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP28_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP29_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP2_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP30_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP31_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP32_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP33_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP34_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP35_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP36_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP37_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP38_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP39_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP3_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP40_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP41_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP42_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP43_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP44_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP45_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP46_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP47_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP48_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP49_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP4_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP50_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP51_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP52_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP53_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP54_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP55_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP56_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP57_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP58_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP59_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP5_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP60_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP61_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP62_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP63_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP6_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP7_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP8_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043d8 W VEP9_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+004043e0 T __c_init	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:141
+00404406 T __cpu_init	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:189
+0040448a T __init	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:293
+004044ac T SysCall_Handler	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:344
+004044ac W syscall_handler	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:347
+004044ae T Tlb_exception_handler	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:357
+004044ae W tlb_exception_handler	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:360
+004044b0 T SysError_IRQHandler	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:371
+004044b0 W error_exception_handler	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:372
+004044f0 T _nds32_init_mem	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-soc.c:32
+004044f2 T __soc_init	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-soc.c:71
+004044f4 T HW14_ISR	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G0CODE/Debug/../src/irq.c:29
+004044f6 T main	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G0CODE/Debug/../src/main.c:43
+004045cc T strlen
+004045d8 R tATACmdList_C	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/ata_cmd/ata_cmd_list.c:131
+00404788 R unAtaIdentify_C	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/ata_cmd/ata_identify.c:549
+00404b0c R FIS_CODE	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/driver/dsata.c:81
+00404b1c R tDevCmdSMTbl_C	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/sata_protocol/sata_define.c:34
+00404b58 R tDevCmdEHTbl_C	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/sata_protocol/sata_define.c:57
+00404b94 R tDevCmdDOSTbl_C	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/sata_protocol/sata_define.c:80
+00404cdc R dRDCmdHead	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/scsi/scsi.c:32
+00404cfc R dWRCmdHead	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/scsi/scsi.c:26
+00404d1c R bFwVersionG0	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/scsi/scsi.c:22
+00404d98 r SG_UART_BASE_ARRY	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform/sg9081.h:56
+00404dc0 A __data_lmastart
+00408000 b RAM_BEGIN
+00408000 B __bss_start
+00408000 R __data_start
+00408000 B _edata
+00408000 b bFlg_Time	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/driver/dsata.c:1611
+00408004 b bFlg_Cnt	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/driver/dsata.c:1610
+00408006 b wCount_dipm.7488
+00408008 b time.8387
+00408010 B aDebugInfoBuffer	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/debug.c:34
+00408030 B UART_TX_FIFO	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/uart.c:15
+00408118 W _FP_BASE_
+00408118 W _SDA_BASE_
+00408230 B _end
+0040b000 b EXEC1_BEGIN
+0040b000 A _stack
+0040b800 b COMRAM3_BEGIN
+0040b800 D tCmdHead	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/driver/dsata.c:67
+0040bc00 D tScsiCmdHead	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/scsi/scsi.c:18
+0040be00 D tScsiDataHead	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/scsi/scsi.c:19
+0040c000 D tSyncBuffer	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/sata_protocol/sata_define.c:29
+0040c200 D tAsyncBuffer	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/sata_protocol/sata_define.c:30
+0040c400 D unAtaIdentify	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/ata_cmd/ata_identify.c:57
+0040c600 D tPrdTbls	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/driver/dsata.c:74
+0040c800 D arrunHWD2HFS	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/driver/dsata.c:69
+0040d000 D unFsmBuff	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/driver/dsata.c:76
+0040d020 D tSataDC	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/sata_protocol/sata_define.c:31
+0040d4b0 D tScsiCtl	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/scsi/scsi.c:17
+0040d4e0 D tTQC	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/sata_protocol/sata_define.c:32
