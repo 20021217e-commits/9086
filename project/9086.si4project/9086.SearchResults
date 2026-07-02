@@ -1,0 +1,2 @@
+---- CMD_READ_FLASH_ID Matches (1 in 1 files) ----
+pri_cmd.h (APP_SDK_G3CODE\inc) line 9 : #define CMD_READ_FLASH_ID           		(0xA1)
