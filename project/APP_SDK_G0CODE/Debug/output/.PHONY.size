@@ -1,0 +1,2 @@
+   text (code + rodata)	   data	    bss	    dec	    hex	filename
+  19896 (17880 +   2016)	   8460	    560	  28916	   70f4	APP_SDK_G0CODE.adx
