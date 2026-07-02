@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{66FCE1BC-5F8D-40B9-BE90-A4706E0676D8}</ProjectGuid>
+    <RootNamespace>JupiterScan</RootNamespace>
+    <ProjectName>SDK</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\inc;$(SolutionDir)..\..\..\FlashDriver\FDL\Interface;$(SolutionDir)..\..\..\FlashDriver\FDL\inc;$(SolutionDir)..\..\..\APP_HAL_Lib\HAL_Lib\Interface;$(SolutionDir)..\..\..\APP_HAL_Lib\HAL_Lib\inc;$(SolutionDir)..\..\..\sata\inc\ata_cmd;$(SolutionDir)..\..\..\sata\inc\driver;$(SolutionDir)..\..\..\sata\inc\sata_protocol;$(SolutionDir)..\..\..\sata\inc\scsi;$(SolutionDir)..\..\..\sata\inc\task_manage;$(SolutionDir)..\..\..\sata\inc\task_process;$(SolutionDir)..\..\..\sata\inc\uitility;$(SolutionDir)..\..\..\syscfg\inc\platform;$(SolutionDir)..\..\..\syscfg\inc\startup;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\APP_HAL_Lib\HAL_Lib\inc\hal_adm.h" />
+    <ClInclude Include="..\..\..\..\APP_HAL_Lib\HAL_Lib\inc\hal_cq.h" />
+    <ClInclude Include="..\..\..\..\APP_HAL_Lib\HAL_Lib\inc\hal_define.h" />
+    <ClInclude Include="..\..\..\..\APP_HAL_Lib\HAL_Lib\inc\hal_timer.h" />
+    <ClInclude Include="..\..\..\..\APP_HAL_Lib\HAL_Lib\interface\data_type.h" />
+    <ClInclude Include="..\..\..\..\APP_HAL_Lib\HAL_Lib\interface\flash_op_cmd.h" />
+    <ClInclude Include="..\..\..\..\APP_HAL_Lib\HAL_Lib\interface\hal.h" />
+    <ClInclude Include="..\..\..\..\APP_HAL_Lib\HAL_Lib\interface\hal_config.h" />
+    <ClInclude Include="..\..\..\..\APP_HAL_Lib\HAL_Lib\interface\SumsungSeed.h" />
+    <ClInclude Include="..\..\..\..\APP_HAL_Lib\HAL_Lib\interface\ToshibaSeed.h" />
+    <ClInclude Include="..\..\..\..\FlashDriver\FDL\inc\fdl_exception.h" />
+    <ClInclude Include="..\..\..\..\FlashDriver\FDL\inc\fdl_irq.h" />
+    <ClInclude Include="..\..\..\..\FlashDriver\FDL\inc\fdl_read_retry.h" />
+    <ClInclude Include="..\..\..\..\FlashDriver\FDL\inc\fdl_task_op.h" />
+    <ClInclude Include="..\..\..\..\FlashDriver\FDL\inc\fdl_copy_back.h" />
+    <ClInclude Include="..\..\..\..\FlashDriver\FDL\inc\fdl_debug.h" />
+    <ClInclude Include="..\..\..\..\FlashDriver\FDL\inc\fdl_erase_block.h" />
+    <ClInclude Include="..\..\..\..\FlashDriver\FDL\inc\fdl_read.h" />
+    <ClInclude Include="..\..\..\..\FlashDriver\FDL\inc\fdl_write.h" />
+    <ClInclude Include="..\..\..\..\FlashDriver\FDL\Interface\flash_driver.h" />
+    <ClInclude Include="..\..\..\..\FlashDriver\FDL\Interface\flash_driver_config.h" />
+    <ClInclude Include="..\..\..\..\FlashDriver\FDL\Interface\flash_driver_struct.h" />
+    <ClInclude Include="..\..\..\..\FlashDriver\FDL\Interface\HAL_Interface.h" />
+    <ClInclude Include="..\..\..\..\Sata\inc\ata_cmd\ata_cmd_list.h" />
+    <ClInclude Include="..\..\..\..\Sata\inc\ata_cmd\ata_dco.h" />
+    <ClInclude Include="..\..\..\..\Sata\inc\ata_cmd\ata_fpdma.h" />
+    <ClInclude Include="..\..\..\..\Sata\inc\ata_cmd\ata_general.h" />
+    <ClInclude Include="..\..\..\..\Sata\inc\ata_cmd\ata_gpl.h" />
+    <ClInclude Include="..\..\..\..\Sata\inc\ata_cmd\ata_identify.h" />
+    <ClInclude Include="..\..\..\..\Sata\inc\ata_cmd\ata_power_mg.h" />
+    <ClInclude Include="..\..\..\..\Sata\inc\ata_cmd\ata_security.h" />
+    <ClInclude Include="..\..\..\..\Sata\inc\ata_cmd\ata_smart.h" />
+    <ClInclude Include="..\..\..\..\Sata\inc\ata_cmd\ata_typedef.h" />
+    <ClInclude Include="..\..\..\..\Sata\inc\driver\dma1c.h" />
+    <ClInclude Include="..\..\..\..\Sata\inc\driver\dsata.h" />
+    <ClInclude Include="..\..\..\..\Sata\inc\sata_protocol\sata_dev_idle.h" />
+    <ClInclude Include="..\..\..\..\Sata\inc\sata_protocol\sata_dma_in.h" />
+    <ClInclude Include="..\..\..\..\Sata\inc\sata_protocol\sata_dma_out.h" />
+    <ClInclude Include="..\..\..\..\Sata\inc\sata_protocol\sata_fpdma.h" />
+    <ClInclude Include="..\..\..\..\Sata\inc\sata_protocol\sata_misc.h" />
+    <ClInclude Include="..\..\..\..\Sata\inc\sata_protocol\sata_pio_in.h" />
+    <ClInclude Include="..\..\..\..\Sata\inc\sata_protocol\sata_pio_out.h" />
+    <ClInclude Include="..\..\..\..\Sata\inc\sata_protocol\sata_typedef.h" />
+    <ClInclude Include="..\..\..\..\Sata\inc\scsi\scsi.h" />
+    <ClInclude Include="..\..\..\..\Sata\inc\task_manage\task_manage.h" />
+    <ClInclude Include="..\..\..\..\Sata\inc\task_process\task_process.h" />
+    <ClInclude Include="..\..\..\..\Sata\inc\uitility\uitility.h" />
+    <ClInclude Include="..\..\..\..\SysCfg\inc\platform\common.h" />
+    <ClInclude Include="..\..\..\..\SysCfg\inc\platform\mcu.h" />
+    <ClInclude Include="..\..\..\..\SysCfg\inc\platform\regADMCOM.h" />
+    <ClInclude Include="..\..\..\..\SysCfg\inc\platform\regBFC.h" />
+    <ClInclude Include="..\..\..\..\SysCfg\inc\platform\regCPM.h" />
+    <ClInclude Include="..\..\..\..\SysCfg\inc\platform\regDARB.h" />
+    <ClInclude Include="..\..\..\..\SysCfg\inc\platform\regDIU.h" />
+    <ClInclude Include="..\..\..\..\SysCfg\inc\platform\regDMA1.h" />
+    <ClInclude Include="..\..\..\..\SysCfg\inc\platform\regDMA2.h" />
+    <ClInclude Include="..\..\..\..\SysCfg\inc\platform\regDSATA.h" />
+    <ClInclude Include="..\..\..\..\SysCfg\inc\platform\regFC.h" />
+    <ClInclude Include="..\..\..\..\SysCfg\inc\platform\regLDPC.h" />
+    <ClInclude Include="..\..\..\..\SysCfg\inc\platform\regMCU.h" />
+    <ClInclude Include="..\..\..\..\SysCfg\inc\platform\regPadctrl.h" />
+    <ClInclude Include="..\..\..\..\SysCfg\inc\platform\regPMCP.h" />
+    <ClInclude Include="..\..\..\..\SysCfg\inc\platform\regSPI.h" />
+    <ClInclude Include="..\..\..\..\SysCfg\inc\platform\regUART.h" />
+    <ClInclude Include="..\..\..\..\SysCfg\inc\platform\regVMC.h" />
+    <ClInclude Include="..\..\..\..\SysCfg\inc\platform\sg9081.h" />
+    <ClInclude Include="..\..\..\..\SysCfg\inc\platform\system_sg9081.h" />
+    <ClInclude Include="..\..\..\..\SysCfg\inc\startup\ae210p.h" />
+    <ClInclude Include="..\..\..\..\SysCfg\inc\startup\assert_demos.h" />
+    <ClInclude Include="..\..\..\..\SysCfg\inc\startup\config.h" />
+    <ClInclude Include="..\..\..\..\SysCfg\inc\startup\interrupt.h" />
+    <ClInclude Include="..\..\..\inc\jpt_cmd.h" />
+    <ClInclude Include="..\..\..\inc\jpt_fdl.h" />
+    <ClInclude Include="..\..\..\inc\main.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\APP_HAL_Lib\HAL_Lib\src\hal_adm.c" />
+    <ClCompile Include="..\..\..\..\APP_HAL_Lib\HAL_Lib\src\hal_bfc.c" />
+    <ClCompile Include="..\..\..\..\APP_HAL_Lib\HAL_Lib\src\hal_cpm.c" />
+    <ClCompile Include="..\..\..\..\APP_HAL_Lib\HAL_Lib\src\hal_cq.c" />
+    <ClCompile Include="..\..\..\..\APP_HAL_Lib\HAL_Lib\src\hal_define.c" />
+    <ClCompile Include="..\..\..\..\APP_HAL_Lib\HAL_Lib\src\hal_fc.c" />
+    <ClCompile Include="..\..\..\..\APP_HAL_Lib\HAL_Lib\src\hal_mcu.c" />
+    <ClCompile Include="..\..\..\..\APP_HAL_Lib\HAL_Lib\src\hal_pad.c" />
+    <ClCompile Include="..\..\..\..\APP_HAL_Lib\HAL_Lib\src\hal_pmcp.c" />
+    <ClCompile Include="..\..\..\..\APP_HAL_Lib\HAL_Lib\src\hal_timer.c" />
+    <ClCompile Include="..\..\..\..\APP_HAL_Lib\HAL_Lib\src\hal_uart.c" />
+    <ClCompile Include="..\..\..\..\APP_HAL_Lib\HAL_Lib\src\special_function.c" />
+    <ClCompile Include="..\..\..\..\FlashDriver\FDL\src\fdl_exception.c" />
+    <ClCompile Include="..\..\..\..\FlashDriver\FDL\src\fdl_irq.c" />
+    <ClCompile Include="..\..\..\..\FlashDriver\FDL\src\fdl_read_retry.c" />
+    <ClCompile Include="..\..\..\..\FlashDriver\FDL\src\fdl_read_retry_flash.c" />
+    <ClCompile Include="..\..\..\..\FlashDriver\FDL\src\fdl_task_op.c" />
+    <ClCompile Include="..\..\..\..\FlashDriver\FDL\src\fdl_copy_back.c" />
+    <ClCompile Include="..\..\..\..\FlashDriver\FDL\src\fdl_debug.c" />
+    <ClCompile Include="..\..\..\..\FlashDriver\FDL\src\fdl_erase_block.c" />
+    <ClCompile Include="..\..\..\..\FlashDriver\FDL\src\fdl_read.c" />
+    <ClCompile Include="..\..\..\..\FlashDriver\FDL\src\fdl_write.c" />
+    <ClCompile Include="..\..\..\..\FlashDriver\FDL\src\flash_driver.c" />
+    <ClCompile Include="..\..\..\..\Sata\src\ata_cmd\ata_cmd_list.c" />
+    <ClCompile Include="..\..\..\..\Sata\src\ata_cmd\ata_dco.c" />
+    <ClCompile Include="..\..\..\..\Sata\src\ata_cmd\ata_fpdma.c" />
+    <ClCompile Include="..\..\..\..\Sata\src\ata_cmd\ata_general.c" />
+    <ClCompile Include="..\..\..\..\Sata\src\ata_cmd\ata_gpl.c" />
+    <ClCompile Include="..\..\..\..\Sata\src\ata_cmd\ata_identify.c" />
+    <ClCompile Include="..\..\..\..\Sata\src\ata_cmd\ata_power_mg.c" />
+    <ClCompile Include="..\..\..\..\Sata\src\ata_cmd\ata_security.c" />
+    <ClCompile Include="..\..\..\..\Sata\src\ata_cmd\ata_smart.c" />
+    <ClCompile Include="..\..\..\..\Sata\src\driver\dma1c.c" />
+    <ClCompile Include="..\..\..\..\Sata\src\driver\dsata.c" />
+    <ClCompile Include="..\..\..\..\Sata\src\sata_protocol\sata_define.c" />
+    <ClCompile Include="..\..\..\..\Sata\src\sata_protocol\sata_dev_idle.c" />
+    <ClCompile Include="..\..\..\..\Sata\src\sata_protocol\sata_dma_in.c" />
+    <ClCompile Include="..\..\..\..\Sata\src\sata_protocol\sata_dma_out.c" />
+    <ClCompile Include="..\..\..\..\Sata\src\sata_protocol\sata_fpdma.c" />
+    <ClCompile Include="..\..\..\..\Sata\src\sata_protocol\sata_misc.c" />
+    <ClCompile Include="..\..\..\..\Sata\src\sata_protocol\sata_pio_in.c" />
+    <ClCompile Include="..\..\..\..\Sata\src\sata_protocol\sata_pio_out.c" />
+    <ClCompile Include="..\..\..\..\Sata\src\scsi\scsi.c" />
+    <ClCompile Include="..\..\..\..\Sata\src\task_manage\task_manage.c" />
+    <ClCompile Include="..\..\..\..\Sata\src\task_process\task_process.c" />
+    <ClCompile Include="..\..\..\..\Sata\src\uitility\uitility.c" />
+    <ClCompile Include="..\..\..\..\SysCfg\src\platform\mcu.c" />
+    <ClCompile Include="..\..\..\..\SysCfg\src\platform\system_sg9081.c" />
+    <ClCompile Include="..\..\..\..\SysCfg\src\startup\init-default.c" />
+    <ClCompile Include="..\..\..\..\SysCfg\src\startup\init-soc.c" />
+    <ClCompile Include="..\..\..\src\jpt_fdl.c" />
+    <ClCompile Include="..\..\..\src\main.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
