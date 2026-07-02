@@ -1,0 +1,1228 @@
+19:32:56 **** Incremental Build of configuration Debug for project APP_SDK_G3CODE ****
+make -j28 pre-build main-build 
+sh -x ../CopyBinHex.cmd;../../A1-SourceInsight4.0-DoubleCore/CopyBinHexG3.bat
++ pwd
++ nds32le-elf-objcopy -O binary -j .BANK0 -j .text_.srcvmc_demo.o -j .rodata_.srcvmc_demo.o -j .BANK1 -j .BANK2 -j .BANK3 -j .BANK4 -j .BANK5 -j .BANK6 -j .BANK7 APP_SDK_G3CODE.adx BANK.bin
+D:\development\Automation\9086BB\9086\APP_SDK_G3CODE\Debug
+nds32le-elf-objcopy: 'APP_SDK_G3CODE.adx': No such file
++ nds32le-elf-objcopy -O binary -j .nds32_init -j .text -j .rodata -j .data APP_SDK_G3CODE.adx APP_SDK_G3CODE.bin
+nds32le-elf-objcopy: 'APP_SDK_G3CODE.adx': No such file
++ nds32le-elf-objcopy -O ihex -j .nds32_init -j .text -j .rodata -j .data APP_SDK_G3CODE.adx APP_SDK_G3CODE.hex
+nds32le-elf-objcopy: 'APP_SDK_G3CODE.adx': No such file
++ nds32le-elf-readelf -s '*.adx'
++ grep FUNC
++ sort -nrk 3
++ awk '{printf("%6-s\t%24-s\n",$3,$8)}'
+readelf: Error: '*.adx': No such file
++ nds32le-elf-readelf -s '*.adx'
+readelf: Error: '*.adx': No such file
++ grep OBJECT
++ sort -nrk 3
++ awk '{printf("%6-s\t%24-s\n",$3,$8)}'
+/bin/sh: ../../A1-SourceInsight4.0-DoubleCore/CopyBinHexG3.bat: No such file or directory
+make: [makefile:136: pre-build] Error 127 (ignored)
+ 
+Building file: /cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/Micron_WL_Addr.c
+Invoking: Andes C Compiler
+nds32le-elf-gcc -D__DIS_ALIGN_RD__ -D__JUPITER_DEBUG__ -DSATA_DRIVE_NEW -D__DUAL_CORE__ -D__FILL_PAGE_EN__11 -D__FDL_HW_VIRTUL_CLST__ -D__FDL_CQFIFO_TRIG_IRQ__ -D__FDL_CRC_FUNC__ -D__G3_FLYCODE -D__SW_PMCP__11 -D__TLC_RD_VERIFY__11 -D__FLASH_SUMSUNG_3DV4__ -D__FPGA_PLATEFORM_OFF -U__CAP_512G_4CHAN_4CE_SUPPORT__ -U__FPGA_PLATEFORM -U__APP_CACHE_READ__ -U__YS9083XT_ALGO__ -U__SATA_LOG_EN__ -U__VMC_EN__ -I"/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/Interface" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/interface" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/ata_cmd" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/driver" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/sata_protocol" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/scsi" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_manage" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_process" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/startup" -Os -mcmodel=large -g3 -Wall -c -fmessage-length=0 -ffunction-sections -MMD -MP -MF"FDL/src/Micron_WL_Addr.d" -MT"FDL/src/Micron_WL_Addr.d FDL/src/Micron_WL_Addr.o" -o "FDL/src/Micron_WL_Addr.o" "/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/Micron_WL_Addr.c"
+Finished building: /cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/Micron_WL_Addr.c
+ 
+Building file: /cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_PValueSet.c
+Invoking: Andes C Compiler
+nds32le-elf-gcc -D__DIS_ALIGN_RD__ -D__JUPITER_DEBUG__ -DSATA_DRIVE_NEW -D__DUAL_CORE__ -D__FILL_PAGE_EN__11 -D__FDL_HW_VIRTUL_CLST__ -D__FDL_CQFIFO_TRIG_IRQ__ -D__FDL_CRC_FUNC__ -D__G3_FLYCODE -D__SW_PMCP__11 -D__TLC_RD_VERIFY__11 -D__FLASH_SUMSUNG_3DV4__ -D__FPGA_PLATEFORM_OFF -U__CAP_512G_4CHAN_4CE_SUPPORT__ -U__FPGA_PLATEFORM -U__APP_CACHE_READ__ -U__YS9083XT_ALGO__ -U__SATA_LOG_EN__ -U__VMC_EN__ -I"/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/Interface" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/interface" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/ata_cmd" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/driver" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/sata_protocol" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/scsi" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_manage" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_process" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/startup" -Os -mcmodel=large -g3 -Wall -c -fmessage-length=0 -ffunction-sections -MMD -MP -MF"FDL/src/fdl_PValueSet.d" -MT"FDL/src/fdl_PValueSet.d FDL/src/fdl_PValueSet.o" -o "FDL/src/fdl_PValueSet.o" "/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_PValueSet.c"
+In file included from /cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_PValueSet.c:12:0:
+/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/inc/fdl_PValueSet.h:92:0: warning: "TLC_PRE_CMD" redefined
+ #define TLC_PRE_CMD       (tRDTBestPValueScan.bTLCPreCmd)/*区分ED3和其他Flash*/
+ ^
+In file included from /cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/interface/flash_op_cmd.h:15:0,
+                 from /cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/interface/hal.h:28,
+                 from /cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/Interface/flash_driver_struct.h:9,
+                 from /cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/Interface/flash_driver.h:33,
+                 from /cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_PValueSet.c:10:
+/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/Interface/flash_driver_config.h:247:0: note: this is the location of the previous definition
+ #define TLC_PRE_CMD (1)     /*无需用前�?�?�?来区分同�?��WordLine中的LP、XP、HP,用Row地址直接指定*/
+ ^
+Finished building: /cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_PValueSet.c
+ 
+Building file: /cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_common.c
+Invoking: Andes C Compiler
+nds32le-elf-gcc -D__DIS_ALIGN_RD__ -D__JUPITER_DEBUG__ -DSATA_DRIVE_NEW -D__DUAL_CORE__ -D__FILL_PAGE_EN__11 -D__FDL_HW_VIRTUL_CLST__ -D__FDL_CQFIFO_TRIG_IRQ__ -D__FDL_CRC_FUNC__ -D__G3_FLYCODE -D__SW_PMCP__11 -D__TLC_RD_VERIFY__11 -D__FLASH_SUMSUNG_3DV4__ -D__FPGA_PLATEFORM_OFF -U__CAP_512G_4CHAN_4CE_SUPPORT__ -U__FPGA_PLATEFORM -U__APP_CACHE_READ__ -U__YS9083XT_ALGO__ -U__SATA_LOG_EN__ -U__VMC_EN__ -I"/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/Interface" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/interface" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/ata_cmd" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/driver" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/sata_protocol" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/scsi" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_manage" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_process" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/startup" -Os -mcmodel=large -g3 -Wall -c -fmessage-length=0 -ffunction-sections -MMD -MP -MF"FDL/src/fdl_common.d" -MT"FDL/src/fdl_common.d FDL/src/fdl_common.o" -o "FDL/src/fdl_common.o" "/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_common.c"
+/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_common.c: In function 'Fdl_GetRaidPage':
+/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_common.c:856:92: warning: passing argument 8 of 'HAL_CQStartDMA2Write' makes integer from pointer without a cast
+  HAL_CQStartDMA2Write(bChanPhy, dBuffAddr, DMA2_WR_TO_FLASH, 0, 0,SECT_OF_PAGE,JOINT_NONE, NULL);
+                                                                                            ^
+In file included from /cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/Interface/flash_driver_struct.h:9:0,
+                 from /cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/inc/fdl_common.h:4,
+                 from /cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_common.c:1:
+/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/interface/hal.h:1002:6: note: expected 'long unsigned int' but argument is of type 'void *'
+ void HAL_CQStartDMA2Write(U8 bChan, U32 dBuffAddr, DMA2_Dir dir, U32 dBuffIdx, U8 bFlashIdx, U8 bTotalSect, Joint_Mode joint, U32 dDmaInfoAddr);
+      ^
+/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_common.c: In function 'Fdl_DmaRdClrTimeoutMCU':
+/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_common.c:896:2: warning: implicit declaration of function 'Fdl_PullUpCeAndRd' [-Wimplicit-function-declaration]
+  Fdl_PullUpCeAndRd(bPhyChan); 
+  ^
+Finished building: /cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_common.c
+ 
+Building file: /cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_copyback.c
+Invoking: Andes C Compiler
+nds32le-elf-gcc -D__DIS_ALIGN_RD__ -D__JUPITER_DEBUG__ -DSATA_DRIVE_NEW -D__DUAL_CORE__ -D__FILL_PAGE_EN__11 -D__FDL_HW_VIRTUL_CLST__ -D__FDL_CQFIFO_TRIG_IRQ__ -D__FDL_CRC_FUNC__ -D__G3_FLYCODE -D__SW_PMCP__11 -D__TLC_RD_VERIFY__11 -D__FLASH_SUMSUNG_3DV4__ -D__FPGA_PLATEFORM_OFF -U__CAP_512G_4CHAN_4CE_SUPPORT__ -U__FPGA_PLATEFORM -U__APP_CACHE_READ__ -U__YS9083XT_ALGO__ -U__SATA_LOG_EN__ -U__VMC_EN__ -I"/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/Interface" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/interface" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/ata_cmd" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/driver" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/sata_protocol" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/scsi" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_manage" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_process" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/startup" -Os -mcmodel=large -g3 -Wall -c -fmessage-length=0 -ffunction-sections -MMD -MP -MF"FDL/src/fdl_copyback.d" -MT"FDL/src/fdl_copyback.d FDL/src/fdl_copyback.o" -o "FDL/src/fdl_copyback.o" "/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_copyback.c"
+In file included from /cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/interface/hal.h:28:0,
+                 from /cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/Interface/flash_driver_struct.h:9,
+                 from /cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/inc/fdl_copyback.h:6,
+                 from /cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_copyback.c:1:
+/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_copyback.c: In function 'TaskConvertTableDataCopyBackProg':
+/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/interface/flash_op_cmd.h:435:16: warning: 'bLunOfChan' is used uninitialized in this function [-Wuninitialized]
+               ((U32)(lun)<<FAIL_ADDR_LUN_BIT_OFFS)|\
+                ^
+/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_copyback.c:2980:6: note: 'bLunOfChan' was declared here
+  U08 bLunOfChan; 
+      ^
+Finished building: /cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_copyback.c
+ 
+Building file: /cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_debug.c
+Invoking: Andes C Compiler
+nds32le-elf-gcc -D__DIS_ALIGN_RD__ -D__JUPITER_DEBUG__ -DSATA_DRIVE_NEW -D__DUAL_CORE__ -D__FILL_PAGE_EN__11 -D__FDL_HW_VIRTUL_CLST__ -D__FDL_CQFIFO_TRIG_IRQ__ -D__FDL_CRC_FUNC__ -D__G3_FLYCODE -D__SW_PMCP__11 -D__TLC_RD_VERIFY__11 -D__FLASH_SUMSUNG_3DV4__ -D__FPGA_PLATEFORM_OFF -U__CAP_512G_4CHAN_4CE_SUPPORT__ -U__FPGA_PLATEFORM -U__APP_CACHE_READ__ -U__YS9083XT_ALGO__ -U__SATA_LOG_EN__ -U__VMC_EN__ -I"/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/Interface" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/interface" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/ata_cmd" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/driver" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/sata_protocol" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/scsi" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_manage" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_process" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/startup" -Os -mcmodel=large -g3 -Wall -c -fmessage-length=0 -ffunction-sections -MMD -MP -MF"FDL/src/fdl_debug.d" -MT"FDL/src/fdl_debug.d FDL/src/fdl_debug.o" -o "FDL/src/fdl_debug.o" "/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_debug.c"
+Finished building: /cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_debug.c
+ 
+Building file: /cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_erase_block.c
+Invoking: Andes C Compiler
+nds32le-elf-gcc -D__DIS_ALIGN_RD__ -D__JUPITER_DEBUG__ -DSATA_DRIVE_NEW -D__DUAL_CORE__ -D__FILL_PAGE_EN__11 -D__FDL_HW_VIRTUL_CLST__ -D__FDL_CQFIFO_TRIG_IRQ__ -D__FDL_CRC_FUNC__ -D__G3_FLYCODE -D__SW_PMCP__11 -D__TLC_RD_VERIFY__11 -D__FLASH_SUMSUNG_3DV4__ -D__FPGA_PLATEFORM_OFF -U__CAP_512G_4CHAN_4CE_SUPPORT__ -U__FPGA_PLATEFORM -U__APP_CACHE_READ__ -U__YS9083XT_ALGO__ -U__SATA_LOG_EN__ -U__VMC_EN__ -I"/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/Interface" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/interface" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/ata_cmd" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/driver" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/sata_protocol" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/scsi" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_manage" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_process" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/startup" -Os -mcmodel=large -g3 -Wall -c -fmessage-length=0 -ffunction-sections -MMD -MP -MF"FDL/src/fdl_erase_block.d" -MT"FDL/src/fdl_erase_block.d FDL/src/fdl_erase_block.o" -o "FDL/src/fdl_erase_block.o" "/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_erase_block.c"
+Finished building: /cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_erase_block.c
+ 
+Building file: /cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_exception.c
+Invoking: Andes C Compiler
+nds32le-elf-gcc -D__DIS_ALIGN_RD__ -D__JUPITER_DEBUG__ -DSATA_DRIVE_NEW -D__DUAL_CORE__ -D__FILL_PAGE_EN__11 -D__FDL_HW_VIRTUL_CLST__ -D__FDL_CQFIFO_TRIG_IRQ__ -D__FDL_CRC_FUNC__ -D__G3_FLYCODE -D__SW_PMCP__11 -D__TLC_RD_VERIFY__11 -D__FLASH_SUMSUNG_3DV4__ -D__FPGA_PLATEFORM_OFF -U__CAP_512G_4CHAN_4CE_SUPPORT__ -U__FPGA_PLATEFORM -U__APP_CACHE_READ__ -U__YS9083XT_ALGO__ -U__SATA_LOG_EN__ -U__VMC_EN__ -I"/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/Interface" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/interface" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/ata_cmd" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/driver" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/sata_protocol" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/scsi" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_manage" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_process" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/startup" -Os -mcmodel=large -g3 -Wall -c -fmessage-length=0 -ffunction-sections -MMD -MP -MF"FDL/src/fdl_exception.d" -MT"FDL/src/fdl_exception.d FDL/src/fdl_exception.o" -o "FDL/src/fdl_exception.o" "/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_exception.c"
+Finished building: /cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_exception.c
+ 
+Building file: /cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_irq.c
+Invoking: Andes C Compiler
+nds32le-elf-gcc -D__DIS_ALIGN_RD__ -D__JUPITER_DEBUG__ -DSATA_DRIVE_NEW -D__DUAL_CORE__ -D__FILL_PAGE_EN__11 -D__FDL_HW_VIRTUL_CLST__ -D__FDL_CQFIFO_TRIG_IRQ__ -D__FDL_CRC_FUNC__ -D__G3_FLYCODE -D__SW_PMCP__11 -D__TLC_RD_VERIFY__11 -D__FLASH_SUMSUNG_3DV4__ -D__FPGA_PLATEFORM_OFF -U__CAP_512G_4CHAN_4CE_SUPPORT__ -U__FPGA_PLATEFORM -U__APP_CACHE_READ__ -U__YS9083XT_ALGO__ -U__SATA_LOG_EN__ -U__VMC_EN__ -I"/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/Interface" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/interface" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/ata_cmd" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/driver" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/sata_protocol" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/scsi" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_manage" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_process" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/startup" -Os -mcmodel=large -g3 -Wall -c -fmessage-length=0 -ffunction-sections -MMD -MP -MF"FDL/src/fdl_irq.d" -MT"FDL/src/fdl_irq.d FDL/src/fdl_irq.o" -o "FDL/src/fdl_irq.o" "/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_irq.c"
+Finished building: /cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_irq.c
+ 
+Building file: /cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_mcu_op.c
+Invoking: Andes C Compiler
+nds32le-elf-gcc -D__DIS_ALIGN_RD__ -D__JUPITER_DEBUG__ -DSATA_DRIVE_NEW -D__DUAL_CORE__ -D__FILL_PAGE_EN__11 -D__FDL_HW_VIRTUL_CLST__ -D__FDL_CQFIFO_TRIG_IRQ__ -D__FDL_CRC_FUNC__ -D__G3_FLYCODE -D__SW_PMCP__11 -D__TLC_RD_VERIFY__11 -D__FLASH_SUMSUNG_3DV4__ -D__FPGA_PLATEFORM_OFF -U__CAP_512G_4CHAN_4CE_SUPPORT__ -U__FPGA_PLATEFORM -U__APP_CACHE_READ__ -U__YS9083XT_ALGO__ -U__SATA_LOG_EN__ -U__VMC_EN__ -I"/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/Interface" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/interface" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/ata_cmd" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/driver" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/sata_protocol" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/scsi" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_manage" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_process" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/startup" -Os -mcmodel=large -g3 -Wall -c -fmessage-length=0 -ffunction-sections -MMD -MP -MF"FDL/src/fdl_mcu_op.d" -MT"FDL/src/fdl_mcu_op.d FDL/src/fdl_mcu_op.o" -o "FDL/src/fdl_mcu_op.o" "/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_mcu_op.c"
+Finished building: /cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_mcu_op.c
+ 
+Building file: /cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_read.c
+Invoking: Andes C Compiler
+nds32le-elf-gcc -D__DIS_ALIGN_RD__ -D__JUPITER_DEBUG__ -DSATA_DRIVE_NEW -D__DUAL_CORE__ -D__FILL_PAGE_EN__11 -D__FDL_HW_VIRTUL_CLST__ -D__FDL_CQFIFO_TRIG_IRQ__ -D__FDL_CRC_FUNC__ -D__G3_FLYCODE -D__SW_PMCP__11 -D__TLC_RD_VERIFY__11 -D__FLASH_SUMSUNG_3DV4__ -D__FPGA_PLATEFORM_OFF -U__CAP_512G_4CHAN_4CE_SUPPORT__ -U__FPGA_PLATEFORM -U__APP_CACHE_READ__ -U__YS9083XT_ALGO__ -U__SATA_LOG_EN__ -U__VMC_EN__ -I"/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/Interface" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/interface" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/ata_cmd" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/driver" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/sata_protocol" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/scsi" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_manage" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_process" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/startup" -Os -mcmodel=large -g3 -Wall -c -fmessage-length=0 -ffunction-sections -MMD -MP -MF"FDL/src/fdl_read.d" -MT"FDL/src/fdl_read.d FDL/src/fdl_read.o" -o "FDL/src/fdl_read.o" "/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_read.c"
+/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_read.c: In function 'TaskConvert4KReadClstToBuff':
+/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_read.c:1132:9: warning: unused variable 'wColOpNext' [-Wunused-variable]
+     U16 wColOpNext;
+         ^
+Finished building: /cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_read.c
+ 
+Building file: /cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_read_retry.c
+Invoking: Andes C Compiler
+nds32le-elf-gcc -D__DIS_ALIGN_RD__ -D__JUPITER_DEBUG__ -DSATA_DRIVE_NEW -D__DUAL_CORE__ -D__FILL_PAGE_EN__11 -D__FDL_HW_VIRTUL_CLST__ -D__FDL_CQFIFO_TRIG_IRQ__ -D__FDL_CRC_FUNC__ -D__G3_FLYCODE -D__SW_PMCP__11 -D__TLC_RD_VERIFY__11 -D__FLASH_SUMSUNG_3DV4__ -D__FPGA_PLATEFORM_OFF -U__CAP_512G_4CHAN_4CE_SUPPORT__ -U__FPGA_PLATEFORM -U__APP_CACHE_READ__ -U__YS9083XT_ALGO__ -U__SATA_LOG_EN__ -U__VMC_EN__ -I"/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/Interface" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/interface" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/ata_cmd" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/driver" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/sata_protocol" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/scsi" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_manage" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_process" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/startup" -Os -mcmodel=large -g3 -Wall -c -fmessage-length=0 -ffunction-sections -MMD -MP -MF"FDL/src/fdl_read_retry.d" -MT"FDL/src/fdl_read_retry.d FDL/src/fdl_read_retry.o" -o "FDL/src/fdl_read_retry.o" "/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_read_retry.c"
+Finished building: /cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_read_retry.c
+ 
+Building file: /cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_soft_decode.c
+Invoking: Andes C Compiler
+nds32le-elf-gcc -D__DIS_ALIGN_RD__ -D__JUPITER_DEBUG__ -DSATA_DRIVE_NEW -D__DUAL_CORE__ -D__FILL_PAGE_EN__11 -D__FDL_HW_VIRTUL_CLST__ -D__FDL_CQFIFO_TRIG_IRQ__ -D__FDL_CRC_FUNC__ -D__G3_FLYCODE -D__SW_PMCP__11 -D__TLC_RD_VERIFY__11 -D__FLASH_SUMSUNG_3DV4__ -D__FPGA_PLATEFORM_OFF -U__CAP_512G_4CHAN_4CE_SUPPORT__ -U__FPGA_PLATEFORM -U__APP_CACHE_READ__ -U__YS9083XT_ALGO__ -U__SATA_LOG_EN__ -U__VMC_EN__ -I"/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/Interface" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/interface" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/ata_cmd" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/driver" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/sata_protocol" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/scsi" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_manage" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_process" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/startup" -Os -mcmodel=large -g3 -Wall -c -fmessage-length=0 -ffunction-sections -MMD -MP -MF"FDL/src/fdl_soft_decode.d" -MT"FDL/src/fdl_soft_decode.d FDL/src/fdl_soft_decode.o" -o "FDL/src/fdl_soft_decode.o" "/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_soft_decode.c"
+/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_soft_decode.c:18:29: warning: backslash and newline separated by space
+  (NAND_FLASH == MIC_B16A) ||\ 
+ ^
+/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_soft_decode.c: In function 'Fdl_MCUSoftDecode':
+/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_soft_decode.c:696:8: warning: unused variable 'j' [-Wunused-variable]
+  U08 i,j;
+        ^
+Finished building: /cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_soft_decode.c
+ 
+Building file: /cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_task_op.c
+Invoking: Andes C Compiler
+nds32le-elf-gcc -D__DIS_ALIGN_RD__ -D__JUPITER_DEBUG__ -DSATA_DRIVE_NEW -D__DUAL_CORE__ -D__FILL_PAGE_EN__11 -D__FDL_HW_VIRTUL_CLST__ -D__FDL_CQFIFO_TRIG_IRQ__ -D__FDL_CRC_FUNC__ -D__G3_FLYCODE -D__SW_PMCP__11 -D__TLC_RD_VERIFY__11 -D__FLASH_SUMSUNG_3DV4__ -D__FPGA_PLATEFORM_OFF -U__CAP_512G_4CHAN_4CE_SUPPORT__ -U__FPGA_PLATEFORM -U__APP_CACHE_READ__ -U__YS9083XT_ALGO__ -U__SATA_LOG_EN__ -U__VMC_EN__ -I"/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/Interface" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/interface" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/ata_cmd" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/driver" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/sata_protocol" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/scsi" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_manage" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_process" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/startup" -Os -mcmodel=large -g3 -Wall -c -fmessage-length=0 -ffunction-sections -MMD -MP -MF"FDL/src/fdl_task_op.d" -MT"FDL/src/fdl_task_op.d FDL/src/fdl_task_op.o" -o "FDL/src/fdl_task_op.o" "/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_task_op.c"
+Finished building: /cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_task_op.c
+ 
+Building file: /cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_write.c
+Invoking: Andes C Compiler
+nds32le-elf-gcc -D__DIS_ALIGN_RD__ -D__JUPITER_DEBUG__ -DSATA_DRIVE_NEW -D__DUAL_CORE__ -D__FILL_PAGE_EN__11 -D__FDL_HW_VIRTUL_CLST__ -D__FDL_CQFIFO_TRIG_IRQ__ -D__FDL_CRC_FUNC__ -D__G3_FLYCODE -D__SW_PMCP__11 -D__TLC_RD_VERIFY__11 -D__FLASH_SUMSUNG_3DV4__ -D__FPGA_PLATEFORM_OFF -U__CAP_512G_4CHAN_4CE_SUPPORT__ -U__FPGA_PLATEFORM -U__APP_CACHE_READ__ -U__YS9083XT_ALGO__ -U__SATA_LOG_EN__ -U__VMC_EN__ -I"/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/Interface" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/interface" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/ata_cmd" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/driver" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/sata_protocol" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/scsi" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_manage" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_process" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/startup" -Os -mcmodel=large -g3 -Wall -c -fmessage-length=0 -ffunction-sections -MMD -MP -MF"FDL/src/fdl_write.d" -MT"FDL/src/fdl_write.d FDL/src/fdl_write.o" -o "FDL/src/fdl_write.o" "/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_write.c"
+Finished building: /cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_write.c
+ 
+Building file: /cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_write_fail_handler.c
+Invoking: Andes C Compiler
+nds32le-elf-gcc -D__DIS_ALIGN_RD__ -D__JUPITER_DEBUG__ -DSATA_DRIVE_NEW -D__DUAL_CORE__ -D__FILL_PAGE_EN__11 -D__FDL_HW_VIRTUL_CLST__ -D__FDL_CQFIFO_TRIG_IRQ__ -D__FDL_CRC_FUNC__ -D__G3_FLYCODE -D__SW_PMCP__11 -D__TLC_RD_VERIFY__11 -D__FLASH_SUMSUNG_3DV4__ -D__FPGA_PLATEFORM_OFF -U__CAP_512G_4CHAN_4CE_SUPPORT__ -U__FPGA_PLATEFORM -U__APP_CACHE_READ__ -U__YS9083XT_ALGO__ -U__SATA_LOG_EN__ -U__VMC_EN__ -I"/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/Interface" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/interface" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/ata_cmd" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/driver" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/sata_protocol" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/scsi" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_manage" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_process" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/startup" -Os -mcmodel=large -g3 -Wall -c -fmessage-length=0 -ffunction-sections -MMD -MP -MF"FDL/src/fdl_write_fail_handler.d" -MT"FDL/src/fdl_write_fail_handler.d FDL/src/fdl_write_fail_handler.o" -o "FDL/src/fdl_write_fail_handler.o" "/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_write_fail_handler.c"
+Finished building: /cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_write_fail_handler.c
+ 
+Building file: /cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/flash_driver.c
+Invoking: Andes C Compiler
+nds32le-elf-gcc -D__DIS_ALIGN_RD__ -D__JUPITER_DEBUG__ -DSATA_DRIVE_NEW -D__DUAL_CORE__ -D__FILL_PAGE_EN__11 -D__FDL_HW_VIRTUL_CLST__ -D__FDL_CQFIFO_TRIG_IRQ__ -D__FDL_CRC_FUNC__ -D__G3_FLYCODE -D__SW_PMCP__11 -D__TLC_RD_VERIFY__11 -D__FLASH_SUMSUNG_3DV4__ -D__FPGA_PLATEFORM_OFF -U__CAP_512G_4CHAN_4CE_SUPPORT__ -U__FPGA_PLATEFORM -U__APP_CACHE_READ__ -U__YS9083XT_ALGO__ -U__SATA_LOG_EN__ -U__VMC_EN__ -I"/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/Interface" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/interface" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/ata_cmd" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/driver" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/sata_protocol" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/scsi" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_manage" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_process" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/startup" -Os -mcmodel=large -g3 -Wall -c -fmessage-length=0 -ffunction-sections -MMD -MP -MF"FDL/src/flash_driver.d" -MT"FDL/src/flash_driver.d FDL/src/flash_driver.o" -o "FDL/src/flash_driver.o" "/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/flash_driver.c"
+/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/flash_driver.c: In function 'FDL_Init':
+/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/flash_driver.c:29:5: warning: unused variable 'bEccCorrMode' [-Wunused-variable]
+  U8 bEccCorrMode;
+     ^
+/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/flash_driver.c: In function 'FDL_FlashDiffSignalEn':
+/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/flash_driver.c:135:6: warning: unused variable 'FeatureAddress' [-Wunused-variable]
+  U08 FeatureAddress;
+      ^
+/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/flash_driver.c:134:6: warning: unused variable 'bData' [-Wunused-variable]
+  U08 bData[4] = {0,0,0,0};
+      ^
+/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/flash_driver.c: In function 'FDL_FlashIFModeInit':
+/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/flash_driver.c:163:6: warning: unused variable 'bSetMose' [-Wunused-variable]
+  U08 bSetMose = 0;/*Set Feature 模式:0-写脉冲模�?1-DQS模式，用于上电就是Toggle模式的Flash*/
+      ^
+/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/flash_driver.c:162:19: warning: unused variable 'bHardResetSts' [-Wunused-variable]
+     U08 bResetSts,bHardResetSts;
+                   ^
+/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/flash_driver.c:162:9: warning: unused variable 'bResetSts' [-Wunused-variable]
+     U08 bResetSts,bHardResetSts;
+         ^
+/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/flash_driver.c:160:6: warning: unused variable 'bData' [-Wunused-variable]
+  U08 bData[4] = {0,0,0,0};
+      ^
+/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/flash_driver.c:159:6: warning: unused variable 'bShallowEraseEn' [-Wunused-variable]
+  U08 bShallowEraseEn = 1;
+      ^
+/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/flash_driver.c: In function 'FDL_ClrRetryReg':
+/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/flash_driver.c:520:6: warning: unused variable 'i' [-Wunused-variable]
+  U08 i = 0;
+      ^
+/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/flash_driver.c: In function 'FDL_ContinueTask':
+/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/flash_driver.c:620:6: warning: unused variable 'dBaseLen' [-Wunused-variable]
+  U32 dBaseLen = tFtlTask.wLen;
+      ^
+/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/flash_driver.c: In function 'FDL_RemoveDevAllLunDwlsvBlkList':
+/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/flash_driver.c:958:6: warning: unused variable 'i' [-Wunused-variable]
+  U08 i;
+      ^
+/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/flash_driver.c: In function 'ReadClstToBuff':
+/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/flash_driver.c:1598:21: warning: passing argument 1 of 'Fdl_PreReadMultiCe' discards 'const' qualifier from pointer target type
+  Fdl_PreReadMultiCe(ptClstAddr);
+                     ^
+In file included from /cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/flash_driver.c:12:0:
+/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/inc/fdl_common.h:66:6: note: expected 'struct T_FLASH_PHY_ADDR *' but argument is of type 'const struct T_FLASH_PHY_ADDR *'
+ void Fdl_PreReadMultiCe(T_FLASH_PHY_ADDR *ptClstAddr);
+      ^
+Finished building: /cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/flash_driver.c
+ 
+Building file: /cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_adm.c
+Invoking: Andes C Compiler
+nds32le-elf-gcc -D__DIS_ALIGN_RD__ -D__JUPITER_DEBUG__ -DSATA_DRIVE_NEW -D__DUAL_CORE__ -D__FILL_PAGE_EN__11 -D__FDL_HW_VIRTUL_CLST__ -D__FDL_CQFIFO_TRIG_IRQ__ -D__FDL_CRC_FUNC__ -D__G3_FLYCODE -D__SW_PMCP__11 -D__TLC_RD_VERIFY__11 -D__FLASH_SUMSUNG_3DV4__ -D__FPGA_PLATEFORM_OFF -U__CAP_512G_4CHAN_4CE_SUPPORT__ -U__FPGA_PLATEFORM -U__APP_CACHE_READ__ -U__YS9083XT_ALGO__ -U__SATA_LOG_EN__ -U__VMC_EN__ -I"/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/Interface" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/interface" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/ata_cmd" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/driver" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/sata_protocol" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/scsi" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_manage" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_process" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/startup" -Os -mcmodel=large -g3 -Wall -c -fmessage-length=0 -ffunction-sections -MMD -MP -MF"HAL_Lib/src/hal_adm.d" -MT"HAL_Lib/src/hal_adm.d HAL_Lib/src/hal_adm.o" -o "HAL_Lib/src/hal_adm.o" "/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_adm.c"
+Finished building: /cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_adm.c
+ 
+Building file: /cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_bfc.c
+Invoking: Andes C Compiler
+nds32le-elf-gcc -D__DIS_ALIGN_RD__ -D__JUPITER_DEBUG__ -DSATA_DRIVE_NEW -D__DUAL_CORE__ -D__FILL_PAGE_EN__11 -D__FDL_HW_VIRTUL_CLST__ -D__FDL_CQFIFO_TRIG_IRQ__ -D__FDL_CRC_FUNC__ -D__G3_FLYCODE -D__SW_PMCP__11 -D__TLC_RD_VERIFY__11 -D__FLASH_SUMSUNG_3DV4__ -D__FPGA_PLATEFORM_OFF -U__CAP_512G_4CHAN_4CE_SUPPORT__ -U__FPGA_PLATEFORM -U__APP_CACHE_READ__ -U__YS9083XT_ALGO__ -U__SATA_LOG_EN__ -U__VMC_EN__ -I"/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/Interface" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/interface" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/ata_cmd" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/driver" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/sata_protocol" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/scsi" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_manage" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_process" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/startup" -Os -mcmodel=large -g3 -Wall -c -fmessage-length=0 -ffunction-sections -MMD -MP -MF"HAL_Lib/src/hal_bfc.d" -MT"HAL_Lib/src/hal_bfc.d HAL_Lib/src/hal_bfc.o" -o "HAL_Lib/src/hal_bfc.o" "/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_bfc.c"
+/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_bfc.c: In function 'HAL_BFCSetBuffStatus':
+/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_bfc.c:52:71: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+  while(HAL_BFCGetBuffStatus(wIndex%SG_ADM->rBUF_SIZE)&wNewBitPosition != 0)
+                                                                       ^
+/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_bfc.c: In function 'HAL_RTY_BFCSetBuffStatus':
+/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_bfc.c:88:71: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+  while(HAL_BFCGetBuffStatus(wIndex%SG_ADM->rBUF_SIZE)&wNewBitPosition != 0)
+                                                                       ^
+/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_bfc.c: In function 'HAL_RTY_BFCSetBuffStatusBit':
+/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_bfc.c:126:74: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+  while(HAL_BFCGetBuffStatus(wIndex%SG_ADM->rBUF_SIZE)&((U16)(1<<wIndex)) != 0)
+                                                                          ^
+Finished building: /cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_bfc.c
+ 
+Building file: /cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_cpm.c
+Invoking: Andes C Compiler
+nds32le-elf-gcc -D__DIS_ALIGN_RD__ -D__JUPITER_DEBUG__ -DSATA_DRIVE_NEW -D__DUAL_CORE__ -D__FILL_PAGE_EN__11 -D__FDL_HW_VIRTUL_CLST__ -D__FDL_CQFIFO_TRIG_IRQ__ -D__FDL_CRC_FUNC__ -D__G3_FLYCODE -D__SW_PMCP__11 -D__TLC_RD_VERIFY__11 -D__FLASH_SUMSUNG_3DV4__ -D__FPGA_PLATEFORM_OFF -U__CAP_512G_4CHAN_4CE_SUPPORT__ -U__FPGA_PLATEFORM -U__APP_CACHE_READ__ -U__YS9083XT_ALGO__ -U__SATA_LOG_EN__ -U__VMC_EN__ -I"/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/Interface" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/interface" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/ata_cmd" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/driver" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/sata_protocol" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/scsi" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_manage" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_process" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/startup" -Os -mcmodel=large -g3 -Wall -c -fmessage-length=0 -ffunction-sections -MMD -MP -MF"HAL_Lib/src/hal_cpm.d" -MT"HAL_Lib/src/hal_cpm.d HAL_Lib/src/hal_cpm.o" -o "HAL_Lib/src/hal_cpm.o" "/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_cpm.c"
+Finished building: /cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_cpm.c
+ 
+Building file: /cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_cq.c
+Invoking: Andes C Compiler
+nds32le-elf-gcc -D__DIS_ALIGN_RD__ -D__JUPITER_DEBUG__ -DSATA_DRIVE_NEW -D__DUAL_CORE__ -D__FILL_PAGE_EN__11 -D__FDL_HW_VIRTUL_CLST__ -D__FDL_CQFIFO_TRIG_IRQ__ -D__FDL_CRC_FUNC__ -D__G3_FLYCODE -D__SW_PMCP__11 -D__TLC_RD_VERIFY__11 -D__FLASH_SUMSUNG_3DV4__ -D__FPGA_PLATEFORM_OFF -U__CAP_512G_4CHAN_4CE_SUPPORT__ -U__FPGA_PLATEFORM -U__APP_CACHE_READ__ -U__YS9083XT_ALGO__ -U__SATA_LOG_EN__ -U__VMC_EN__ -I"/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/Interface" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/interface" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/ata_cmd" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/driver" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/sata_protocol" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/scsi" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_manage" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_process" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/startup" -Os -mcmodel=large -g3 -Wall -c -fmessage-length=0 -ffunction-sections -MMD -MP -MF"HAL_Lib/src/hal_cq.d" -MT"HAL_Lib/src/hal_cq.d HAL_Lib/src/hal_cq.o" -o "HAL_Lib/src/hal_cq.o" "/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_cq.c"
+/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_cq.c: In function 'HAL_CQGetLogicNumExt':
+/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_cq.c:174:2: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  dLogNum = (*(U32 *)SG_FC(bChan)->Reserved3);
+  ^
+Finished building: /cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_cq.c
+ 
+Building file: /cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_define.c
+Invoking: Andes C Compiler
+nds32le-elf-gcc -D__DIS_ALIGN_RD__ -D__JUPITER_DEBUG__ -DSATA_DRIVE_NEW -D__DUAL_CORE__ -D__FILL_PAGE_EN__11 -D__FDL_HW_VIRTUL_CLST__ -D__FDL_CQFIFO_TRIG_IRQ__ -D__FDL_CRC_FUNC__ -D__G3_FLYCODE -D__SW_PMCP__11 -D__TLC_RD_VERIFY__11 -D__FLASH_SUMSUNG_3DV4__ -D__FPGA_PLATEFORM_OFF -U__CAP_512G_4CHAN_4CE_SUPPORT__ -U__FPGA_PLATEFORM -U__APP_CACHE_READ__ -U__YS9083XT_ALGO__ -U__SATA_LOG_EN__ -U__VMC_EN__ -I"/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/Interface" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/interface" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/ata_cmd" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/driver" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/sata_protocol" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/scsi" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_manage" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_process" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/startup" -Os -mcmodel=large -g3 -Wall -c -fmessage-length=0 -ffunction-sections -MMD -MP -MF"HAL_Lib/src/hal_define.d" -MT"HAL_Lib/src/hal_define.d HAL_Lib/src/hal_define.o" -o "HAL_Lib/src/hal_define.o" "/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_define.c"
+Finished building: /cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_define.c
+ 
+Building file: /cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_fc.c
+Invoking: Andes C Compiler
+nds32le-elf-gcc -D__DIS_ALIGN_RD__ -D__JUPITER_DEBUG__ -DSATA_DRIVE_NEW -D__DUAL_CORE__ -D__FILL_PAGE_EN__11 -D__FDL_HW_VIRTUL_CLST__ -D__FDL_CQFIFO_TRIG_IRQ__ -D__FDL_CRC_FUNC__ -D__G3_FLYCODE -D__SW_PMCP__11 -D__TLC_RD_VERIFY__11 -D__FLASH_SUMSUNG_3DV4__ -D__FPGA_PLATEFORM_OFF -U__CAP_512G_4CHAN_4CE_SUPPORT__ -U__FPGA_PLATEFORM -U__APP_CACHE_READ__ -U__YS9083XT_ALGO__ -U__SATA_LOG_EN__ -U__VMC_EN__ -I"/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/Interface" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/interface" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/ata_cmd" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/driver" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/sata_protocol" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/scsi" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_manage" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_process" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/startup" -Os -mcmodel=large -g3 -Wall -c -fmessage-length=0 -ffunction-sections -MMD -MP -MF"HAL_Lib/src/hal_fc.d" -MT"HAL_Lib/src/hal_fc.d HAL_Lib/src/hal_fc.o" -o "HAL_Lib/src/hal_fc.o" "/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_fc.c"
+/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_fc.c: In function 'HAL_NFSetFeature':
+/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_fc.c:306:6: warning: unused variable 'i' [-Wunused-variable]
+  U08 i = 0;
+      ^
+/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_fc.c: In function 'HAL_NFGetFeature':
+/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_fc.c:326:6: warning: unused variable 'i' [-Wunused-variable]
+  U08 i = 0;
+      ^
+/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_fc.c: In function 'HAL_NFGetExtFeature':
+/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_fc.c:352:7: warning: unused variable 'i' [-Wunused-variable]
+   U08 i = 0;
+       ^
+/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_fc.c: In function 'HAL_NFSetExtFeature':
+/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_fc.c:399:7: warning: unused variable 'i' [-Wunused-variable]
+   U08 i = 0;
+       ^
+/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_fc.c: In function 'HAL_NFResetFlash':
+/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_fc.c:56:5: warning: 'bStatus' is used uninitialized in this function [-Wuninitialized]
+     return bStatus; 
+     ^
+Finished building: /cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_fc.c
+ 
+Building file: /cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_ldpc.c
+Invoking: Andes C Compiler
+nds32le-elf-gcc -D__DIS_ALIGN_RD__ -D__JUPITER_DEBUG__ -DSATA_DRIVE_NEW -D__DUAL_CORE__ -D__FILL_PAGE_EN__11 -D__FDL_HW_VIRTUL_CLST__ -D__FDL_CQFIFO_TRIG_IRQ__ -D__FDL_CRC_FUNC__ -D__G3_FLYCODE -D__SW_PMCP__11 -D__TLC_RD_VERIFY__11 -D__FLASH_SUMSUNG_3DV4__ -D__FPGA_PLATEFORM_OFF -U__CAP_512G_4CHAN_4CE_SUPPORT__ -U__FPGA_PLATEFORM -U__APP_CACHE_READ__ -U__YS9083XT_ALGO__ -U__SATA_LOG_EN__ -U__VMC_EN__ -I"/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/Interface" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/interface" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/ata_cmd" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/driver" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/sata_protocol" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/scsi" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_manage" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_process" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/startup" -Os -mcmodel=large -g3 -Wall -c -fmessage-length=0 -ffunction-sections -MMD -MP -MF"HAL_Lib/src/hal_ldpc.d" -MT"HAL_Lib/src/hal_ldpc.d HAL_Lib/src/hal_ldpc.o" -o "HAL_Lib/src/hal_ldpc.o" "/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_ldpc.c"
+In file included from /cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/inc/hal_ldpc.h:1:0,
+                 from /cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_ldpc.c:1:
+/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_ldpc.c: In function 'HAL_LDPC_Init':
+/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform/sg9081.h:82:30: warning: statement with no effect [-Wunused-value]
+ #define SG_LDPC              ((SG_LDPC_TypeDef  *) SG_LDPC_BASE)
+                              ^
+/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_ldpc.c:115:2: note: in expansion of macro 'SG_LDPC'
+  SG_LDPC->rMCU_WLENC_REG_OP_STS; //clear flag
+  ^
+/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform/sg9081.h:82:30: warning: statement with no effect [-Wunused-value]
+ #define SG_LDPC              ((SG_LDPC_TypeDef  *) SG_LDPC_BASE)
+                              ^
+/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_ldpc.c:116:2: note: in expansion of macro 'SG_LDPC'
+  SG_LDPC->rMCU_WLENC_MEM_OP_STS; //clear flag
+  ^
+/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform/sg9081.h:82:30: warning: statement with no effect [-Wunused-value]
+ #define SG_LDPC              ((SG_LDPC_TypeDef  *) SG_LDPC_BASE)
+                              ^
+/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_ldpc.c:131:2: note: in expansion of macro 'SG_LDPC'
+  SG_LDPC->rMCU_WLDEC_REG_OP_STS; //clear flag
+  ^
+/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform/sg9081.h:82:30: warning: statement with no effect [-Wunused-value]
+ #define SG_LDPC              ((SG_LDPC_TypeDef  *) SG_LDPC_BASE)
+                              ^
+/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_ldpc.c:132:2: note: in expansion of macro 'SG_LDPC'
+  SG_LDPC->rMCU_WLDEC_MEM_OP_STS; //clear flag
+  ^
+Finished building: /cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_ldpc.c
+ 
+Building file: /cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_mcu.c
+Invoking: Andes C Compiler
+nds32le-elf-gcc -D__DIS_ALIGN_RD__ -D__JUPITER_DEBUG__ -DSATA_DRIVE_NEW -D__DUAL_CORE__ -D__FILL_PAGE_EN__11 -D__FDL_HW_VIRTUL_CLST__ -D__FDL_CQFIFO_TRIG_IRQ__ -D__FDL_CRC_FUNC__ -D__G3_FLYCODE -D__SW_PMCP__11 -D__TLC_RD_VERIFY__11 -D__FLASH_SUMSUNG_3DV4__ -D__FPGA_PLATEFORM_OFF -U__CAP_512G_4CHAN_4CE_SUPPORT__ -U__FPGA_PLATEFORM -U__APP_CACHE_READ__ -U__YS9083XT_ALGO__ -U__SATA_LOG_EN__ -U__VMC_EN__ -I"/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/Interface" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/interface" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/ata_cmd" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/driver" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/sata_protocol" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/scsi" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_manage" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_process" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/startup" -Os -mcmodel=large -g3 -Wall -c -fmessage-length=0 -ffunction-sections -MMD -MP -MF"HAL_Lib/src/hal_mcu.d" -MT"HAL_Lib/src/hal_mcu.d HAL_Lib/src/hal_mcu.o" -o "HAL_Lib/src/hal_mcu.o" "/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_mcu.c"
+/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_mcu.c: In function 'HAL_MCU_SendFourAddr':
+/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_mcu.c:82:5: warning: right shift count >= width of type
+     HAL_MCU_SendOneAddr(bChan, dAddr>>32);
+     ^
+Finished building: /cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_mcu.c
+ 
+Building file: /cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_pad.c
+Invoking: Andes C Compiler
+nds32le-elf-gcc -D__DIS_ALIGN_RD__ -D__JUPITER_DEBUG__ -DSATA_DRIVE_NEW -D__DUAL_CORE__ -D__FILL_PAGE_EN__11 -D__FDL_HW_VIRTUL_CLST__ -D__FDL_CQFIFO_TRIG_IRQ__ -D__FDL_CRC_FUNC__ -D__G3_FLYCODE -D__SW_PMCP__11 -D__TLC_RD_VERIFY__11 -D__FLASH_SUMSUNG_3DV4__ -D__FPGA_PLATEFORM_OFF -U__CAP_512G_4CHAN_4CE_SUPPORT__ -U__FPGA_PLATEFORM -U__APP_CACHE_READ__ -U__YS9083XT_ALGO__ -U__SATA_LOG_EN__ -U__VMC_EN__ -I"/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/Interface" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/interface" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/ata_cmd" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/driver" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/sata_protocol" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/scsi" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_manage" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_process" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/startup" -Os -mcmodel=large -g3 -Wall -c -fmessage-length=0 -ffunction-sections -MMD -MP -MF"HAL_Lib/src/hal_pad.d" -MT"HAL_Lib/src/hal_pad.d HAL_Lib/src/hal_pad.o" -o "HAL_Lib/src/hal_pad.o" "/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_pad.c"
+Finished building: /cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_pad.c
+ 
+Building file: /cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_pmcp.c
+Invoking: Andes C Compiler
+nds32le-elf-gcc -D__DIS_ALIGN_RD__ -D__JUPITER_DEBUG__ -DSATA_DRIVE_NEW -D__DUAL_CORE__ -D__FILL_PAGE_EN__11 -D__FDL_HW_VIRTUL_CLST__ -D__FDL_CQFIFO_TRIG_IRQ__ -D__FDL_CRC_FUNC__ -D__G3_FLYCODE -D__SW_PMCP__11 -D__TLC_RD_VERIFY__11 -D__FLASH_SUMSUNG_3DV4__ -D__FPGA_PLATEFORM_OFF -U__CAP_512G_4CHAN_4CE_SUPPORT__ -U__FPGA_PLATEFORM -U__APP_CACHE_READ__ -U__YS9083XT_ALGO__ -U__SATA_LOG_EN__ -U__VMC_EN__ -I"/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/Interface" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/interface" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/ata_cmd" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/driver" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/sata_protocol" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/scsi" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_manage" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_process" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/startup" -Os -mcmodel=large -g3 -Wall -c -fmessage-length=0 -ffunction-sections -MMD -MP -MF"HAL_Lib/src/hal_pmcp.d" -MT"HAL_Lib/src/hal_pmcp.d HAL_Lib/src/hal_pmcp.o" -o "HAL_Lib/src/hal_pmcp.o" "/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_pmcp.c"
+/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_pmcp.c: In function 'HAL_PMCPSrchMin':
+/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_pmcp.c:156:2: warning: implicit declaration of function 'HAL_PMCPSrchMin_WithFFFF' [-Wimplicit-function-declaration]
+  HAL_PMCPSrchMin_WithFFFF(bPmcpIdx, dSrchRamAddr, bUnitSize, wSrchUnitCnt, dRetValueBuffAddr, dRetItemBuffAddr, wSrchRetCnt, wRingOff);
+  ^
+/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_pmcp.c: In function 'HAL_PMCPMatrixValueOp':
+/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_pmcp.c:1911:8: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+        (((U16 *)&(dFixedNum))[1]) = (((U16 *)&(dFixedNum))[0]);
+        ^
+/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_pmcp.c: At top level:
+/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_pmcp.c:2188:7: warning: conflicting types for 'HAL_PMCPSrchMin_WithFFFF'
+ void  HAL_PMCPSrchMin_WithFFFF(U8 bPmcpIdx, U32 dSrchRamAddr, U08 bUnitSize, U16 wSrchUnitCnt,U32 dRetValueBuffAddr, U32 dRetItemBuffAddr,U16 wSrchRetCnt,U16 wStartOff)
+       ^
+/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_pmcp.c:156:2: note: previous implicit declaration of 'HAL_PMCPSrchMin_WithFFFF' was here
+  HAL_PMCPSrchMin_WithFFFF(bPmcpIdx, dSrchRamAddr, bUnitSize, wSrchUnitCnt, dRetValueBuffAddr, dRetItemBuffAddr, wSrchRetCnt, wRingOff);
+  ^
+/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_pmcp.c: In function 'HAL_SW_SearchSegment':
+/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_pmcp.c:713:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_pmcp.c: In function 'HAL_PMCPGetValueFromMem':
+/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_pmcp.c:2339:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: /cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_pmcp.c
+ 
+Building file: /cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_sata.c.c
+Invoking: Andes C Compiler
+nds32le-elf-gcc -D__DIS_ALIGN_RD__ -D__JUPITER_DEBUG__ -DSATA_DRIVE_NEW -D__DUAL_CORE__ -D__FILL_PAGE_EN__11 -D__FDL_HW_VIRTUL_CLST__ -D__FDL_CQFIFO_TRIG_IRQ__ -D__FDL_CRC_FUNC__ -D__G3_FLYCODE -D__SW_PMCP__11 -D__TLC_RD_VERIFY__11 -D__FLASH_SUMSUNG_3DV4__ -D__FPGA_PLATEFORM_OFF -U__CAP_512G_4CHAN_4CE_SUPPORT__ -U__FPGA_PLATEFORM -U__APP_CACHE_READ__ -U__YS9083XT_ALGO__ -U__SATA_LOG_EN__ -U__VMC_EN__ -I"/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/Interface" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/interface" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/ata_cmd" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/driver" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/sata_protocol" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/scsi" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_manage" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_process" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/startup" -Os -mcmodel=large -g3 -Wall -c -fmessage-length=0 -ffunction-sections -MMD -MP -MF"HAL_Lib/src/hal_sata.c.d" -MT"HAL_Lib/src/hal_sata.c.d HAL_Lib/src/hal_sata.c.o" -o "HAL_Lib/src/hal_sata.c.o" "/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_sata.c.c"
+Finished building: /cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_sata.c.c
+ 
+Building file: /cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_timer.c
+Invoking: Andes C Compiler
+nds32le-elf-gcc -D__DIS_ALIGN_RD__ -D__JUPITER_DEBUG__ -DSATA_DRIVE_NEW -D__DUAL_CORE__ -D__FILL_PAGE_EN__11 -D__FDL_HW_VIRTUL_CLST__ -D__FDL_CQFIFO_TRIG_IRQ__ -D__FDL_CRC_FUNC__ -D__G3_FLYCODE -D__SW_PMCP__11 -D__TLC_RD_VERIFY__11 -D__FLASH_SUMSUNG_3DV4__ -D__FPGA_PLATEFORM_OFF -U__CAP_512G_4CHAN_4CE_SUPPORT__ -U__FPGA_PLATEFORM -U__APP_CACHE_READ__ -U__YS9083XT_ALGO__ -U__SATA_LOG_EN__ -U__VMC_EN__ -I"/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/Interface" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/interface" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/ata_cmd" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/driver" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/sata_protocol" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/scsi" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_manage" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_process" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/startup" -Os -mcmodel=large -g3 -Wall -c -fmessage-length=0 -ffunction-sections -MMD -MP -MF"HAL_Lib/src/hal_timer.d" -MT"HAL_Lib/src/hal_timer.d HAL_Lib/src/hal_timer.o" -o "HAL_Lib/src/hal_timer.o" "/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_timer.c"
+Finished building: /cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_timer.c
+ 
+Building file: ../src/CmdHandle.c
+Invoking: Andes C Compiler
+nds32le-elf-gcc -D__DIS_ALIGN_RD__ -D__JUPITER_DEBUG__ -DSATA_DRIVE_NEW -D__DUAL_CORE__ -D__FILL_PAGE_EN__11 -D__FDL_HW_VIRTUL_CLST__ -D__FDL_CQFIFO_TRIG_IRQ__ -D__FDL_CRC_FUNC__ -D__G3_FLYCODE -D__SW_PMCP__11 -D__TLC_RD_VERIFY__11 -D__FLASH_SUMSUNG_3DV4__ -D__FPGA_PLATEFORM_OFF -U__CAP_512G_4CHAN_4CE_SUPPORT__ -U__FPGA_PLATEFORM -U__APP_CACHE_READ__ -U__YS9083XT_ALGO__ -U__SATA_LOG_EN__ -U__VMC_EN__ -I"/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/Interface" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/interface" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/ata_cmd" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/driver" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/sata_protocol" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/scsi" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_manage" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_process" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/startup" -Os -mcmodel=large -g3 -Wall -c -fmessage-length=0 -ffunction-sections -MMD -MP -MF"src/CmdHandle.d" -MT"src/CmdHandle.d src/CmdHandle.o" -o "src/CmdHandle.o" "../src/CmdHandle.c"
+Finished building: ../src/CmdHandle.c
+ 
+Building file: ../src/fdl_retry_test.c
+Invoking: Andes C Compiler
+nds32le-elf-gcc -D__DIS_ALIGN_RD__ -D__JUPITER_DEBUG__ -DSATA_DRIVE_NEW -D__DUAL_CORE__ -D__FILL_PAGE_EN__11 -D__FDL_HW_VIRTUL_CLST__ -D__FDL_CQFIFO_TRIG_IRQ__ -D__FDL_CRC_FUNC__ -D__G3_FLYCODE -D__SW_PMCP__11 -D__TLC_RD_VERIFY__11 -D__FLASH_SUMSUNG_3DV4__ -D__FPGA_PLATEFORM_OFF -U__CAP_512G_4CHAN_4CE_SUPPORT__ -U__FPGA_PLATEFORM -U__APP_CACHE_READ__ -U__YS9083XT_ALGO__ -U__SATA_LOG_EN__ -U__VMC_EN__ -I"/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/Interface" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/interface" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/ata_cmd" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/driver" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/sata_protocol" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/scsi" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_manage" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_process" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/startup" -Os -mcmodel=large -g3 -Wall -c -fmessage-length=0 -ffunction-sections -MMD -MP -MF"src/fdl_retry_test.d" -MT"src/fdl_retry_test.d src/fdl_retry_test.o" -o "src/fdl_retry_test.o" "../src/fdl_retry_test.c"
+Finished building: ../src/fdl_retry_test.c
+ 
+Building file: ../src/fdl_test.c
+Invoking: Andes C Compiler
+nds32le-elf-gcc -D__DIS_ALIGN_RD__ -D__JUPITER_DEBUG__ -DSATA_DRIVE_NEW -D__DUAL_CORE__ -D__FILL_PAGE_EN__11 -D__FDL_HW_VIRTUL_CLST__ -D__FDL_CQFIFO_TRIG_IRQ__ -D__FDL_CRC_FUNC__ -D__G3_FLYCODE -D__SW_PMCP__11 -D__TLC_RD_VERIFY__11 -D__FLASH_SUMSUNG_3DV4__ -D__FPGA_PLATEFORM_OFF -U__CAP_512G_4CHAN_4CE_SUPPORT__ -U__FPGA_PLATEFORM -U__APP_CACHE_READ__ -U__YS9083XT_ALGO__ -U__SATA_LOG_EN__ -U__VMC_EN__ -I"/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/Interface" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/interface" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/ata_cmd" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/driver" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/sata_protocol" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/scsi" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_manage" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_process" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/startup" -Os -mcmodel=large -g3 -Wall -c -fmessage-length=0 -ffunction-sections -MMD -MP -MF"src/fdl_test.d" -MT"src/fdl_test.d src/fdl_test.o" -o "src/fdl_test.o" "../src/fdl_test.c"
+../src/fdl_test.c: In function 'FDL_Test_Init':
+../src/fdl_test.c:761:34: warning: assignment from incompatible pointer type
+  tFdlParam.FTL_CollectRetryInfor = FTL_ReadRetryFail;//FTL注册给FDL，发生retryfail后调用此函数
+                                  ^
+../src/fdl_test.c:762:41: warning: assignment from incompatible pointer type
+  tFdlParam.FTL_ExceptionWriteFailHandle = FTL_WriteFail;//FTL注册给FDL，发生retryfail后调用此函数
+                                         ^
+../src/fdl_test.c: At top level:
+../src/fdl_test.c:1864:1: warning: multi-line comment [-Wcomment]
+ //  FDL_Log("pAddr%03d:|..%02d..|.....%02d....|.0x%06X.|",wOffset,\
+ ^
+../src/fdl_test.c:1948:1: warning: multi-line comment [-Wcomment]
+ //    FDL_Log("pAddr%03d:|....%02d....|..%02d..|.....%02d....|....%02d....|.0x%06X.|",wOffset,\
+ ^
+../src/fdl_test.c:2048:1: warning: multi-line comment [-Wcomment]
+ //                 SWAP_D(HAL_BFCGetBuffStatus(0*16)),\
+ ^
+../src/fdl_test.c:2071:1: warning: multi-line comment [-Wcomment]
+ //           FDL_Log("0x%02X:%02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X",j,\
+ ^
+../src/fdl_test.c:2149:1: warning: multi-line comment [-Wcomment]
+ //   FDL_Log("pAddr%03d:|....%02d....|..%02d..|.....%02d....|....%02d....|.0x%06X.|",wOffset,\
+ ^
+../src/fdl_test.c:2191:1: warning: multi-line comment [-Wcomment]
+ //        FDL_Log("ptClstAddr--%04d:|   %02d    |  %02d  |    %02d     |   %02d     | 0x%06X |",i,\
+ ^
+../src/fdl_test.c:2239:1: warning: multi-line comment [-Wcomment]
+ //        FDL_Log("ptClstAddr--%04d:|   %02d    |  %02d  |    %02d     |   %02d     | 0x%06X |",i,\
+ ^
+../src/fdl_test.c: In function 'FDL_CMD_CF_DiscreteBuffReadNoJoint':
+../src/fdl_test.c:3774:6: warning: unused variable 'wSecCnt' [-Wunused-variable]
+  U16 wSecCnt   = pCtrl->dSecCnt;//返回到Host扇区个数
+      ^
+../src/fdl_test.c: In function 'FDL_CMD_E2_ScanFlashDriver':
+../src/fdl_test.c:4407:4: warning: implicit declaration of function 'HAL_InitChanClock' [-Wimplicit-function-declaration]
+    HAL_InitChanClock(Chan,dSysclkSel,dSysclkPeriodSel,dTrx2clkPeriodSel);/*配置时钟*/
+    ^
+../src/fdl_test.c: In function 'FDL_CMD_F2_WriteTlcBlk':
+../src/fdl_test.c:4698:6: warning: variable 'wBlockEd' set but not used [-Wunused-but-set-variable]
+  U16 wBlockEd;
+      ^
+../src/fdl_test.c:4697:6: warning: variable 'wBlockSt' set but not used [-Wunused-but-set-variable]
+  U16 wBlockSt;  
+      ^
+../src/fdl_test.c:4696:6: warning: variable 'bLunEd' set but not used [-Wunused-but-set-variable]
+  U08 bLunEd; 
+      ^
+../src/fdl_test.c:4695:6: warning: variable 'bLunSt' set but not used [-Wunused-but-set-variable]
+  U08 bLunSt;  
+      ^
+../src/fdl_test.c:4694:6: warning: variable 'bChanEd' set but not used [-Wunused-but-set-variable]
+  U08 bChanEd;  
+      ^
+../src/fdl_test.c:4693:6: warning: variable 'bChanSt' set but not used [-Wunused-but-set-variable]
+  U08 bChanSt;  
+      ^
+../src/fdl_test.c: In function 'FDL_CMD_F3_WriteTlcPage':
+../src/fdl_test.c:4771:9: warning: unused variable 'bLunOfChip' [-Wunused-variable]
+     U08 bLunOfChip  = bLunSt % LUN_OF_CHIP;
+         ^
+../src/fdl_test.c:4754:6: warning: variable 'dFailEn' set but not used [-Wunused-but-set-variable]
+  U32 dFailEn;
+      ^
+Finished building: ../src/fdl_test.c
+ 
+Building file: ../src/ftl.c
+Invoking: Andes C Compiler
+nds32le-elf-gcc -D__DIS_ALIGN_RD__ -D__JUPITER_DEBUG__ -DSATA_DRIVE_NEW -D__DUAL_CORE__ -D__FILL_PAGE_EN__11 -D__FDL_HW_VIRTUL_CLST__ -D__FDL_CQFIFO_TRIG_IRQ__ -D__FDL_CRC_FUNC__ -D__G3_FLYCODE -D__SW_PMCP__11 -D__TLC_RD_VERIFY__11 -D__FLASH_SUMSUNG_3DV4__ -D__FPGA_PLATEFORM_OFF -U__CAP_512G_4CHAN_4CE_SUPPORT__ -U__FPGA_PLATEFORM -U__APP_CACHE_READ__ -U__YS9083XT_ALGO__ -U__SATA_LOG_EN__ -U__VMC_EN__ -I"/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/Interface" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/interface" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/ata_cmd" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/driver" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/sata_protocol" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/scsi" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_manage" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_process" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/startup" -Os -mcmodel=large -g3 -Wall -c -fmessage-length=0 -ffunction-sections -MMD -MP -MF"src/ftl.d" -MT"src/ftl.d src/ftl.o" -o "src/ftl.o" "../src/ftl.c"
+../src/ftl.c: In function 'FTL_NCQWrite':
+../src/ftl.c:185:5: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+     U16 tmp_data = *((U16 *)MEM_SEED_BUFF_ADDR);
+     ^
+Finished building: ../src/ftl.c
+ 
+Building file: ../src/hal_test.c
+Invoking: Andes C Compiler
+nds32le-elf-gcc -D__DIS_ALIGN_RD__ -D__JUPITER_DEBUG__ -DSATA_DRIVE_NEW -D__DUAL_CORE__ -D__FILL_PAGE_EN__11 -D__FDL_HW_VIRTUL_CLST__ -D__FDL_CQFIFO_TRIG_IRQ__ -D__FDL_CRC_FUNC__ -D__G3_FLYCODE -D__SW_PMCP__11 -D__TLC_RD_VERIFY__11 -D__FLASH_SUMSUNG_3DV4__ -D__FPGA_PLATEFORM_OFF -U__CAP_512G_4CHAN_4CE_SUPPORT__ -U__FPGA_PLATEFORM -U__APP_CACHE_READ__ -U__YS9083XT_ALGO__ -U__SATA_LOG_EN__ -U__VMC_EN__ -I"/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/Interface" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/interface" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/ata_cmd" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/driver" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/sata_protocol" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/scsi" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_manage" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_process" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/startup" -Os -mcmodel=large -g3 -Wall -c -fmessage-length=0 -ffunction-sections -MMD -MP -MF"src/hal_test.d" -MT"src/hal_test.d src/hal_test.o" -o "src/hal_test.o" "../src/hal_test.c"
+../src/hal_test.c: In function 'FA_Flash_Info_Init':
+../src/hal_test.c:2141:60: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+     NANDFlash.FLASH_CODE = ((U16)FA_FLASH_INFO_BUFF[3])<<8 + FA_FLASH_INFO_BUFF[4]; //FlashCode
+                                                            ^
+../src/hal_test.c:2142:64: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+     NANDFlash.PAGE_IN_BLOCK = ((U32)FA_FLASH_INFO_BUFF[5])<<24 + ((U32)FA_FLASH_INFO_BUFF[6])<<16 + ((U32)FA_FLASH_INFO_BUFF[7])<<8 + FA_FLASH_INFO_BUFF[8]; //每个Block中的物理页数�?
+                                                                ^
+../src/hal_test.c:2142:99: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+     NANDFlash.PAGE_IN_BLOCK = ((U32)FA_FLASH_INFO_BUFF[5])<<24 + ((U32)FA_FLASH_INFO_BUFF[6])<<16 + ((U32)FA_FLASH_INFO_BUFF[7])<<8 + FA_FLASH_INFO_BUFF[8]; //每个Block中的物理页数�?
+                                                                                                   ^
+../src/hal_test.c:2142:133: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+     NANDFlash.PAGE_IN_BLOCK = ((U32)FA_FLASH_INFO_BUFF[5])<<24 + ((U32)FA_FLASH_INFO_BUFF[6])<<16 + ((U32)FA_FLASH_INFO_BUFF[7])<<8 + FA_FLASH_INFO_BUFF[8]; //每个Block中的物理页数�?
+                                                                                                                                     ^
+../src/hal_test.c:2143:66: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+     NANDFlash.SLC_WL_IN_BLOCK = ((U32)FA_FLASH_INFO_BUFF[9])<<24 + ((U32)FA_FLASH_INFO_BUFF[10])<<16 + ((U32)FA_FLASH_INFO_BUFF[11])<<8 + FA_FLASH_INFO_BUFF[12]; //每个Block中的SLC模式物理页数�?
+                                                                  ^
+../src/hal_test.c:2143:102: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+     NANDFlash.SLC_WL_IN_BLOCK = ((U32)FA_FLASH_INFO_BUFF[9])<<24 + ((U32)FA_FLASH_INFO_BUFF[10])<<16 + ((U32)FA_FLASH_INFO_BUFF[11])<<8 + FA_FLASH_INFO_BUFF[12]; //每个Block中的SLC模式物理页数�?
+                                                                                                      ^
+../src/hal_test.c:2143:137: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+     NANDFlash.SLC_WL_IN_BLOCK = ((U32)FA_FLASH_INFO_BUFF[9])<<24 + ((U32)FA_FLASH_INFO_BUFF[10])<<16 + ((U32)FA_FLASH_INFO_BUFF[11])<<8 + FA_FLASH_INFO_BUFF[12]; //每个Block中的SLC模式物理页数�?
+                                                                                                                                         ^
+../src/hal_test.c:2144:64: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+     NANDFlash.BYTE_IN_PAGE = ((U32)FA_FLASH_INFO_BUFF[13])<<24 + ((U32)FA_FLASH_INFO_BUFF[14])<<16 + ((U32)FA_FLASH_INFO_BUFF[15])<<8 + FA_FLASH_INFO_BUFF[16]; //页字节数
+                                                                ^
+../src/hal_test.c:2144:100: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+     NANDFlash.BYTE_IN_PAGE = ((U32)FA_FLASH_INFO_BUFF[13])<<24 + ((U32)FA_FLASH_INFO_BUFF[14])<<16 + ((U32)FA_FLASH_INFO_BUFF[15])<<8 + FA_FLASH_INFO_BUFF[16]; //页字节数
+                                                                                                    ^
+../src/hal_test.c:2144:135: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+     NANDFlash.BYTE_IN_PAGE = ((U32)FA_FLASH_INFO_BUFF[13])<<24 + ((U32)FA_FLASH_INFO_BUFF[14])<<16 + ((U32)FA_FLASH_INFO_BUFF[15])<<8 + FA_FLASH_INFO_BUFF[16]; //页字节数
+                                                                                                                                       ^
+../src/hal_test.c:2148:64: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+     NANDFlash.FA_ERASE_TYPE = ((U16)FA_FLASH_INFO_BUFF[19])<<8 + FA_FLASH_INFO_BUFF[20]; //擦除方式类别�?
+                                                                ^
+../src/hal_test.c:2149:66: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+     NANDFlash.FA_PROGRAM_TYPE = ((U16)FA_FLASH_INFO_BUFF[21])<<8 + FA_FLASH_INFO_BUFF[22]; //编程方式类别，比如是否有PreCMD指定WL中的页，是否是one-pass编程，编程顺序（地址计算）类别，比如QLC的锯齿或Coarse-Fine编程
+                                                                  ^
+../src/hal_test.c:2150:63: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+     NANDFlash.FA_READ_TYPE = ((U16)FA_FLASH_INFO_BUFF[23])<<8 + FA_FLASH_INFO_BUFF[24]; //读方式类别，比如是否有PreCMD指定页，是否�?Eh配置retry，是否使用ROIC（row地址后多加几轮地�?��配置retry
+                                                               ^
+../src/hal_test.c:2151:64: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+     NANDFlash.FA_RETRY_TYPE = ((U16)FA_FLASH_INFO_BUFF[25])<<8 + FA_FLASH_INFO_BUFF[26]; //配置offset的方式�?
+                                                                ^
+../src/hal_test.c:2152:63: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+     NANDFlash.FA_SEED_TYPE = ((U16)FA_FLASH_INFO_BUFF[27])<<8 + FA_FLASH_INFO_BUFF[28]; //选择随机化种子类型（如三�?56�?12�?
+                                                               ^
+../src/hal_test.c:2154:71: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+     NANDFlash.PROGRAM_ORDER_COUNT = ((U32)FA_FLASH_INFO_BUFF[29])<<24 + ((U32)FA_FLASH_INFO_BUFF[30])<<16 + ((U32)FA_FLASH_INFO_BUFF[31])<<8 + FA_FLASH_INFO_BUFF[32]; //TLC模式下WL编程次数或�?页编程次�?
+                                                                       ^
+../src/hal_test.c:2154:107: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+     NANDFlash.PROGRAM_ORDER_COUNT = ((U32)FA_FLASH_INFO_BUFF[29])<<24 + ((U32)FA_FLASH_INFO_BUFF[30])<<16 + ((U32)FA_FLASH_INFO_BUFF[31])<<8 + FA_FLASH_INFO_BUFF[32]; //TLC模式下WL编程次数或�?页编程次�?
+                                                                                                           ^
+../src/hal_test.c:2154:142: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+     NANDFlash.PROGRAM_ORDER_COUNT = ((U32)FA_FLASH_INFO_BUFF[29])<<24 + ((U32)FA_FLASH_INFO_BUFF[30])<<16 + ((U32)FA_FLASH_INFO_BUFF[31])<<8 + FA_FLASH_INFO_BUFF[32]; //TLC模式下WL编程次数或�?页编程次�?
+                                                                                                                                              ^
+../src/hal_test.c:2155:66: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+     NANDFlash.BLOCK_ADDR_GAP = ((U32)FA_FLASH_INFO_BUFF[33])<<24 + ((U32)FA_FLASH_INFO_BUFF[34])<<16 + ((U32)FA_FLASH_INFO_BUFF[35])<<8 + FA_FLASH_INFO_BUFF[36]; //块地�?��间隔，即Page Address的地�?��间大小，2^(PA�?��bit�?
+                                                                  ^
+../src/hal_test.c:2155:102: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+     NANDFlash.BLOCK_ADDR_GAP = ((U32)FA_FLASH_INFO_BUFF[33])<<24 + ((U32)FA_FLASH_INFO_BUFF[34])<<16 + ((U32)FA_FLASH_INFO_BUFF[35])<<8 + FA_FLASH_INFO_BUFF[36]; //块地�?��间隔，即Page Address的地�?��间大小，2^(PA�?��bit�?
+                                                                                                      ^
+../src/hal_test.c:2155:137: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+     NANDFlash.BLOCK_ADDR_GAP = ((U32)FA_FLASH_INFO_BUFF[33])<<24 + ((U32)FA_FLASH_INFO_BUFF[34])<<16 + ((U32)FA_FLASH_INFO_BUFF[35])<<8 + FA_FLASH_INFO_BUFF[36]; //块地�?��间隔，即Page Address的地�?��间大小，2^(PA�?��bit�?
+                                                                                                                                         ^
+../src/hal_test.c:2156:64: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+     NANDFlash.LUN_ADDR_GAP = ((U32)FA_FLASH_INFO_BUFF[37])<<24 + ((U32)FA_FLASH_INFO_BUFF[38])<<16 + ((U32)FA_FLASH_INFO_BUFF[39])<<8 + FA_FLASH_INFO_BUFF[40]; //LUN地址的间隔，2^(BA�?��bit数[包括plane地址]+PA�?��bit�?保留位数-1�?
+                                                                ^
+../src/hal_test.c:2156:100: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+     NANDFlash.LUN_ADDR_GAP = ((U32)FA_FLASH_INFO_BUFF[37])<<24 + ((U32)FA_FLASH_INFO_BUFF[38])<<16 + ((U32)FA_FLASH_INFO_BUFF[39])<<8 + FA_FLASH_INFO_BUFF[40]; //LUN地址的间隔，2^(BA�?��bit数[包括plane地址]+PA�?��bit�?保留位数-1�?
+                                                                                                    ^
+../src/hal_test.c:2156:135: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+     NANDFlash.LUN_ADDR_GAP = ((U32)FA_FLASH_INFO_BUFF[37])<<24 + ((U32)FA_FLASH_INFO_BUFF[38])<<16 + ((U32)FA_FLASH_INFO_BUFF[39])<<8 + FA_FLASH_INFO_BUFF[40]; //LUN地址的间隔，2^(BA�?��bit数[包括plane地址]+PA�?��bit�?保留位数-1�?
+                                                                                                                                       ^
+../src/hal_test.c: In function 'RS_CheckStatusWithSaveOffline':
+../src/hal_test.c:2304:24: warning: variable 'SRData' set but not used [-Wunused-but-set-variable]
+  U8 BlkIdx, bCheckBit, SRData;
+                        ^
+../src/hal_test.c:2304:13: warning: variable 'bCheckBit' set but not used [-Wunused-but-set-variable]
+  U8 BlkIdx, bCheckBit, SRData;
+             ^
+../src/hal_test.c: In function 'MultiPlane_WritePage':
+../src/hal_test.c:3412:32: warning: unused variable 'UPMark' [-Wunused-variable]
+  U8 ConfirmCMD,PreCMD,PgmStats,UPMark;
+                                ^
+../src/hal_test.c: In function 'MultiPlane_WritePage_SAMSUNG':
+../src/hal_test.c:3545:8: warning: variable 'PgmStats' set but not used [-Wunused-but-set-variable]
+     U8 PgmStats;
+        ^
+../src/hal_test.c:3544:16: warning: unused variable 'PreCMD' [-Wunused-variable]
+  U8 ConfirmCMD,PreCMD;
+                ^
+../src/hal_test.c: In function 'MultiPlane_WritePage_PrefixCMD':
+../src/hal_test.c:3708:32: warning: unused variable 'CoarseStats' [-Wunused-variable]
+  U8 ConfirmCMD,PgmStats,UPMark,CoarseStats;
+                                ^
+../src/hal_test.c:3708:25: warning: unused variable 'UPMark' [-Wunused-variable]
+  U8 ConfirmCMD,PgmStats,UPMark,CoarseStats;
+                         ^
+../src/hal_test.c: In function 'MultiPlane_SAMSUNG_Confirm':
+../src/hal_test.c:4060:6: warning: unused variable 'Delay_us' [-Wunused-variable]
+  U32 Delay_us;
+      ^
+../src/hal_test.c:4058:15: warning: unused variable 'RBOrder' [-Wunused-variable]
+  U16 *BlkList,RBOrder;
+               ^
+../src/hal_test.c: In function 'FA_WriteBlk':
+../src/hal_test.c:4102:5: warning: unused variable 'FillData' [-Wunused-variable]
+  U8 FillData;
+     ^
+../src/hal_test.c:4101:5: warning: variable 'Pattern' set but not used [-Wunused-but-set-variable]
+  U8 Pattern;
+     ^
+../src/hal_test.c:4100:5: warning: unused variable 'BuffTemp' [-Wunused-variable]
+  U8 BuffTemp[10];
+     ^
+../src/hal_test.c:4099:6: warning: unused variable 'PGMOrder' [-Wunused-variable]
+  U16 PGMOrder;
+      ^
+../src/hal_test.c:4098:5: warning: variable 'ProgramSelect' set but not used [-Wunused-but-set-variable]
+  U8 ProgramSelect;
+     ^
+../src/hal_test.c:4097:5: warning: variable 'bChip' set but not used [-Wunused-but-set-variable]
+  U8 bChip;
+     ^
+../src/hal_test.c:4095:22: warning: unused variable 'PgmEnd' [-Wunused-variable]
+  U16 PgmCnt,PgmBegin,PgmEnd;
+                      ^
+../src/hal_test.c:4095:13: warning: unused variable 'PgmBegin' [-Wunused-variable]
+  U16 PgmCnt,PgmBegin,PgmEnd;
+             ^
+../src/hal_test.c:4094:27: warning: unused variable 'WLAddr' [-Wunused-variable]
+  U32 i,PageIndex,PageAddr,WLAddr;
+                           ^
+../src/hal_test.c:4094:18: warning: unused variable 'PageAddr' [-Wunused-variable]
+  U32 i,PageIndex,PageAddr,WLAddr;
+                  ^
+../src/hal_test.c:4094:8: warning: unused variable 'PageIndex' [-Wunused-variable]
+  U32 i,PageIndex,PageAddr,WLAddr;
+        ^
+../src/hal_test.c: In function 'FA_WriteBlkNew':
+../src/hal_test.c:4801:5: warning: unused variable 'FillData' [-Wunused-variable]
+  U8 FillData;
+     ^
+../src/hal_test.c:4800:5: warning: variable 'Pattern' set but not used [-Wunused-but-set-variable]
+  U8 Pattern;
+     ^
+../src/hal_test.c:4799:5: warning: unused variable 'BuffTemp' [-Wunused-variable]
+  U8 BuffTemp[10];
+     ^
+../src/hal_test.c:4798:6: warning: unused variable 'PGMOrder' [-Wunused-variable]
+  U16 PGMOrder;
+      ^
+../src/hal_test.c:4797:5: warning: variable 'ProgramSelect' set but not used [-Wunused-but-set-variable]
+  U8 ProgramSelect;
+     ^
+../src/hal_test.c:4796:5: warning: variable 'bChip' set but not used [-Wunused-but-set-variable]
+  U8 bChip;
+     ^
+../src/hal_test.c:4794:22: warning: unused variable 'PgmEnd' [-Wunused-variable]
+  U16 PgmCnt,PgmBegin,PgmEnd;
+                      ^
+../src/hal_test.c:4794:13: warning: unused variable 'PgmBegin' [-Wunused-variable]
+  U16 PgmCnt,PgmBegin,PgmEnd;
+             ^
+../src/hal_test.c:4793:27: warning: unused variable 'WLAddr' [-Wunused-variable]
+  U32 i,PageIndex,PageAddr,WLAddr;
+                           ^
+../src/hal_test.c:4793:18: warning: unused variable 'PageAddr' [-Wunused-variable]
+  U32 i,PageIndex,PageAddr,WLAddr;
+                  ^
+../src/hal_test.c:4793:8: warning: unused variable 'PageIndex' [-Wunused-variable]
+  U32 i,PageIndex,PageAddr,WLAddr;
+        ^
+../src/hal_test.c: In function 'FA_RecordRB':
+../src/hal_test.c:5295:6: warning: unused variable 'ADCValIdx' [-Wunused-variable]
+  U16 ADCValIdx=1;
+      ^
+../src/hal_test.c: In function 'FA_WritePage_WoPreCMD':
+../src/hal_test.c:5481:139: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+  if((NAND_FLASH != SAMSUNG_3DV6_TLC)&&(NAND_FLASH != SAMSUNG_3DV7_TLC)&&(NAND_FLASH != SAMSUNG_3DV8_TLC)&&(NAND_FLASH != SAMSUNG_3DV9_TLC)||(NAND_FLASH == SAMSUNG_3DV6P))
+                                                                                                                                           ^
+../src/hal_test.c:5317:13: warning: unused variable 'BlockAddress' [-Wunused-variable]
+  U32 UPMark,BlockAddress;
+             ^
+../src/hal_test.c:5317:6: warning: unused variable 'UPMark' [-Wunused-variable]
+  U32 UPMark,BlockAddress;
+      ^
+../src/hal_test.c:5315:24: warning: unused variable 'WLAddress' [-Wunused-variable]
+  U32 dRowAdd,PageOrder,WLAddress;
+                        ^
+../src/hal_test.c:5315:14: warning: unused variable 'PageOrder' [-Wunused-variable]
+  U32 dRowAdd,PageOrder,WLAddress;
+              ^
+../src/hal_test.c:5313:51: warning: unused variable 'PagePosition' [-Wunused-variable]
+  U8 PmgStats,bChan,bChip,BlkIdx,PreCMD,ConfirmCMD,PagePosition;
+                                                   ^
+../src/hal_test.c:5313:5: warning: unused variable 'PmgStats' [-Wunused-variable]
+  U8 PmgStats,bChan,bChip,BlkIdx,PreCMD,ConfirmCMD,PagePosition;
+     ^
+../src/hal_test.c: In function 'FA_WritePage_PreCMD':
+../src/hal_test.c:5542:13: warning: unused variable 'BlockAddress' [-Wunused-variable]
+  U32 UPMark,BlockAddress;
+             ^
+../src/hal_test.c:5542:6: warning: unused variable 'UPMark' [-Wunused-variable]
+  U32 UPMark,BlockAddress;
+      ^
+../src/hal_test.c:5538:59: warning: unused variable 'PagePosition' [-Wunused-variable]
+  U8 PmgStats,bChan,bChip,BlkIdx,PreCMD,ReadCMD,ConfirmCMD,PagePosition;
+                                                           ^
+../src/hal_test.c:5538:40: warning: unused variable 'ReadCMD' [-Wunused-variable]
+  U8 PmgStats,bChan,bChip,BlkIdx,PreCMD,ReadCMD,ConfirmCMD,PagePosition;
+                                        ^
+../src/hal_test.c:5538:5: warning: variable 'PmgStats' set but not used [-Wunused-but-set-variable]
+  U8 PmgStats,bChan,bChip,BlkIdx,PreCMD,ReadCMD,ConfirmCMD,PagePosition;
+     ^
+../src/hal_test.c: In function 'FA_WritePage_V5_MLC':
+../src/hal_test.c:5878:16: warning: unused variable 'BlockAddress' [-Wunused-variable]
+     U32 UPMark,BlockAddress;
+                ^
+../src/hal_test.c:5878:9: warning: unused variable 'UPMark' [-Wunused-variable]
+     U32 UPMark,BlockAddress;
+         ^
+../src/hal_test.c:5876:27: warning: unused variable 'WLAddress' [-Wunused-variable]
+     U32 dRowAdd,PageOrder,WLAddress;
+                           ^
+../src/hal_test.c:5876:17: warning: unused variable 'PageOrder' [-Wunused-variable]
+     U32 dRowAdd,PageOrder,WLAddress;
+                 ^
+../src/hal_test.c:5874:54: warning: unused variable 'PagePosition' [-Wunused-variable]
+     U8 PmgStats,bChan,bChip,BlkIdx,PreCMD,ConfirmCMD,PagePosition;
+                                                      ^
+../src/hal_test.c:5874:8: warning: unused variable 'PmgStats' [-Wunused-variable]
+     U8 PmgStats,bChan,bChip,BlkIdx,PreCMD,ConfirmCMD,PagePosition;
+        ^
+../src/hal_test.c: In function 'FA_SubReadData_WoPreCMD':
+../src/hal_test.c:6087:33: warning: variable 'offset' set but not used [-Wunused-but-set-variable]
+  U8 bChan,bChip,BlkIdx,BlkCnt,i,offset;
+                                 ^
+../src/hal_test.c:6087:31: warning: unused variable 'i' [-Wunused-variable]
+  U8 bChan,bChip,BlkIdx,BlkCnt,i,offset;
+                               ^
+../src/hal_test.c: In function 'FA_SubReadData_PreCMD':
+../src/hal_test.c:6213:31: warning: unused variable 'i' [-Wunused-variable]
+  U8 bChan,bChip,BlkIdx,BlkCnt,i,offset,PreCMD;
+                               ^
+../src/hal_test.c: In function 'FA_ReadData':
+../src/hal_test.c:6569:5: warning: unused variable 'bChip' [-Wunused-variable]
+  U8 bChip=pCtrl->bChip;
+     ^
+../src/hal_test.c:6565:7: warning: unused variable 'BlkList' [-Wunused-variable]
+  U16 *BlkList;
+       ^
+../src/hal_test.c:6564:5: warning: unused variable 'BlkIdx' [-Wunused-variable]
+  U8 BlkIdx;
+     ^
+../src/hal_test.c:6563:5: warning: unused variable 'i' [-Wunused-variable]
+  U8 i;
+     ^
+../src/hal_test.c: In function 'FA_WriteData':
+../src/hal_test.c:6599:5: warning: unused variable 'bChip' [-Wunused-variable]
+  U8 bChip=pCtrl->bChip;
+     ^
+../src/hal_test.c:6595:7: warning: unused variable 'BlkList' [-Wunused-variable]
+  U16 *BlkList;
+       ^
+../src/hal_test.c:6594:5: warning: unused variable 'BlkIdx' [-Wunused-variable]
+  U8 BlkIdx;
+     ^
+../src/hal_test.c:6593:5: warning: unused variable 'i' [-Wunused-variable]
+  U8 i;
+     ^
+../src/hal_test.c: In function 'FA_SubReadData_V5_MLC':
+../src/hal_test.c:6636:29: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+         if ((pCtrl->dSecCnt)&0xFF == 0x00)
+                             ^
+../src/hal_test.c:6645:34: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+         else if ((pCtrl->dSecCnt)&0xFF == 0x01)
+                                  ^
+../src/hal_test.c:6649:34: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+         else if ((pCtrl->dSecCnt)&0xFF == 0x02)
+                                  ^
+../src/hal_test.c:6664:28: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+         if((pCtrl->dSecCnt)&0xFF == 0x00)
+                            ^
+../src/hal_test.c:6612:33: warning: variable 'offset' set but not used [-Wunused-but-set-variable]
+  U8 bChan,bChip,BlkIdx,BlkCnt,i,offset;
+                                 ^
+../src/hal_test.c:6612:31: warning: unused variable 'i' [-Wunused-variable]
+  U8 bChan,bChip,BlkIdx,BlkCnt,i,offset;
+                               ^
+../src/hal_test.c: In function 'FA_ReadParameterPage':
+../src/hal_test.c:6743:5: warning: unused variable 'bChip' [-Wunused-variable]
+  U8 bChip=pCtrl->bChip;
+     ^
+../src/hal_test.c: In function 'FA_EraseBlk':
+../src/hal_test.c:6767:6: warning: unused variable 'dPageaddr' [-Wunused-variable]
+  U16 dPageaddr = 0;
+      ^
+../src/hal_test.c:6762:6: warning: unused variable 'bData' [-Wunused-variable]
+  U08 bData[4] = {0,0,0,0};
+      ^
+../src/hal_test.c:6761:5: warning: variable 'EraseSelect' set but not used [-Wunused-but-set-variable]
+  U8 EraseSelect;
+     ^
+../src/hal_test.c: In function 'FA_EraseBlk_Type1':
+../src/hal_test.c:6984:2: warning: 'return' with a value, in function returning void
+  return 0;
+  ^
+../src/hal_test.c: In function 'FA_Universal':
+../src/hal_test.c:7061:6: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+      ((U16 *)(MEM_DMA_BUFF_ADDR))[201] = RBStatus;
+      ^
+../src/hal_test.c:7062:6: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+      ((U16 *)(MEM_DMA_BUFF_ADDR))[200] = (RBRst > 60000) ? 0xFFFF : RBRst;
+      ^
+../src/hal_test.c:7088:5: warning: implicit declaration of function 'HAL_MCUSendDataByDqs_GAI' [-Wimplicit-function-declaration]
+     HAL_MCUSendDataByDqs_GAI(bChan,Operation,WrStat);
+     ^
+../src/hal_test.c: In function 'FA_SetCE':
+../src/hal_test.c:7242:5: warning: unused variable 'Val' [-Wunused-variable]
+  U8 Val = pCtrl->P1;
+     ^
+../src/hal_test.c: In function 'FA_GetFeature':
+../src/hal_test.c:7268:5: warning: unused variable 'i' [-Wunused-variable]
+  U8 i;
+     ^
+../src/hal_test.c:7267:5: warning: unused variable 'P4' [-Wunused-variable]
+  U8 P4;
+     ^
+../src/hal_test.c:7266:5: warning: unused variable 'P3' [-Wunused-variable]
+  U8 P3;
+     ^
+../src/hal_test.c:7265:5: warning: unused variable 'P2' [-Wunused-variable]
+  U8 P2;
+     ^
+../src/hal_test.c:7264:5: warning: unused variable 'P1' [-Wunused-variable]
+  U8 P1;
+     ^
+../src/hal_test.c:7263:6: warning: unused variable 'bData' [-Wunused-variable]
+  U08 bData[6] = {0,0,0,0,0};
+      ^
+../src/hal_test.c: In function 'FA_ReadID':
+../src/hal_test.c:7331:2: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  ((U16 *)MEM_DMA_BUFF_ADDR)[5] = NAND_FLASH;
+  ^
+../src/hal_test.c:7291:6: warning: unused variable 'RegValue' [-Wunused-variable]
+  U32 RegValue;
+      ^
+../src/hal_test.c:7289:6: warning: variable 'bTrx2ClkPeriod' set but not used [-Wunused-but-set-variable]
+  U08 bTrx2ClkPeriod;
+      ^
+../src/hal_test.c:7287:6: warning: unused variable 'bTrx2ClkSource' [-Wunused-variable]
+  U08 bTrx2ClkSource  = HAL_CPMGetClkSource(0);
+      ^
+../src/hal_test.c:7286:9: warning: unused variable 'bSysClkSource' [-Wunused-variable]
+     U08 bSysClkSource  = SG_CPM->rSYS_CLK_SOURCE_SEL;
+         ^
+../src/hal_test.c: In function 'FA_ReadUID':
+../src/hal_test.c:7350:5: warning: unused variable 'bChip' [-Wunused-variable]
+  U8 bChip=pCtrl->bChip;
+     ^
+../src/hal_test.c: In function 'FA_SubReadData_ReadUID':
+../src/hal_test.c:7369:6: warning: variable 'dRowAdd' set but not used [-Wunused-but-set-variable]
+  U32 dRowAdd = 0;
+      ^
+../src/hal_test.c:7368:6: warning: unused variable 'wColAdd' [-Wunused-variable]
+  U16 wColAdd = 0;
+      ^
+../src/hal_test.c: In function 'FA_NCQReadData':
+../src/hal_test.c:7789:6: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+  if(1==(ptClstAddr->m_bDataType)>>4&0xF)
+      ^
+../src/hal_test.c:7455:6: warning: unused variable 'dWLAddr' [-Wunused-variable]
+  U16 dWLAddr;
+      ^
+../src/hal_test.c:7450:6: warning: unused variable 'offset' [-Wunused-variable]
+  U08 offset         = (U08)(ptClstAddr->m_bChan & 0XFF);
+      ^
+../src/hal_test.c: In function 'FA_SetOffset':
+../src/hal_test.c:7841:5: warning: unused variable 'bLUN' [-Wunused-variable]
+  U8 bLUN =(U8)pCtrl->bRBMode;
+     ^
+../src/hal_test.c: In function 'FA_COPYBACKWrite':
+../src/hal_test.c:8253:6: warning: unused variable 'Prog_Time' [-Wunused-variable]
+   U8 Prog_Time  = ProgramMap[Layer_Part_Idx*5+4];
+      ^
+../src/hal_test.c:8214:6: warning: unused variable 'PreCMD' [-Wunused-variable]
+  U8  PreCMD;
+      ^
+../src/hal_test.c: In function 'FA_ReadDisturb':
+../src/hal_test.c:8901:6: warning: unused variable 'k' [-Wunused-variable]
+  U16 k;
+      ^
+../src/hal_test.c:8899:6: warning: unused variable 'i' [-Wunused-variable]
+  U32 i;
+      ^
+../src/hal_test.c: In function 'FA_FindOV_Init':
+../src/hal_test.c:9124:7: warning: unused variable 'ReadCnt' [-Wunused-variable]
+  *xLC   = (U8)pCtrl ->bRBMode;
+       ^
+../src/hal_test.c:9093:7: warning: unused variable 'BlkID' [-Wunused-variable]
+  U32 *Add_DE   = (U32 *)(MEM_DMA_BUFF_ADDR + 4308);
+       ^
+../src/hal_test.c:9082:7: warning: unused variable 'GroupModel' [-Wunused-variable]
+  U32 *totalPageCnt = (U32 *)(MEM_DMA_BUFF_ADDR + 4016);   //总页�?
+       ^
+../src/hal_test.c: In function 'FA_FindOV':
+../src/hal_test.c:9554:6: warning: implicit declaration of function 'DataMove' [-Wimplicit-function-declaration]
+       {
+      ^
+../src/hal_test.c:9630:8: warning: implicit declaration of function 'ShortSeek_Cw' [-Wimplicit-function-declaration]
+        //OV
+        ^
+../src/hal_test.c:9333:7: warning: unused variable 'U64haPageCw0' [-Wunused-variable]
+ 
+       ^
+../src/hal_test.c:9245:7: warning: unused variable 'totalPageCnt' [-Wunused-variable]
+ 
+       ^
+../src/hal_test.c: At top level:
+../src/hal_test.c:10230:6: warning: conflicting types for 'ShortSeek_Cw'
+  
+      ^
+../src/hal_test.c:9630:8: note: previous implicit declaration of 'ShortSeek_Cw' was here
+        //OV
+        ^
+../src/hal_test.c: In function 'ShortSeek_Cw':
+../src/hal_test.c:10251:5: warning: implicit declaration of function 'Get_Page_Retry_Error_Cw' [-Wimplicit-function-declaration]
+     }
+     ^
+../src/hal_test.c: At top level:
+../src/hal_test.c:10347:6: warning: conflicting types for 'Get_Page_Retry_Error_Cw'
+ 
+      ^
+../src/hal_test.c:10251:5: note: previous implicit declaration of 'Get_Page_Retry_Error_Cw' was here
+     }
+     ^
+../src/hal_test.c: In function 'Get_Page_Retry_Error_Cw':
+../src/hal_test.c:10350:2: warning: implicit declaration of function 'DataMove_Cw' [-Wimplicit-function-declaration]
+  //数据是否解码�?��在函数外部定义，避免性能浪费
+  ^
+../src/hal_test.c: At top level:
+../src/hal_test.c:10354:6: warning: conflicting types for 'DataMove'
+ 
+      ^
+../src/hal_test.c:9554:6: note: previous implicit declaration of 'DataMove' was here
+       {
+      ^
+../src/hal_test.c: In function 'DataMove':
+../src/hal_test.c:10359:5: warning: unused variable 'PreCMD' [-Wunused-variable]
+  HAL_CQCheckIOStatus(bChan, bChip, IO_1_PASS, FIO_STAT_READY, FIO_STAT_PASS);
+     ^
+../src/hal_test.c:10358:16: warning: unused variable 'WlAddr' [-Wunused-variable]
+  HAL_CQChipSelect(bChan, bChip);
+                ^
+../src/hal_test.c: At top level:
+../src/hal_test.c:10417:6: warning: conflicting types for 'DataMove_Cw'
+ 
+      ^
+../src/hal_test.c:10350:2: note: previous implicit declaration of 'DataMove_Cw' was here
+  //数据是否解码�?��在函数外部定义，避免性能浪费
+  ^
+../src/hal_test.c: In function 'DataMove_Cw':
+../src/hal_test.c:10422:5: warning: unused variable 'PreCMD' [-Wunused-variable]
+ #if(NAND_FLASH == Hynix_3DV8_TLC)
+     ^
+../src/hal_test.c:10421:16: warning: unused variable 'WlAddr' [-Wunused-variable]
+  //partical Read
+                ^
+../src/hal_test.c: In function 'SetOffsetForFindOV':
+../src/hal_test.c:10485:5: warning: unused variable 'bLUN' [-Wunused-variable]
+ 
+     ^
+../src/hal_test.c: In function 'FA_GetExtendedFA':
+../src/hal_test.c:10656:6: warning: unused variable 'DmaLenTemp' [-Wunused-variable]
+   HAL_NFGetExtFeature(bChan, bChip, bAdd1, bAdd2, bLUN, (U8 *)bData, 4);
+      ^
+../src/hal_test.c: In function 'FA_SetParamter':
+../src/hal_test.c:10734:7: warning: extra tokens at end of #else directive
+  HAL_CQWaitDone(bChan);
+       ^
+../src/hal_test.c:10727:6: warning: unused variable 'bData' [-Wunused-variable]
+     HAL_FA_DQSSetParameter(bChan, bChip, Add, Param, PreCmdOption, SetCmd);
+      ^
+../src/hal_test.c:10726:5: warning: unused variable 'SetCmd' [-Wunused-variable]
+ #if ((FDL_TEST_FLASH==SanDisk_BiCS5_QLC)||(FDL_TEST_FLASH==SanDisk_BiCS6_TLC)||(NAND_FLASH==SanDisk_BiCS8_TLC)||(FDL_TEST_FLASH==SanDisk_BiCS6_QLC)||(FDL_TEST_FLASH==SanDisk_BiCS8_QLC)||(FDL_TEST_FLASH==KHMB))
+     ^
+../src/hal_test.c:10725:5: warning: unused variable 'PreCmdOption' [-Wunused-variable]
+ 
+     ^
+../src/hal_test.c: In function 'FA_GetParamter':
+../src/hal_test.c:10768:7: warning: extra tokens at end of #else directive
+ #endif
+       ^
+../src/hal_test.c:10753:6: warning: unused variable 'DmaLenTemp' [-Wunused-variable]
+  HAL_FA_DQSSetParameter(bChan, bChip, 0x00, 0x01, 1, 0x55);
+      ^
+../src/hal_test.c: In function 'FA_CheckBlkData':
+../src/hal_test.c:10858:6: warning: unused variable 'TimeMark' [-Wunused-variable]
+ 
+      ^
+../src/hal_test.c:10856:6: warning: unused variable 'ReReadIdx' [-Wunused-variable]
+  SG_DMA2_CH(bChan)->rRND_CTRL.bits.RND_BYPASS = 0;
+      ^
+../src/hal_test.c:10855:6: warning: unused variable 'ReReadCnt' [-Wunused-variable]
+  HostCmdResponse();
+      ^
+../src/hal_test.c:10854:6: warning: unused variable 'ErrThld' [-Wunused-variable]
+  MemorySet((U8 *)pErrBuff, 0xCC,5120);
+      ^
+../src/hal_test.c:10853:6: warning: unused variable 'FailPageIdx' [-Wunused-variable]
+ 
+      ^
+../src/hal_test.c:10852:6: warning: unused variable 'FailPageSum' [-Wunused-variable]
+  U32 TimeMark;
+      ^
+../src/hal_test.c:10843:15: warning: unused variable 'PageSum' [-Wunused-variable]
+  U8 bChan=pCtrl->bChan;
+               ^
+../src/hal_test.c: In function 'HAL_ReadPage_WithNoDataOut':
+../src/hal_test.c:10884:9: warning: unused variable 'dRowAdd' [-Wunused-variable]
+     ReadTimeCnt = pCtrl->dSeedIdx;
+         ^
+../src/hal_test.c:10883:30: warning: unused variable 'PreCMD' [-Wunused-variable]
+     PageAddEnd = pCtrl->dPageCnt;
+                              ^
+../src/hal_test.c:10883:22: warning: unused variable 'BlkIdx' [-Wunused-variable]
+     PageAddEnd = pCtrl->dPageCnt;
+                      ^
+../src/hal_test.c: In function 'ReadPage_WithNoDataOut':
+../src/hal_test.c:10972:7: warning: unused variable 'pulse' [-Wunused-variable]
+ #if ((FDL_TEST_FLASH == MIC_B16A))
+       ^
+../src/hal_test.c:10970:5: warning: unused variable 'i' [-Wunused-variable]
+  {
+     ^
+../src/hal_test.c:10969:5: warning: unused variable 'P4' [-Wunused-variable]
+  if(gettemp==1)
+     ^
+../src/hal_test.c:10968:5: warning: unused variable 'P3' [-Wunused-variable]
+ 
+     ^
+../src/hal_test.c:10967:5: warning: unused variable 'P2' [-Wunused-variable]
+  U8 gettemp=(U8)pCtrl->P4;
+     ^
+../src/hal_test.c:10966:5: warning: unused variable 'P1' [-Wunused-variable]
+  U8 * pulse = feature;
+     ^
+../src/hal_test.c:10965:6: warning: unused variable 'bData' [-Wunused-variable]
+  U8 feature[4];
+      ^
+../src/hal_test.c:10964:5: warning: unused variable 'bChip' [-Wunused-variable]
+  U8 i;
+     ^
+../src/hal_test.c: In function 'FA_HighTempSocketReadTemp':
+../src/hal_test.c:31:28: warning: passing argument 2 of 'HostDataTransfer' makes integer from pointer without a cast
+ #define FA_CUR_TEMP_ADD    ((U16*)FA_TEMP_BUFFADD)
+                            ^
+../src/hal_test.c:11134:35: note: in expansion of macro 'FA_CUR_TEMP_ADD'
+  U8 bChan = 1;
+                                   ^
+In file included from ../src/hal_test.c:6:0:
+/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc/pri_cmd.h:164:6: note: expected 'long unsigned int' but argument is of type 'short unsigned int *'
+ void HostDataTransfer(DMA1_Dir bDir,U32 dBuffAddr,U16 wSec,Joint_Mode bJoint);
+      ^
+../src/hal_test.c: In function 'FA_TMPSensorWriteByte':
+../src/hal_test.c:11338:5: warning: unused variable 'timer' [-Wunused-variable]
+  {
+     ^
+../src/hal_test.c: In function 'FA_TMPSensorGetTemp':
+../src/hal_test.c:11409:5: warning: unused variable 'ConfigReg' [-Wunused-variable]
+  FA_TMPSensorSetLevel(SensorID, 0, 0); // Set SCL Low
+     ^
+../src/hal_test.c:11405:5: warning: unused variable 'bData' [-Wunused-variable]
+  //Start communication, set target address, Auto-Increment and register Pointer
+     ^
+../src/hal_test.c:11403:5: warning: unused variable 'bAck' [-Wunused-variable]
+  U8 ConfigReg = 0x03;
+     ^
+../src/hal_test.c: In function 'HAL_MCUSendCER_CE':
+../src/hal_test.c:11667:8: warning: unused variable 'temp' [-Wunused-variable]
+ 
+        ^
+../src/hal_test.c: In function 'FA_OfflineTaskInit':
+../src/hal_test.c:11697:6: warning: unused variable 'd' [-Wunused-variable]
+  Offline_Chip = pCtrl->bChip;
+      ^
+../src/hal_test.c:11696:7: warning: unused variable 'j' [-Wunused-variable]
+  Offline_Chan = pCtrl->bChan;
+       ^
+../src/hal_test.c: In function 'FA_PE_offline':
+../src/hal_test.c:11774:9: warning: unused variable 'k' [-Wunused-variable]
+   if(Offline_PE_counter==Offline_OperationCntList[Offline_OperationStage-Offline_PE_Stage_counter-1]){
+         ^
+../src/hal_test.c: In function 'FA_Offline_WriteBlock_ver1':
+../src/hal_test.c:11914:5: warning: unused variable 'FillData' [-Wunused-variable]
+  pCtrl->dMode = Offline_OperationMode;
+     ^
+../src/hal_test.c:11913:5: warning: variable 'Pattern' set but not used [-Wunused-but-set-variable]
+  pCtrl->bChip = Offline_Chip;
+     ^
+../src/hal_test.c:11912:5: warning: unused variable 'BuffTemp' [-Wunused-variable]
+  pCtrl->bChan = Offline_Chan;
+     ^
+../src/hal_test.c:11911:6: warning: unused variable 'PGMOrder' [-Wunused-variable]
+   ((U16*) pCtrl->bBlklist)[i] = BlockList[i];
+      ^
+../src/hal_test.c:11910:5: warning: unused variable 'ProgramSelect' [-Wunused-variable]
+  for(i=0;i<Offline_PlaneCnt;i++)
+     ^
+../src/hal_test.c:11909:22: warning: unused variable 'PgmEnd' [-Wunused-variable]
+  T_FDL_FTCTRL *pCtrl;
+                      ^
+../src/hal_test.c:11909:13: warning: unused variable 'PgmBegin' [-Wunused-variable]
+  T_FDL_FTCTRL *pCtrl;
+             ^
+../src/hal_test.c:11908:27: warning: unused variable 'WLAddr' [-Wunused-variable]
+  U8 FillData;
+                           ^
+../src/hal_test.c:11908:18: warning: unused variable 'PageAddr' [-Wunused-variable]
+  U8 FillData;
+                  ^
+../src/hal_test.c:11908:8: warning: unused variable 'PageIndex' [-Wunused-variable]
+  U8 FillData;
+        ^
+../src/hal_test.c:11907:5: warning: unused variable 'bChip' [-Wunused-variable]
+  U8 Pattern;
+     ^
+../src/hal_test.c: In function 'FA_OfflineTaskInterrupt':
+../src/hal_test.c:12462:4: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+    FA_Offline_Status[0] = Offline_PE_counter;
+    ^
+../src/hal_test.c:36:29: warning: passing argument 2 of 'HostDataTransfer' makes integer from pointer without a cast
+ #define FA_Offline_Status   ((U32*)MEM_DMA_BUFF_ADDR)
+                             ^
+../src/hal_test.c:12464:37: note: in expansion of macro 'FA_Offline_Status'
+    
+                                     ^
+In file included from ../src/hal_test.c:6:0:
+/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc/pri_cmd.h:164:6: note: expected 'long unsigned int' but argument is of type 'long unsigned int *'
+ void HostDataTransfer(DMA1_Dir bDir,U32 dBuffAddr,U16 wSec,Joint_Mode bJoint);
+      ^
+../src/hal_test.c:12468:4: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+   case 2: //Resume PE offline
+    ^
+../src/hal_test.c:36:29: warning: passing argument 2 of 'HostDataTransfer' makes integer from pointer without a cast
+ #define FA_Offline_Status   ((U32*)MEM_DMA_BUFF_ADDR)
+                             ^
+../src/hal_test.c:12472:37: note: in expansion of macro 'FA_Offline_Status'
+    break;
+                                     ^
+In file included from ../src/hal_test.c:6:0:
+/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc/pri_cmd.h:164:6: note: expected 'long unsigned int' but argument is of type 'long unsigned int *'
+ void HostDataTransfer(DMA1_Dir bDir,U32 dBuffAddr,U16 wSec,Joint_Mode bJoint);
+      ^
+../src/hal_test.c: In function 'GetPageMark':
+../src/hal_test.c:2459:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../src/hal_test.c: In function 'MultiPlane_WritePage_PrefixCMD':
+../src/hal_test.c:3967:10: warning: 'WlAddr' is used uninitialized in this function [-Wuninitialized]
+  dRowAdd = (BlkList[BlkIdx]) * FDL_ROW_OF_BLK + WlAddr;
+          ^
+../src/hal_test.c: In function 'FA_WritePage_PreCMD':
+../src/hal_test.c:5754:10: warning: 'WlAddr' is used uninitialized in this function [-Wuninitialized]
+  dRowAdd = (BlkList[BlkIdx]) * FDL_ROW_OF_BLK + WlAddr;
+          ^
+../src/hal_test.c:5833:2: warning: 'ConfirmCMD' is used uninitialized in this function [-Wuninitialized]
+  HAL_CQSendFlashCmd(bChan, ConfirmCMD);  //Confirm CMD
+  ^
+../src/hal_test.c: In function 'FA_SubReadData_PreCMD':
+../src/hal_test.c:6415:10: warning: 'WlAddr' is used uninitialized in this function [-Wuninitialized]
+  dRowAdd = (BlkList[BlkIdx]) * FDL_ROW_OF_BLK + WlAddr;
+          ^
+In file included from /cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform/common.h:139:0,
+                 from ../src/hal_test.c:1:
+../src/hal_test.c: In function 'FA_EraseBlk':
+/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform/sg9081.h:87:66: warning: 'bChan' is used uninitialized in this function [-Wuninitialized]
+ #define SG_FC(x)             ((SG_FC_TypeDef  *) (SG_FC_BASE_ARRY[x])) 
+                                                                  ^
+../src/hal_test.c:6759:5: note: 'bChan' was declared here
+  U8 bChan;
+     ^
+../src/hal_test.c: In function 'FA_Offline_WriteBlock_ver1':
+../src/hal_test.c:11918:15: warning: 'pCtrl' is used uninitialized in this function [-Wuninitialized]
+  pCtrl->P4 = FL_CMD_PROG_CONFIRM2; //CfmCMD
+               ^
+../src/hal_test.c: In function 'RS_CheckStatusWithSave':
+../src/hal_test.c:2290:2: warning: 'SRData' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  return SRData;
+  ^
+../src/hal_test.c: In function 'MultiPlane_WritePage_PrefixCMD':
+../src/hal_test.c:3965:23: warning: 'PreCMD' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  if (1==pCtrl->dMode) HAL_CQSendFlashCmd(bChan, PreCMD);
+                       ^
+../src/hal_test.c:3996:9: warning: 'PgmStats' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  else if(1==PgmStats)//Last Page Of WL
+         ^
+../src/hal_test.c: In function 'FA_WritePage_PreCMD':
+../src/hal_test.c:5749:22: warning: 'PreCMD' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  if(1==pCtrl->dMode) HAL_CQSendFlashCmd(bChan, PreCMD);
+                      ^
+../src/hal_test.c: In function 'FA_SubReadData_PreCMD':
+../src/hal_test.c:6484:23: warning: 'PreCMD' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   if(1==pCtrl->dMode) HAL_CQSendFlashCmd(bChan, PreCMD);
+                       ^
+../src/hal_test.c: In function 'FA_Universal':
+../src/hal_test.c:7062:40: warning: 'RBRst' may be used uninitialized in this function [-Wmaybe-uninitialized]
+      ((U16 *)(MEM_DMA_BUFF_ADDR))[200] = (RBRst > 60000) ? 0xFFFF : RBRst;
+                                        ^
+In file included from /cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/Interface/flash_driver_struct.h:9:0,
+                 from /cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc/Hal_test.h:3,
+                 from ../src/hal_test.c:3:
+../src/hal_test.c: In function 'FA_TMPSensorSetLevel':
+/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/interface/hal.h:2127:47: warning: 'bPin' may be used uninitialized in this function [-Wmaybe-uninitialized]
+ #define BIT_CLR_0(Bit)            (~((U32)(0x1<<(Bit))))
+                                               ^
+../src/hal_test.c:11254:5: note: 'bPin' was declared here
+   bPin = SensorID + LineType;
+     ^
+../src/hal_test.c: In function 'FA_PE_offline':
+../src/hal_test.c:11787:17: warning: 'BlockList' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    U16 dPageaddr;
+                 ^
+Finished building: ../src/hal_test.c
+ 
+Building file: ../src/interface.c
+Invoking: Andes C Compiler
+nds32le-elf-gcc -D__DIS_ALIGN_RD__ -D__JUPITER_DEBUG__ -DSATA_DRIVE_NEW -D__DUAL_CORE__ -D__FILL_PAGE_EN__11 -D__FDL_HW_VIRTUL_CLST__ -D__FDL_CQFIFO_TRIG_IRQ__ -D__FDL_CRC_FUNC__ -D__G3_FLYCODE -D__SW_PMCP__11 -D__TLC_RD_VERIFY__11 -D__FLASH_SUMSUNG_3DV4__ -D__FPGA_PLATEFORM_OFF -U__CAP_512G_4CHAN_4CE_SUPPORT__ -U__FPGA_PLATEFORM -U__APP_CACHE_READ__ -U__YS9083XT_ALGO__ -U__SATA_LOG_EN__ -U__VMC_EN__ -I"/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/Interface" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/interface" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/ata_cmd" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/driver" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/sata_protocol" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/scsi" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_manage" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_process" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/startup" -Os -mcmodel=large -g3 -Wall -c -fmessage-length=0 -ffunction-sections -MMD -MP -MF"src/interface.d" -MT"src/interface.d src/interface.o" -o "src/interface.o" "../src/interface.c"
+Finished building: ../src/interface.c
+ 
+Building file: ../src/main.c
+Invoking: Andes C Compiler
+nds32le-elf-gcc -D__DIS_ALIGN_RD__ -D__JUPITER_DEBUG__ -DSATA_DRIVE_NEW -D__DUAL_CORE__ -D__FILL_PAGE_EN__11 -D__FDL_HW_VIRTUL_CLST__ -D__FDL_CQFIFO_TRIG_IRQ__ -D__FDL_CRC_FUNC__ -D__G3_FLYCODE -D__SW_PMCP__11 -D__TLC_RD_VERIFY__11 -D__FLASH_SUMSUNG_3DV4__ -D__FPGA_PLATEFORM_OFF -U__CAP_512G_4CHAN_4CE_SUPPORT__ -U__FPGA_PLATEFORM -U__APP_CACHE_READ__ -U__YS9083XT_ALGO__ -U__SATA_LOG_EN__ -U__VMC_EN__ -I"/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/Interface" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/interface" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/ata_cmd" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/driver" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/sata_protocol" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/scsi" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_manage" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_process" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/startup" -Os -mcmodel=large -g3 -Wall -c -fmessage-length=0 -ffunction-sections -MMD -MP -MF"src/main.d" -MT"src/main.d src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:191:5: warning: implicit declaration of function 'FDL_Test_CheckDevice' [-Wimplicit-function-declaration]
+     FDL_Test_CheckDevice();
+     ^
+Finished building: ../src/main.c
+ 
+Building file: ../src/pri_cmd.c
+Invoking: Andes C Compiler
+nds32le-elf-gcc -D__DIS_ALIGN_RD__ -D__JUPITER_DEBUG__ -DSATA_DRIVE_NEW -D__DUAL_CORE__ -D__FILL_PAGE_EN__11 -D__FDL_HW_VIRTUL_CLST__ -D__FDL_CQFIFO_TRIG_IRQ__ -D__FDL_CRC_FUNC__ -D__G3_FLYCODE -D__SW_PMCP__11 -D__TLC_RD_VERIFY__11 -D__FLASH_SUMSUNG_3DV4__ -D__FPGA_PLATEFORM_OFF -U__CAP_512G_4CHAN_4CE_SUPPORT__ -U__FPGA_PLATEFORM -U__APP_CACHE_READ__ -U__YS9083XT_ALGO__ -U__SATA_LOG_EN__ -U__VMC_EN__ -I"/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/Interface" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/inc" -I"/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/interface" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/ata_cmd" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/driver" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/sata_protocol" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/scsi" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_manage" -I"/cygdrive/D/development/Automation/9086BB/9086/Sata/inc/task_process" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform" -I"/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/startup" -Os -mcmodel=large -g3 -Wall -c -fmessage-length=0 -ffunction-sections -MMD -MP -MF"src/pri_cmd.d" -MT"src/pri_cmd.d src/pri_cmd.o" -o "src/pri_cmd.o" "../src/pri_cmd.c"
+Finished building: ../src/pri_cmd.c
+ 
+Building target: APP_SDK_G3CODE.adx
+Invoking: Andes C Linker
+nds32le-elf-gcc -Os -nostartfiles -static -mcmodel=large -T"output/nds32.ld" -Wl,--gc-sections -mvh -o "APP_SDK_G3CODE.adx"  ./FDL/src/Micron_WL_Addr.o ./FDL/src/fdl_PValueSet.o ./FDL/src/fdl_common.o ./FDL/src/fdl_copyback.o ./FDL/src/fdl_debug.o ./FDL/src/fdl_erase_block.o ./FDL/src/fdl_exception.o ./FDL/src/fdl_irq.o ./FDL/src/fdl_mcu_op.o ./FDL/src/fdl_read.o ./FDL/src/fdl_read_retry.o ./FDL/src/fdl_soft_decode.o ./FDL/src/fdl_task_op.o ./FDL/src/fdl_write.o ./FDL/src/fdl_write_fail_handler.o ./FDL/src/flash_driver.o  ./HAL_Lib/src/hal_adm.o ./HAL_Lib/src/hal_bfc.o ./HAL_Lib/src/hal_cpm.o ./HAL_Lib/src/hal_cq.o ./HAL_Lib/src/hal_define.o ./HAL_Lib/src/hal_fc.o ./HAL_Lib/src/hal_ldpc.o ./HAL_Lib/src/hal_mcu.o ./HAL_Lib/src/hal_pad.o ./HAL_Lib/src/hal_pmcp.o ./HAL_Lib/src/hal_sata.c.o ./HAL_Lib/src/hal_timer.o  ./Sata/src/ata_cmd/ata_cfa.o ./Sata/src/ata_cmd/ata_cmd_list.o ./Sata/src/ata_cmd/ata_dco.o ./Sata/src/ata_cmd/ata_fpdma.o ./Sata/src/ata_cmd/ata_general.o ./Sata/src/ata_cmd/ata_gpl.o ./Sata/src/ata_cmd/ata_hpa.o ./Sata/src/ata_cmd/ata_identify.o ./Sata/src/ata_cmd/ata_power_mg.o ./Sata/src/ata_cmd/ata_sanitize.o ./Sata/src/ata_cmd/ata_security.o ./Sata/src/ata_cmd/ata_smart.o  ./Sata/src/driver/dma1c.o ./Sata/src/driver/dsata.o  ./Sata/src/sata_protocol/sata_define.o ./Sata/src/sata_protocol/sata_dev_idle.o ./Sata/src/sata_protocol/sata_dma_in.o ./Sata/src/sata_protocol/sata_dma_out.o ./Sata/src/sata_protocol/sata_fpdma.o ./Sata/src/sata_protocol/sata_misc.o ./Sata/src/sata_protocol/sata_pio_in.o ./Sata/src/sata_protocol/sata_pio_out.o  ./Sata/src/scsi/scsi.o  ./Sata/src/task_manage/SATA_AbormalHandle.o ./Sata/src/task_manage/task_manage.o  ./Sata/src/task_process/task_process.o  ./SysCfg/src/platform/debug.o ./SysCfg/src/platform/mcu.o ./SysCfg/src/platform/pad.o ./SysCfg/src/platform/system_sg9081.o ./SysCfg/src/platform/uart.o ./SysCfg/src/platform/uitility.o  ./SysCfg/src/startup/crt0.o ./SysCfg/src/startup/crtbegin.o ./SysCfg/src/startup/crtend.o ./SysCfg/src/startup/init-default.o ./SysCfg/src/startup/init-soc.o  ./src/CmdHandle.o ./src/fdl_retry_test.o ./src/fdl_test.o ./src/ftl.o ./src/hal_test.o ./src/interface.o ./src/main.o ./src/pri_cmd.o   
+Finished building target: APP_SDK_G3CODE.adx
+ 
+make --no-print-directory post-build
+sh -x ../CopyBinHex.cmd;../../A1-SourceInsight4.0-DoubleCore/CopyBinHexG3.bat
++ pwd
+D:\development\Automation\9086BB\9086\APP_SDK_G3CODE\Debug
++ nds32le-elf-objcopy -O binary -j .BANK0 -j .text_.srcvmc_demo.o -j .rodata_.srcvmc_demo.o -j .BANK1 -j .BANK2 -j .BANK3 -j .BANK4 -j .BANK5 -j .BANK6 -j .BANK7 APP_SDK_G3CODE.adx BANK.bin
++ nds32le-elf-objcopy -O binary -j .nds32_init -j .text -j .rodata -j .data APP_SDK_G3CODE.adx APP_SDK_G3CODE.bin
++ nds32le-elf-objcopy -O ihex -j .nds32_init -j .text -j .rodata -j .data APP_SDK_G3CODE.adx APP_SDK_G3CODE.hex
++ nds32le-elf-readelf -s APP_SDK_G3CODE.adx
++ grep FUNC
++ sort -nrk 3
++ awk '{printf("%6-s\t%24-s\n",$3,$8)}'
++ nds32le-elf-readelf -s APP_SDK_G3CODE.adx
++ grep OBJECT
++ sort -nrk 3
++ awk '{printf("%6-s\t%24-s\n",$3,$8)}'
+/bin/sh: ../../A1-SourceInsight4.0-DoubleCore/CopyBinHexG3.bat: No such file or directory
+make[1]: [makefile:140: post-build] Error 127 (ignored)
+ 
+Invoking: NM (symbol listing)
+nds32le-elf-nm -n -l -C "APP_SDK_G3CODE.adx" > output/symbol.txt
+Finished building: output/symbol.txt
+ 
+Invoking: Readelf (ELF info listing)
+nds32le-elf-readelf -a "APP_SDK_G3CODE.adx" > output/readelf.txt
+Finished building: output/readelf.txt
+ 
+Invoking: Objdump (disassembly)
+nds32le-elf-objdump -x -d -C "APP_SDK_G3CODE.adx" > output/objdump.txt
+Finished building: output/objdump.txt
+ 
+Invoking: Size (section size listing)
+nds32le-elf-size  "APP_SDK_G3CODE.adx" | tee output/.PHONY.size
+   text (code + rodata)	   data	    bss	    dec	    hex	filename
+  89736 (48108 +  41628)	 316716	  11940	 418392	  66258	APP_SDK_G3CODE.adx
+Finished building: output/.PHONY.size
+ 
+
+19:33:28 Build Finished (took 32s.254ms)
+

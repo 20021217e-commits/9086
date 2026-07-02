@@ -1,0 +1,6 @@
+19:32:53 **** Incremental Build of configuration Debug for project APP_SDK_G0CODE ****
+make -k -j28 all 
+make: Nothing to be done for 'all'.
+
+19:32:54 Build Finished (took 771ms)
+
