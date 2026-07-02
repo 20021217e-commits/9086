@@ -1,0 +1,55 @@
+USER_SECTIONS .vector,.mixram1,.comram1,.comram2,.cmdhead,.prdtable,.fsm,.satadc,.tqc,.fsm_hwd2h,.vector_table,.identify,.undocds,.combuffer,.satalogctx,.uart_debug,.comram3,.raidram,.scsictrl,.scsicmdhead,.scsidatahead,.UART_FIFO,.SMART_DATA,.IDENTIFY_C
+
+LOAD_AREA1  0x00400000  0x000000a4 
+{
+    EXEC_AREA1  0x00000000
+    {
+        VAR __VECTOR_ADDR=0x00400000
+        *(.nds32_init)
+        LOADADDR  __init_lmaend
+    }
+}
+
+EILM 0x004000a4 0xF0000 ; address base 0x00000000, max_size=128K//0x10020000 0xE0000
+{
+	EXEC0 0x004000a4 0x007F5C  ;max 31.5k,和9081 boot code重合了0.5K
+    {
+        * (+RO) 
+    }
+	
+	RAM 0x00408000 0x00003000
+	{		
+		LOADADDR NEXT __data_lmastart
+		ADDR NEXT __data_start
+		* (+RW,+ZI)
+		STACK = 0x0040B000
+		VAR _stack_size=0x1000
+	}
+
+    EXEC1 0x0040B000 0x00000800
+    {
+        ;30 K
+        * KEEP (.IDENTIFY_C)
+        * KEEP (.SMART_DATA)
+        * (+ISR,+RO) 
+    }
+    
+     COMRAM3 0x0040B800 0x0004800{
+          * KEEP(.cmdhead)
+          * KEEP(.scsicmdhead)
+          * KEEP(.scsidatahead)
+          * KEEP(.undocds)
+          * KEEP(.combuffer)
+          * KEEP(.identify)
+          * KEEP(.prdtable)
+          * KEEP(.fsm_hwd2h)
+          * KEEP(.fsm)
+          * KEEP(.satadc)
+          * KEEP(.scsictrl)
+          * KEEP(.satalogctx)
+          * KEEP(.tqc)
+          * KEEP(.Exbuff)
+    }
+    
+
+}
