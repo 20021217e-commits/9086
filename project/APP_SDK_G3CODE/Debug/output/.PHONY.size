@@ -1,0 +1,2 @@
+   text (code + rodata)	   data	    bss	    dec	    hex	filename
+  89736 (48108 +  41628)	 316716	  11940	 418392	  66258	APP_SDK_G3CODE.adx
