@@ -1,0 +1,65 @@
+USER_SECTIONS .vector,.BANK0,.BANK1,.BANK2,.BANK3,.BANK4,.BANK5,.BANK6,.BANK7,.mixram1,.comram1,.comram2,.cmdhead,.prdtable,.fsm,.satadc,.tqc,.fsm_hwd2h,.vector_table,.identify,.combuffer,.tSataLogCtx,.undocds, .scsictrl,.scsicmdhead,.scsidatahead,.comram3,.raidram
+
+
+LOAD_AREA1  0x003D8000  0x000000a4 
+{
+    EXEC_AREA1  0x00000000
+    {
+        VAR __G3_VECTOR_ADDR=0x003D8000
+        VAR __G0_VECTOR_ADDR=0x00400000
+        *(.nds32_init)
+        LOADADDR  __init_lmaend
+    }
+}
+
+EILM 0x003D80a4 0xF0000 ; address base 0x00000000, max_size=128K//0x10020000 0xE0000
+{
+    EXEC 0x003D80a4 0x0001FF5C;128kbyte --VMC disable
+    {
+        * (+ISR,+RO)
+        VAR __CODE_START=0x003D8000	
+        VAR __CODE_END=0x003F8000	
+    }
+    
+    COMRAM1 0x00410000 0x0010000
+    {
+        LOADADDR NEXT __data_lmastart
+        ADDR NEXT __data_start
+        ;VAR _SDA_BASE_=0x004023e8
+        * (+RW,+ZI)
+        *(.comram1)
+        
+        STACK = 0x00420000
+        VAR _stack_size=0x1000
+        VAR _stackSlave=0x0041F000
+    }
+    
+    COMRAM3 0x0040B800 0x0004800{
+    	  * KEEP(.cmdhead)			;sizeof(T_CMD_HEAD) = 1k
+    	  * KEEP(.scsicmdhead)		;sizeof(T_SCSI_CMD_HEAD) = 512B
+          * KEEP(.scsidatahead)		;sizeof(T_SCSI_DATA_HEAD) = 512B
+          * KEEP(.undocds)			;sizeof(T_BUFFER)  = 512B
+          * KEEP(.combuffer)        ; sizeof(T_BUFFER)  = 512B      
+          * KEEP(.identify)			;sizeof(UN_ATA_INDETIFY_T) = 512B
+          * KEEP(.prdtable)			; sizeof(T_PRD_ENTRY) = 0x10* 0x20 = 512B
+          * KEEP(.fsm_hwd2h)         ;  开启了按FIFO x形式存储时不需要该字节
+          * KEEP(.fsm)				; sizeof(UN_FSM) = 32B
+          * KEEP(.satadc)
+          * KEEP(.scsictrl)
+          * KEEP(.tSataLogCtx)
+          * KEEP(.tqc)
+          * KEEP(.Exbuff)
+    }
+    
+	COMRAM2 0x00420000 0x0004D800
+	{
+		*(.comram2)
+	}
+    
+    RAIDRAM 0x00470000 0x00030000
+    {
+        *(.raidram)
+        *(.UART_FIFO)
+        *(.LCN_MAP)
+    }
+}
