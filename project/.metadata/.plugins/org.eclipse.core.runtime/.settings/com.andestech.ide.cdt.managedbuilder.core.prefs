@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+toolChain/nds32le-elf-mculib-v3m/ldscript/__executable_start=300000
+toolChain/nds32le-elf-mculib-v3m/ldscript/_stack=780000
+toolChain/nds32le-elf-mculib-v3m/ldscript/fileName=C\:\\Users\\Lenovo\\toolchains\\nds32le-elf-mculib-v3m\\nds32le-elf\\lib\\ldscripts\\nds32elf16m.x
+toolChain/nds32le-elf-mculib-v3m/ldscript/lastModified=1489658949000
