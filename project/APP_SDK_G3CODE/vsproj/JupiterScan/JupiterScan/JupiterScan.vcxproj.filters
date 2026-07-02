@@ -1,0 +1,474 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="sata">
+      <UniqueIdentifier>{974e50f7-cd38-4f7e-98e4-1c26d0ce5c53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="syscfg">
+      <UniqueIdentifier>{eaad00a9-3878-4d9e-ae58-6cdc87834882}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sata\src">
+      <UniqueIdentifier>{5a86f256-f3bf-492c-a895-44528b41c8b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sata\inc">
+      <UniqueIdentifier>{eb2ba8f9-09db-458d-95e7-671dbe536cbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sata\inc\driver">
+      <UniqueIdentifier>{e97a7f7c-28ee-4db3-9c4a-20c378b6814e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sata\inc\sata_protocol">
+      <UniqueIdentifier>{db6430f1-41e9-416e-8c26-81d52c0cb881}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sata\inc\scsi">
+      <UniqueIdentifier>{305675d6-ae73-4da7-b14e-ca2714d7cf0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sata\inc\task_manage">
+      <UniqueIdentifier>{a6cf8456-f067-437e-bb98-a5275af10df6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sata\inc\task_process">
+      <UniqueIdentifier>{12bb8d5a-a1fc-4947-bc8f-bf539a7a4306}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sata\inc\uitility">
+      <UniqueIdentifier>{411879af-b674-4c13-a614-b4f66fcdc72c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sata\inc\ata_cmd">
+      <UniqueIdentifier>{eb36765c-769a-42cc-bce7-8a1a072fa20d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sata\src\ata_cmd">
+      <UniqueIdentifier>{92766004-f2d7-455f-b23d-f65c66963250}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sata\src\driver">
+      <UniqueIdentifier>{9a72de07-7f06-4c6c-b467-138643f093f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sata\src\sata_protocol">
+      <UniqueIdentifier>{d2c4e7b6-cc81-491b-9e18-bb01b43423df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sata\src\scsi">
+      <UniqueIdentifier>{adee3e60-f109-41db-b1b1-97bc14f181f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sata\src\task_manage">
+      <UniqueIdentifier>{c9f269fe-b03a-47af-a6b3-906c21068642}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sata\src\task_process">
+      <UniqueIdentifier>{1587c43b-49a3-4469-a682-a61c3f1e3050}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sata\src\uitility">
+      <UniqueIdentifier>{143397ed-dde1-4de5-bd57-c23c053c643e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="syscfg\inc">
+      <UniqueIdentifier>{6e5c98d4-1a65-4cfd-9c22-75d40fa5faed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="syscfg\inc\platform">
+      <UniqueIdentifier>{05d182dd-a459-490e-b37d-4cfb1a8ac46a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="syscfg\inc\startup">
+      <UniqueIdentifier>{1728aa9a-7238-429c-8003-3ff6042627b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="syscfg\src">
+      <UniqueIdentifier>{f9df48f6-4fad-4a13-a057-317631f0de92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="syscfg\src\platform">
+      <UniqueIdentifier>{2e219f60-69bb-4949-bc0d-b071e3b1b541}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="syscfg\src\startup">
+      <UniqueIdentifier>{df4abe2b-4350-48af-977e-556785555d2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FDL">
+      <UniqueIdentifier>{7ff50399-7a75-46f9-ae42-7efe25c701f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HAL">
+      <UniqueIdentifier>{93c84fb4-e4e4-4125-a4b7-7dcc95afe2e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demo">
+      <UniqueIdentifier>{ecfd6817-b306-469c-9c8b-1c603a76abee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demo\inc">
+      <UniqueIdentifier>{e4dc5e63-dbb6-47a1-a81d-1424ec388cfa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demo\src">
+      <UniqueIdentifier>{3c062e7e-608d-4d2c-8920-c7e8d4db9f91}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Sata\inc\ata_cmd\ata_cmd_list.h">
+      <Filter>sata\inc\ata_cmd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Sata\inc\ata_cmd\ata_dco.h">
+      <Filter>sata\inc\ata_cmd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Sata\inc\ata_cmd\ata_fpdma.h">
+      <Filter>sata\inc\ata_cmd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Sata\inc\ata_cmd\ata_general.h">
+      <Filter>sata\inc\ata_cmd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Sata\inc\ata_cmd\ata_gpl.h">
+      <Filter>sata\inc\ata_cmd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Sata\inc\ata_cmd\ata_identify.h">
+      <Filter>sata\inc\ata_cmd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Sata\inc\ata_cmd\ata_power_mg.h">
+      <Filter>sata\inc\ata_cmd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Sata\inc\ata_cmd\ata_security.h">
+      <Filter>sata\inc\ata_cmd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Sata\inc\ata_cmd\ata_smart.h">
+      <Filter>sata\inc\ata_cmd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Sata\inc\ata_cmd\ata_typedef.h">
+      <Filter>sata\inc\ata_cmd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Sata\inc\driver\dma1c.h">
+      <Filter>sata\inc\driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Sata\inc\driver\dsata.h">
+      <Filter>sata\inc\driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Sata\inc\sata_protocol\sata_dev_idle.h">
+      <Filter>sata\inc\sata_protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Sata\inc\sata_protocol\sata_dma_in.h">
+      <Filter>sata\inc\sata_protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Sata\inc\sata_protocol\sata_dma_out.h">
+      <Filter>sata\inc\sata_protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Sata\inc\sata_protocol\sata_fpdma.h">
+      <Filter>sata\inc\sata_protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Sata\inc\sata_protocol\sata_misc.h">
+      <Filter>sata\inc\sata_protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Sata\inc\sata_protocol\sata_pio_in.h">
+      <Filter>sata\inc\sata_protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Sata\inc\sata_protocol\sata_pio_out.h">
+      <Filter>sata\inc\sata_protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Sata\inc\sata_protocol\sata_typedef.h">
+      <Filter>sata\inc\sata_protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Sata\inc\scsi\scsi.h">
+      <Filter>sata\inc\scsi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Sata\inc\task_manage\task_manage.h">
+      <Filter>sata\inc\task_manage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Sata\inc\task_process\task_process.h">
+      <Filter>sata\inc\task_process</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Sata\inc\uitility\uitility.h">
+      <Filter>sata\inc\uitility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\SysCfg\inc\startup\ae210p.h">
+      <Filter>syscfg\inc\startup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\SysCfg\inc\startup\assert_demos.h">
+      <Filter>syscfg\inc\startup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\SysCfg\inc\startup\config.h">
+      <Filter>syscfg\inc\startup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\SysCfg\inc\startup\interrupt.h">
+      <Filter>syscfg\inc\startup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\SysCfg\inc\platform\common.h">
+      <Filter>syscfg\inc\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\SysCfg\inc\platform\mcu.h">
+      <Filter>syscfg\inc\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\SysCfg\inc\platform\regADMCOM.h">
+      <Filter>syscfg\inc\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\SysCfg\inc\platform\regBFC.h">
+      <Filter>syscfg\inc\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\SysCfg\inc\platform\regCPM.h">
+      <Filter>syscfg\inc\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\SysCfg\inc\platform\regDARB.h">
+      <Filter>syscfg\inc\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\SysCfg\inc\platform\regDIU.h">
+      <Filter>syscfg\inc\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\SysCfg\inc\platform\regDMA1.h">
+      <Filter>syscfg\inc\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\SysCfg\inc\platform\regDMA2.h">
+      <Filter>syscfg\inc\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\SysCfg\inc\platform\regDSATA.h">
+      <Filter>syscfg\inc\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\SysCfg\inc\platform\regFC.h">
+      <Filter>syscfg\inc\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\SysCfg\inc\platform\regLDPC.h">
+      <Filter>syscfg\inc\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\SysCfg\inc\platform\regMCU.h">
+      <Filter>syscfg\inc\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\SysCfg\inc\platform\regPadctrl.h">
+      <Filter>syscfg\inc\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\SysCfg\inc\platform\regPMCP.h">
+      <Filter>syscfg\inc\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\SysCfg\inc\platform\regSPI.h">
+      <Filter>syscfg\inc\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\SysCfg\inc\platform\regUART.h">
+      <Filter>syscfg\inc\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\SysCfg\inc\platform\regVMC.h">
+      <Filter>syscfg\inc\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\SysCfg\inc\platform\sg9081.h">
+      <Filter>syscfg\inc\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\SysCfg\inc\platform\system_sg9081.h">
+      <Filter>syscfg\inc\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\APP_HAL_Lib\HAL_Lib\inc\hal_cq.h">
+      <Filter>HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\APP_HAL_Lib\HAL_Lib\inc\hal_define.h">
+      <Filter>HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\APP_HAL_Lib\HAL_Lib\interface\data_type.h">
+      <Filter>HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\APP_HAL_Lib\HAL_Lib\interface\flash_op_cmd.h">
+      <Filter>HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\APP_HAL_Lib\HAL_Lib\interface\hal.h">
+      <Filter>HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\APP_HAL_Lib\HAL_Lib\interface\SumsungSeed.h">
+      <Filter>HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\APP_HAL_Lib\HAL_Lib\interface\ToshibaSeed.h">
+      <Filter>HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\FlashDriver\FDL\inc\fdl_debug.h">
+      <Filter>FDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\FlashDriver\FDL\Interface\flash_driver.h">
+      <Filter>FDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\FlashDriver\FDL\Interface\flash_driver_struct.h">
+      <Filter>FDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\FlashDriver\FDL\Interface\HAL_Interface.h">
+      <Filter>FDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\FlashDriver\FDL\inc\fdl_copy_back.h">
+      <Filter>FDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\FlashDriver\FDL\inc\fdl_erase_block.h">
+      <Filter>FDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\FlashDriver\FDL\inc\fdl_read.h">
+      <Filter>FDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\FlashDriver\FDL\inc\fdl_write.h">
+      <Filter>FDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\FlashDriver\FDL\inc\fdl_task_op.h">
+      <Filter>FDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\FlashDriver\FDL\inc\fdl_irq.h">
+      <Filter>FDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\FlashDriver\FDL\inc\fdl_exception.h">
+      <Filter>FDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\FlashDriver\FDL\Interface\flash_driver_config.h">
+      <Filter>FDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\APP_HAL_Lib\HAL_Lib\inc\hal_adm.h">
+      <Filter>HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\inc\jpt_cmd.h">
+      <Filter>Demo\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\inc\jpt_fdl.h">
+      <Filter>Demo\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\inc\main.h">
+      <Filter>Demo\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\APP_HAL_Lib\HAL_Lib\inc\hal_timer.h">
+      <Filter>HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\APP_HAL_Lib\HAL_Lib\interface\hal_config.h">
+      <Filter>HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\FlashDriver\FDL\inc\fdl_read_retry.h">
+      <Filter>FDL</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\Sata\src\uitility\uitility.c">
+      <Filter>sata\src\uitility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Sata\src\task_process\task_process.c">
+      <Filter>sata\src\task_process</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Sata\src\task_manage\task_manage.c">
+      <Filter>sata\src\task_manage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Sata\src\scsi\scsi.c">
+      <Filter>sata\src\scsi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Sata\src\sata_protocol\sata_define.c">
+      <Filter>sata\src\sata_protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Sata\src\sata_protocol\sata_dev_idle.c">
+      <Filter>sata\src\sata_protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Sata\src\sata_protocol\sata_dma_in.c">
+      <Filter>sata\src\sata_protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Sata\src\sata_protocol\sata_dma_out.c">
+      <Filter>sata\src\sata_protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Sata\src\sata_protocol\sata_fpdma.c">
+      <Filter>sata\src\sata_protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Sata\src\sata_protocol\sata_misc.c">
+      <Filter>sata\src\sata_protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Sata\src\sata_protocol\sata_pio_in.c">
+      <Filter>sata\src\sata_protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Sata\src\sata_protocol\sata_pio_out.c">
+      <Filter>sata\src\sata_protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Sata\src\driver\dma1c.c">
+      <Filter>sata\src\driver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Sata\src\driver\dsata.c">
+      <Filter>sata\src\driver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Sata\src\ata_cmd\ata_cmd_list.c">
+      <Filter>sata\src\ata_cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Sata\src\ata_cmd\ata_dco.c">
+      <Filter>sata\src\ata_cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Sata\src\ata_cmd\ata_fpdma.c">
+      <Filter>sata\src\ata_cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Sata\src\ata_cmd\ata_general.c">
+      <Filter>sata\src\ata_cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Sata\src\ata_cmd\ata_gpl.c">
+      <Filter>sata\src\ata_cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Sata\src\ata_cmd\ata_identify.c">
+      <Filter>sata\src\ata_cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Sata\src\ata_cmd\ata_power_mg.c">
+      <Filter>sata\src\ata_cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Sata\src\ata_cmd\ata_security.c">
+      <Filter>sata\src\ata_cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Sata\src\ata_cmd\ata_smart.c">
+      <Filter>sata\src\ata_cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\SysCfg\src\startup\init-default.c">
+      <Filter>syscfg\src\startup</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\SysCfg\src\startup\init-soc.c">
+      <Filter>syscfg\src\startup</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\SysCfg\src\platform\mcu.c">
+      <Filter>syscfg\src\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\SysCfg\src\platform\system_sg9081.c">
+      <Filter>syscfg\src\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\APP_HAL_Lib\HAL_Lib\src\hal_adm.c">
+      <Filter>HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\APP_HAL_Lib\HAL_Lib\src\hal_cq.c">
+      <Filter>HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\APP_HAL_Lib\HAL_Lib\src\hal_define.c">
+      <Filter>HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\APP_HAL_Lib\HAL_Lib\src\special_function.c">
+      <Filter>HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\FlashDriver\FDL\src\fdl_debug.c">
+      <Filter>FDL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\FlashDriver\FDL\src\flash_driver.c">
+      <Filter>FDL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\APP_HAL_Lib\HAL_Lib\src\hal_fc.c">
+      <Filter>HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\FlashDriver\FDL\src\fdl_copy_back.c">
+      <Filter>FDL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\FlashDriver\FDL\src\fdl_erase_block.c">
+      <Filter>FDL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\FlashDriver\FDL\src\fdl_write.c">
+      <Filter>FDL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\FlashDriver\FDL\src\fdl_read.c">
+      <Filter>FDL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\FlashDriver\FDL\src\fdl_task_op.c">
+      <Filter>FDL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\APP_HAL_Lib\HAL_Lib\src\hal_bfc.c">
+      <Filter>HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\APP_HAL_Lib\HAL_Lib\src\hal_mcu.c">
+      <Filter>HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\FlashDriver\FDL\src\fdl_irq.c">
+      <Filter>FDL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\FlashDriver\FDL\src\fdl_exception.c">
+      <Filter>FDL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\jpt_fdl.c">
+      <Filter>Demo\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\main.c">
+      <Filter>Demo\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\APP_HAL_Lib\HAL_Lib\src\hal_timer.c">
+      <Filter>HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\APP_HAL_Lib\HAL_Lib\src\hal_uart.c">
+      <Filter>HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\APP_HAL_Lib\HAL_Lib\src\hal_pad.c">
+      <Filter>HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\APP_HAL_Lib\HAL_Lib\src\hal_cpm.c">
+      <Filter>HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\APP_HAL_Lib\HAL_Lib\src\hal_pmcp.c">
+      <Filter>HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\FlashDriver\FDL\src\fdl_read_retry.c">
+      <Filter>FDL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\FlashDriver\FDL\src\fdl_read_retry_flash.c">
+      <Filter>FDL</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
