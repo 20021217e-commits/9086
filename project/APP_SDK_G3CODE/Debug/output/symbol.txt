@@ -1,0 +1,651 @@
+         U DSATA_G3_TaskRouter
+         U FDL_Test_Analyse_Exception
+         U FTL_EraseBlockInit
+         U Fdl_PullUpCeAndRd
+00000000 a RAIDRAM_SIZE
+00000000 W _RELAX_END_	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/main.c:284
+00000000 t exception_vector	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/main.c:284
+000000a4 A LOAD_AREA1_SIZE
+00001000 A _stack_size
+0000210c a COMRAM3_SIZE
+00002ec4 a COMRAM1_SIZE
+00015de8 a EXEC_SIZE
+0004b400 a COMRAM2_SIZE
+000661cc A EILM_SIZE
+003d8000 a LOAD_AREA1_BEGIN
+003d8000 a NDS_SAG_LMA_LOAD_AREA1
+003d8000 a __CODE_START
+003d8000 A __G3_VECTOR_ADDR
+003d80a4 a EILM_BEGIN
+003d80a4 t EXEC_BEGIN	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_common.c:248
+003d80a4 T Fdl_ConvertAddrInfo	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_common.c:247
+003d80a4 a NDS_SAG_LMA_EILM
+003d80a4 A __init_lmaend
+003d816c T Fdl_ConvertColAddr	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_common.c:283
+003d8194 T Fdl_ClearExceptionState	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_common.c:668
+003d81f0 T Fdl_SearchOfstByAddr	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_common.c:1118
+003d8298 T ExceptionWritePageToFlash
+003d829a T FDL_FCCQIRQHandler
+003d840e T FDL_DMAIRQHandler	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_irq.c:99
+003d8430 T HW14_ISR	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_irq.c:106
+003d843c T HW15_ISR	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_irq.c:111
+003d8448 T HW16_ISR	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_irq.c:116
+003d8454 T HW17_ISR	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_irq.c:121
+003d8460 T HW6_ISR	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_irq.c:126
+003d846c T HW7_ISR	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_irq.c:131
+003d8478 T HW8_ISR	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_irq.c:136
+003d8484 T HW9_ISR	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_irq.c:141
+003d8490 T HW5_ISR	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_irq.c:146
+003d84cc T HW20_ISR	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_irq.c:164
+003d85ba T Fdl_MCUMultiPlnReadCmd	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_mcu_op.c:78
+003d8644 T Fdl_MCUReadCmd	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_mcu_op.c:112
+003d86ce T Fdl_MCUSendPreReadCmd	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_mcu_op.c:134
+003d870a T Fdl_MCUReadCacheCmd	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_mcu_op.c:146
+003d8736 T Task_MultiCEForContinue	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_read.c:126
+003d8768 T Retry_SaveTaskException	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_read_retry.c:1103
+003d877a T Retry_JudgeDmaMask	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_read_retry.c:1113
+003d87ea T Retry_AnalyzeExceptionInfo
+003d8834 T Retry_ReadGetDmaInfor	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_read_retry.c:1229
+003d890e T Retry_CopybackGetDmaInfor	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_read_retry.c:1273
+003d89a0 T Retry_PreReadGetDmaInfo	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_read_retry.c:1295
+003d8aaa T Retry_GetDmaInfor	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_read_retry.c:1345
+003d8b44 T Retry_ReadDMA	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_read_retry.c:1387
+003d8bb2 T RetryInfoRcd	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_read_retry.c:1401
+003d8be4 T Retry_MultiDMA	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_read_retry.c:1410
+003d9226 T Retry_FailDmaCnt	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_read_retry.c:1984
+003d924c T Retry_CQPauseHandle	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_read_retry.c:1999
+003d92c2 T Retry_FailRcdType	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_read_retry.c:2015
+003d9314 T Retry_CQRecover	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_read_retry.c:2026
+003d9356 T Retry_RestartCQ	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_read_retry.c:2077
+003d9456 T FDL_ReadRetry	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_read_retry.c:2245
+003d9484 T FDL_RetryRecordFailInfor	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_read_retry.c:2465
+003d9684 T ChanTaskErgodic	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_task_op.c:18
+003d9756 T TaskErgodicReadWrite	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_task_op.c:451
+003d989c T RunFtlTaskErgodic	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_task_op.c:757
+003d98c8 T WirteStartDMA2ByCQ
+003d9968 T TaskConvertWritePageToFlash	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_write.c:136
+003d9cd0 T Fdl_GetWriteFailInfor	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_write_fail_handler.c:12
+003d9d08 T FDL_SearchOfstByBlkAddr	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_write_fail_handler.c:32
+003d9d6e T Fdl_EraseFailHandler	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_write_fail_handler.c:403
+003d9dd0 T FDL_Init	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/flash_driver.c:25
+003d9e8e T FDL_FlashWPCtrl
+003d9ebc T FDL_FlashIFModeInit	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/flash_driver.c:154
+003d9f0e T FDL_WaitTaskDone	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/flash_driver.c:738
+003d9fd4 T FDL_CheckMultiLunReady	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/flash_driver.c:834
+003da098 T FDL_CreateTask
+003da102 T FDL_JointWritePages	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/flash_driver.c:2131
+003da1d2 t HAL_ADMWaitDMADone.part.0	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_adm.c:302
+003da1ea T HAL_ADMGetJointMode	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_adm.c:71
+003da1fa T HAL_ADMStartDMA1	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_adm.c:117
+003da264 T HAL_MCStartDMA1	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_adm.c:157
+003da2be T HAL_MCWaitDMA1Done	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_adm.c:247
+003da2ce T HAL_ADMStartDMA2	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_adm.c:256
+003da390 T HAL_ADMWaitDMADone
+003da3f0 T HAL_BFCInit	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_bfc.c:8
+003da408 T HAL_BFCGetBuffStatus	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_bfc.c:18
+003da424 T HAL_BFCSetBuffStatus	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_bfc.c:41
+003da46a T HAL_RTY_BFCSetBuffStatus	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_bfc.c:72
+003da4b0 T HAL_RTY_BFCSetBuffStatusBit	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_bfc.c:110
+003da4fa T HAL_CPMGetClkSource	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_cpm.c:33
+003da506 T HAL_CPMGetTrx2Period	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_cpm.c:38
+003da510 T HAL_SystemInit	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_cpm.c:316
+003da7fe T HAL_CQGetIdleSpace
+003da810 T HAL_CQWaitIdleSpace	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_cq.c:14
+003da830 T HAL_CQWaitDone	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_cq.c:29
+003da83c T HAL_CQChipSelect	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_cq.c:42
+003da8ca T HAL_CQSendAddr	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_cq.c:84
+003da8de T HAL_CQSendColAddr
+003da8f2 T HAL_CQSendRowAddr	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_cq.c:94
+003da90c T HAL_CQSendRowAddr_4Byte	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_cq.c:99
+003da92a T HAL_CQSend5Addr	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_cq.c:105
+003da950 T HAL_CQSend6Addr	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_cq.c:112
+003da976 T HAL_CQSendRndAddr	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_cq.c:119
+003da9ae T HAL_CQSendFlashCmd
+003da9c2 T HAL_CQCfgLogicNum	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_cq.c:155
+003da9e2 T HAL_CQCfgLogicNumExt	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_cq.c:162
+003daa02 T HAL_CQCheckHold	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_cq.c:184
+003daa4c T HAL_CQCheckHoldOnly	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_cq.c:202
+003daa62 T HAL_CQCheckIOStatus	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_cq.c:242
+003daa98 T HAL_CQCheckStsCfg	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_cq.c:270
+003dab64 T HAL_CQCheckRealDone	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_cq.c:340
+003dab76 T HAL_CQStartDMA2Write	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_cq.c:409
+003dabf0 T HAL_CQSetUdBaseAddr	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_cq.c:504
+003dac12 T HAL_CQSetUdAttachSize	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_cq.c:531
+003dac30 T HAL_CQSetUdLen	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_cq.c:542
+003dac4e T HAL_CQSetUd	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_cq.c:496
+003dac7e T HAL_CQSetRndSeed	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_cq.c:650
+003dac9c T HAL_CQSetDMAInfoAddr	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_cq.c:689
+003dacbe T HAL_CQStartDMA2	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_cq.c:448
+003dad62 T HAL_McuSetUd	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_cq.c:695
+003dadbc T HAL_McuSetMask	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_cq.c:705
+003dadce T HAL_McuSetRndSeed	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_cq.c:711
+003dae00 T HAL_McuSendWRPulse	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_cq.c:747
+003dae1a T HAL_McuSendReadPluse	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_cq.c:754
+003dae40 T HAL_Init	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_define.c:44
+003db112 T HAL_NFResetFlash	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_fc.c:47
+003db13e T HAL_NFReadFlashID	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_fc.c:100
+003db1fc T HAL_NFSetExtFeature	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_fc.c:396
+003db246 T HAL_MCUSendNByteDataByDqs	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_fc.c:502
+003db310 T HAL_McuSetFeature	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_fc.c:226
+003db36a T HAL_NFSetFeature	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_fc.c:304
+003db37a T HAL_McuSendReadPluseGetData	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_fc.c:530
+003db40c T HAL_McuGetFeature	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_fc.c:251
+003db442 T HAL_NFGetFeature
+003db44a T HAL_NFGetExtFeature	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_fc.c:350
+003db486 T HAL_MCUSendDataByDqs_GAI	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_fc.c:578
+003db58e T HAL_NFChkStCtrl	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_fc.c:714
+003db5b4 T HAL_SetOverFlowThresh	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_fc.c:724
+003db5ec T HAL_NFGetOrClrChkStsHwFlag	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_fc.c:747
+003db67a t HAL_LDPC_ParityChangeCfg.part.0	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_ldpc.c:184
+003db70c T HAL_LDPC_ParityChangeCfg
+003db7a8 T HAL_MCUSetGieState	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_mcu.c:9
+003db7c0 T HAL_MCU_SetCe
+003db7d8 T HAL_MCU_SendCmd	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_mcu.c:33
+003db7f8 T HAL_MCU_SendOneAddr	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_mcu.c:39
+003db818 T HAL_MCU_SendTwoAddr	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_mcu.c:45
+003db830 T HAL_MCU_SendThreeAddr	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_mcu.c:56
+003db856 T HAL_MCUCheckStatus	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_mcu.c:87
+003db8da T HAL_MCU_GetOwnership	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_mcu.c:129
+003db914 T HAL_MCU_ReleaseOwnership	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_mcu.c:151
+003db92a T HAL_LED_Config	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_pad.c:261
+003db9ce T HAL_PMCPInit	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_pmcp.c:25
+003db9d0 T HAL_PMCPWaitDone	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_pmcp.c:57
+003db9fa T HAL_PMCPBitMapCountExtFilter_Cfg
+003dba7a T HAL_PMCPBitMapCountExtFilter	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_pmcp.c:754
+003dbac4 T HAL_PMCPMemorySet_Cfg
+003dbb16 T HAL_PMCPMemorySet	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_pmcp.c:1469
+003dbb40 T DMAC_DMA1WaitDone	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/driver/dma1c.c:27
+003dbbb2 T WaitBuffStatusClr	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/driver/dma1c.c:81
+003dbbe4 T DMAC_DMA1Start	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/driver/dma1c.c:97
+003dbce0 T DSATA_UpdateSystemClockInfo	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/driver/dsata.c:829
+003dbcfc T DSATA_RegisteInterfaceInfo	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/driver/dsata.c:842
+003dbd58 T DSATA_TransferStart	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/driver/dsata.c:2669
+003dbd6e T Scsi_RegisteInterfaceInfo	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/scsi/scsi.c:38
+003dbd92 T Wait4_Ftl2SataTaskDone	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/task_manage/task_manage.c:825
+003dbdbc T NCQ_CmdReorderQueue	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/task_manage/task_manage.c:902
+003dbe8c T NCQ_GetQueueLen	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/task_manage/task_manage.c:1046
+003dbeac T NCQ_QueueInquire	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/task_manage/task_manage.c:1176
+003dbeca T NCQ_GetParam	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/task_manage/task_manage.c:1220
+003dbee2 T NCQ_QueuePop	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/task_manage/task_manage.c:1247
+003dbf56 T NCQ_QueueMulPop	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/task_manage/task_manage.c:1332
+003dc020 T printch	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/debug.c:37
+003dc02c T printstr	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/debug.c:46
+003dc042 T printdec
+003dc060 T printhex
+003dc092 T PRINT_TIME	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/debug.c:107
+003dc0e6 T PRINT_TXT	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/debug.c:233
+003dc11e T PRINT_DEC	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/debug.c:243
+003dc186 T PRINT_HEX	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/debug.c:266
+003dc1ee T stringformat	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/debug.c:399
+003dc20e T PRINT	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/debug.c:423
+003dc288 T GIE_ENABLE
+003dc292 T GIE_DISABLE	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/mcu.c:29
+003dc2a0 T __enable_performance	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/mcu.c:37
+003dc2b8 T __get_pfm_count
+003dc2be T __disbale_performance
+003dc2c6 T __get_sda_base	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/mcu.c:58
+003dc2d4 T __restore_sda_base	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/mcu.c:71
+003dc2d8 T __get_PRIMASK	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/mcu.c:83
+003dc2e4 T __set_PRIMASK	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/mcu.c:90
+003dc2fc T __delay_us	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/mcu.c:102
+003dc318 T __delay_ms	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/mcu.c:109
+003dc334 T g0_disable	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/mcu.c:116
+003dc340 T g0_enable	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/mcu.c:121
+003dc34c T __reset_memory_poweron	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/mcu.c:161
+003dc43c T NVIC_EnableIRQ	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/mcu.c:230
+003dc452 T NVIC_DisableIRQ	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/mcu.c:235
+003dc46a T NVIC_ClearPendingIRQ	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/mcu.c:240
+003dc480 T GetSysTickCnt
+003dc4e2 T UpdateSystemClock	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/system_sg9081.c:171
+003dc500 T delay_us	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/system_sg9081.c:247
+003dc52e T delay_ms	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/system_sg9081.c:273
+003dc55c T SystemInit	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/system_sg9081.c:316
+003dc654 T UART_Init	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/uart.c:20
+003dc718 T UART_SendMsg	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/uart.c:63
+003dc74e T Delay	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/uitility.c:46
+003dc75a T U32MemSet	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/uitility.c:134
+003dc768 T U08MemSet	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/uitility.c:149
+003dc776 T U08MemCopy	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/uitility.c:167
+003dc788 t exception_handler	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:72
+003dc788 t exception_vector_end	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:72
+003dc794 t ISR_TABLE	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:72
+003dc814 t OS_Trap_TLB_Fill	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:121
+003dc81a t OS_Trap_PTE_Not_Present	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:128
+003dc820 t OS_Trap_TLB_Misc	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:135
+003dc826 t OS_Trap_TLB_VLPT_Miss	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:142
+003dc82c t OS_Trap_Machine_Error	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:149
+003dc832 t OS_Trap_Debug_Related	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:155
+003dc838 t OS_Trap_General_Exception	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:160
+003dc896 t OS_Trap_Syscall	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:168
+003dc8ec t common_ISR_wrapper	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:174
+003dc96a t OS_Trap_Interrupt_UNDEF	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:197
+003dc96c t OS_Trap_Interrupt_HW0	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+003dc974 t OS_Trap_Interrupt_HW1	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+003dc97c t OS_Trap_Interrupt_HW2	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+003dc984 t OS_Trap_Interrupt_HW3	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+003dc98c t OS_Trap_Interrupt_HW4	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+003dc994 t OS_Trap_Interrupt_HW5	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+003dc99c t OS_Trap_Interrupt_HW6	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+003dc9a4 t OS_Trap_Interrupt_HW7	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+003dc9ac t OS_Trap_Interrupt_HW8	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+003dc9b4 t OS_Trap_Interrupt_HW9	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+003dc9bc t OS_Trap_Interrupt_HW10	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+003dc9c4 t OS_Trap_Interrupt_HW11	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+003dc9cc t OS_Trap_Interrupt_HW12	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+003dc9d4 t OS_Trap_Interrupt_HW13	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+003dc9dc t OS_Trap_Interrupt_HW14	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+003dc9e4 t OS_Trap_Interrupt_HW15	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+003dc9ee t OS_Trap_Interrupt_HW16	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+003dc9f8 t OS_Trap_Interrupt_HW17	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+003dca02 t OS_Trap_Interrupt_HW18	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+003dca0c t OS_Trap_Interrupt_HW19	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+003dca16 t OS_Trap_Interrupt_HW20	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+003dca20 t OS_Trap_Interrupt_HW21	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+003dca2a t OS_Trap_Interrupt_HW22	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+003dca34 t OS_Trap_Interrupt_HW23	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+003dca3e t OS_Trap_Interrupt_HW24	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+003dca48 t OS_Trap_Interrupt_HW25	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+003dca52 t OS_Trap_Interrupt_HW26	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+003dca5c t OS_Trap_Interrupt_HW27	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+003dca66 t OS_Trap_Interrupt_HW28	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+003dca70 t OS_Trap_Interrupt_HW29	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:200
+003dca7c T _start	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/crt0.S:228
+003dcab8 t Default_Handler	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:126
+003dcab8 W HW0_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W HW10_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W HW11_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W HW12_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W HW13_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W HW18_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W HW19_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W HW1_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W HW21_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W HW22_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W HW23_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W HW24_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W HW25_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W HW26_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W HW27_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W HW28_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W HW29_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W HW2_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W HW30_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W HW31_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W HW3_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W HW4_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W SW0_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP0_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP10_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP11_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP12_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP13_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP14_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP15_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP16_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP17_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP18_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP19_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP1_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP20_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP21_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP22_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP23_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP24_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP25_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP26_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP27_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP28_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP29_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP2_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP30_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP31_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP32_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP33_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP34_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP35_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP36_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP37_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP38_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP39_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP3_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP40_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP41_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP42_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP43_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP44_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP45_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP46_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP47_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP48_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP49_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP4_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP50_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP51_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP52_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP53_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP54_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP55_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP56_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP57_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP58_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP59_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP5_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP60_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP61_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP62_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP63_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP6_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP7_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP8_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcab8 W VEP9_ISR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:127
+003dcac0 T __c_init	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:141
+003dcae6 T __cpu_init	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:189
+003dcb62 T __init	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:293
+003dcb84 T SysCall_Handler	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:344
+003dcb84 W syscall_handler	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:345
+003dcb98 T Tlb_exception_handler	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:357
+003dcb98 W tlb_exception_handler	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:358
+003dcbac T SysError_IRQHandler	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:371
+003dcbac W error_exception_handler	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-default.c:372
+003dcc7a T _nds32_init_mem	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-soc.c:32
+003dcc7c T __soc_init	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/startup/init-soc.c:71
+003dcc7e T TaskQueuedSqueHandle
+003dccfa T FTL_NCQNewCmdInQuire
+003dcd7e T DummyLgRdWrCtrl	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/CmdHandle.c:155
+003dcdac T DummyRW_Process	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/CmdHandle.c:178
+003dce4c T FTL_NCQCmdHandle	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/CmdHandle.c:234
+003dce5c T FDL_Test_SetHwTempVar	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/fdl_test.c:124
+003dd026 T FDL_Test_UDPInit	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/fdl_test.c:199
+003dd27e T FDL_Test_MptoolUDPHwReg	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/fdl_test.c:418
+003dd2ba T FDL_Test_MptoolUDPFlashOperParam	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/fdl_test.c:430
+003dd326 T FDL_Test_MptoolUDPFlashParam	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/fdl_test.c:466
+003dd5be T FDL_Test_Init	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/fdl_test.c:723
+003dd6a6 T FDL_CMD_C0_FDLInit	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/fdl_test.c:782
+003dd6d0 T FDL_Test_CheckDevice	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/fdl_test.c:5357
+003dd86a T CQ_WaitDone	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/fdl_test.c:5542
+003dd896 T FTL_Initial	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/ftl.c:75
+003dd898 T FTL_NCQWrite	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/ftl.c:134
+003dd930 T FA_ADMInit	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/ftl.c:645
+003dd98c T FTL_NCQRead	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/ftl.c:663
+003ddacc T FTL_LogWrite	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/ftl.c:763
+003ddad6 T LgRdWrCtrl	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/ftl.c:785
+003ddb16 T FTL_SATAErrorHandle	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/ftl.c:1177
+003ddb2e T FTL_ReadRetryFail	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/ftl.c:2222
+003ddb30 T FTL_WriteFail	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/ftl.c:2227
+003ddb40 T FA_Flash_Info_Init	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:2135
+003dde96 T HAL_Delay_ms	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:2229
+003ddec4 T RS_Buff_Init	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:2246
+003ddeee T RS_Indx_Increase	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:2254
+003ddf00 T RS_SaveStatusInfo	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:2260
+003ddf38 T RS_CheckStatusWithSave	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:2266
+003ddfcc T RS_Report	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:2327
+003ddffa T FA_SendOprModeCmd
+003de01c T FA_RecordRB	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:5292
+003de078 T MultiPlane_WritePage	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:3407
+003de23c T FA_WriteBlk	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:4092
+003de2d4 T FA_WritePage_WoPreCMD	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:5309
+003de4d8 T FA_WritePage	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:6032
+003de4e0 T FA_SubReadData_ParameterPage	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:6043
+003de5a8 T FA_SubReadData_WoPreCMD	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:6085
+003de75a T FA_ReadData	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:6561
+003de7ec T MultiPlane_Erase	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:6723
+003de810 T FA_ReadParameterPage	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:6738
+003de87c T FA_EraseBlk	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:6757
+003de9b0 T FA_Universal	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:6987
+003ded94 T FA_SetFeature	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:7184
+003dee02 T FA_GetFeature	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:7256
+003dee46 T FA_ReadID	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:7281
+003def34 T FA_SubReadData_ReadUID	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:7365
+003defde T FA_ReadUID	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:7345
+003df04a T FA_NCQReadData	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:7441
+003df1a2 T FA_SetOffset	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:7834
+003df2a4 T FA_COPYBACKWrite	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:8178
+003df534 T FA_ReadDisturb	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:8896
+003df678 T FA_FindOV_Init	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:9059
+003df9f2 T DataMove	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:10354
+003dfa9e T Get_Page_Retry_Error	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:10340
+003dfac6 T DataMove_Cw	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:10417
+003dfb80 T Get_Page_Retry_Error_Cw	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:10347
+003dfbb0 T SetOffsetForFindOV	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:10481
+003dfcc0 T ShortSeek	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:10120
+003dfda6 T ShortSeek_Cw	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:10230
+003dfea0 T FA_FindOV	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:9218
+003e1412 T FA_GetExtendedFA	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:10640
+003e14ec T FA_SetExtendedFA	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:10694
+003e1562 T FA_SetParamter	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:10715
+003e15f4 T FA_GetParamter	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:10746
+003e1670 T FA_Reset	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:10793
+003e16c2 T FA_CheckBlkData_ReadData	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:10815
+003e1772 T FA_CheckBlkData	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:10841
+003e182e T HAL_ReadPage_WithNoDataOut	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:10881
+003e1894 T ReadPage_WithNoDataOut	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:10953
+003e18d2 T FA_HighTempSocketInit	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:11021
+003e196e T FA_SocketSetTemperature	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:11196
+003e19de T FA_OpenSocketFan	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:11225
+003e19f0 T FA_CloseSocketFan	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:11231
+003e1a04 T FA_SocketFanSwitch	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:11138
+003e1a54 T FA_OpenSocketHeater	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:11237
+003e1a66 T FA_CloseSocketHeater	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:11243
+003e1a7a T FA_SocketHeaterSwitch	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:11167
+003e1ace T FA_TMPSensorSetLevel	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:11249
+003e1b32 T FA_TMPSensorSetSDAMode	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:11273
+003e1b9e T FA_TMPSensorStart	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:11298
+003e1be4 T FA_TMPSensorStop	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:11310
+003e1c1a T FA_TMPSensorReadSDA	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:11320
+003e1c52 T FA_TMPSensorWriteByte	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:11334
+003e1cd8 T FA_TMPSensorReadByte	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:11371
+003e1d60 T FA_TMPSensorGetTemp	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:11401
+003e1dd8 T FA_HighTempSocketReadTemp	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:11060
+003e1eaa T FA_HeaterOperationCalculate
+003e1f7e T PIDUpdateCurrentTemperature	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:11578
+003e1fec T IsHigherTemperature	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:11605
+003e2014 T FA_HeaterControl	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:11433
+003e213c T FA_OfflineTaskInit	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:11691
+003e2258 T FA_Offline_WriteBlock_ver1	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:11904
+003e2326 T FA_PE_offline	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:11769
+003e2450 T FA_OfflineTaskInterrupt	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:12447
+003e251c T FA_GPIOCTRL_FUNC
+003e2584 T FA_GPIOCTRL_PS
+003e25d0 T FA_GPIOCTRL_PE
+003e2620 T FA_GPIOCTRL_MODE
+003e266c T FA_GPIOCTRL_DATA
+003e26b8 T FA_GPIOCTRL	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:12584
+003e2820 T GetRomData	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/interface.c:161
+003e28a0 T INTF_Di_TaskProcess
+003e29a2 T INTF_Hi_NoneDataTaskProcess
+003e2a64 T INTF_TaskQueuedProcess	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/interface.c:89
+003e2b0e T INTF_Di_DataProcess	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/interface.c:386
+003e2b38 T LinkChangeHandle	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/main.c:222
+003e2b44 T InterfaceFatalErrorHandle	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/main.c:269
+003e2b50 T ScsiIntCmdHandle	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/main.c:293
+003e2b94 T ScsiIdleCmdHandle	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/main.c:327
+003e2be2 T register_sata_itf	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/main.c:67
+003e2c44 T FA_GPIOInit	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/main.c:104
+003e2d28 T main	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/main.c:139
+003e2dd6 T MemCopy	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/pri_cmd.c:14
+003e2dee T HostDataTransfer	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/pri_cmd.c:22
+003e2e0a T HostCmdResponse	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/pri_cmd.c:28
+003e2e1c T Scsi_JptSwitchHandle	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/pri_cmd.c:187
+003e2e40 T memset
+003e2e84 T strlen
+003e2e90 t vsprintf_help
+003e2e9c T vsprintf
+003e2eb8 T do_printf
+003e3394 t sep_frac
+003e33ce T _printf_float
+003e3b5c T strcpy
+003e3b94 T abs
+003e3b9c T __lshrdi3	/home/sqa/build-ast300/build-toolchain/build-2017-03-15/source-packages/gcc-4.9.3-bsp-v4_1_0-branch/libgcc/libgcc2.c:403
+003e3bc4 T __ashldi3	/home/sqa/build-ast300/build-toolchain/build-2017-03-15/source-packages/gcc-4.9.3-bsp-v4_1_0-branch/libgcc/libgcc2.c:431
+003e3bf0 r SG_FC_BASE_ARRY	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform/sg9081.h:61
+003e3c00 r SG_DMA2_BASE_ARRY	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform/sg9081.h:50
+003e3cac r SG_FC_BASE_ARRY	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform/sg9081.h:61
+003e3cbc r SG_DMA2_BASE_ARRY	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform/sg9081.h:50
+003e3d34 r SG_FC_BASE_ARRY	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform/sg9081.h:61
+003e3d44 r SG_DMA2_BASE_ARRY	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform/sg9081.h:50
+003e3dcc r SG_FC_BASE_ARRY	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform/sg9081.h:61
+003e3ddc R PAGE_STAT_PRO_FAIL_IN_PLN	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_write_fail_handler.c:5
+003e3de0 r SG_FC_BASE_ARRY	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform/sg9081.h:61
+003e3e4c r __func__.10294
+003e3e68 r SG_FC_BASE_ARRY	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform/sg9081.h:61
+003e3e78 r SG_DMA2_BASE_ARRY	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform/sg9081.h:50
+003e3ed8 r SG_DMA2_BASE_ARRY	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform/sg9081.h:50
+003e3ee8 R SumsungSeedTLC	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/interface/SumsungSeed.h:99
+003e40e8 R SumsungSeedSLC	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/interface/SumsungSeed.h:10
+003e4194 r SG_FC_BASE_ARRY	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform/sg9081.h:61
+003e41a4 r SG_DMA2_BASE_ARRY	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform/sg9081.h:50
+003e41b8 R HAL_LDPCParityLen	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_define.c:9
+003e41c4 R HAL_LDPCModeList	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_define.c:8
+003e41cc r SG_FC_BASE_ARRY	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform/sg9081.h:61
+003e41dc r SG_DMA2_BASE_ARRY	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform/sg9081.h:50
+003e41ec r SG_FC_BASE_ARRY	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform/sg9081.h:61
+003e41fc r SG_DMA2_BASE_ARRY	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform/sg9081.h:50
+003e420c r .LC0
+003e4210 r SG_FC_BASE_ARRY	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform/sg9081.h:61
+003e469c r SG_PMCP_BASE_ARRY	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform/sg9081.h:67
+003e46e8 R dRDCmdHead	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/scsi/scsi.c:32
+003e4708 R dWRCmdHead	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/scsi/scsi.c:26
+003e4728 R bFwVersionG3	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/scsi/scsi.c:24
+003e4750 R bFwVersionG0	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/scsi/scsi.c:22
+003e47c4 R HEX_CHAR	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/debug.c:465
+003e47d4 R LPS_STATE	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/debug.c:377
+003e484c R TRSP_TYPE	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/debug.c:359
+003e4978 R I_TYPE	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/debug.c:348
+003e4a18 R General_exception	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/debug.c:333
+003e4cac R Machine_error	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/debug.c:324
+003e4dd8 R TLB_misc	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/debug.c:316
+003e4eac r SG_UART_BASE_ARRY	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform/sg9081.h:56
+003e4f38 r __func__.7104
+003e4f4c r __func__.7093
+003e4f64 r __func__.7088
+003e58cc R dHAL_Mtx_10_B	/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc/ldpc_matrx.h:1531
+003e654c R dHAL_Mtx_10_A	/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc/ldpc_matrx.h:1509
+003e676c R dHAL_Mtx_10_P2	/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc/ldpc_matrx.h:1352
+003e70fc R dHAL_Mtx_10_P1	/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc/ldpc_matrx.h:1273
+003e75ac R dHAL_Mtx_9_B	/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc/ldpc_matrx.h:1188
+003e7fcc R dHAL_Mtx_9_A	/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc/ldpc_matrx.h:1167
+003e81ec R dHAL_Mtx_9_P2	/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc/ldpc_matrx.h:1011
+003e8b5c R dHAL_Mtx_9_P1	/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc/ldpc_matrx.h:932
+003e8ffc R dHAL_Mtx_8_B	/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc/ldpc_matrx.h:864
+003e97fc R dHAL_Mtx_8_A	/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc/ldpc_matrx.h:842
+003e9a1c R dHAL_Mtx_8_P2	/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc/ldpc_matrx.h:689
+003ea35c R dHAL_Mtx_8_P1	/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc/ldpc_matrx.h:611
+003ea7ec R dHAL_Mtx_7_B	/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc/ldpc_matrx.h:557
+003eae0c R dHAL_Mtx_7_A	/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc/ldpc_matrx.h:534
+003eb02c R dHAL_Mtx_7_P2	/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc/ldpc_matrx.h:382
+003eb94c R dHAL_Mtx_7_P1	/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc/ldpc_matrx.h:305
+003ebdcc R dHAL_Mtx_5_B	/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc/ldpc_matrx.h:276
+003ec0ec R dHAL_Mtx_5_A	/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc/ldpc_matrx.h:251
+003ec34c R dHAL_Mtx_5_P2	/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc/ldpc_matrx.h:87
+003ecd2c R dHAL_Mtx_5_P1	/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc/ldpc_matrx.h:11
+003ed18c r SG_FC_BASE_ARRY	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform/sg9081.h:61
+003ed19c r SG_DMA2_BASE_ARRY	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform/sg9081.h:50
+003ed4a4 r SG_DMA2_BASE_ARRY	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform/sg9081.h:50
+003edbf8 r SG_FC_BASE_ARRY	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform/sg9081.h:61
+003edc08 r SG_DMA2_BASE_ARRY	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/inc/platform/sg9081.h:50
+003edd38 R bScanVersion	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/main.c:44
+003edd60 R code_name	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/main.c:43
+003edd64 r PrivCmdTip	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/pri_cmd.c:34
+003edea0 A __data_lmastart
+003f8000 a __CODE_END
+00400000 A __G0_VECTOR_ADDR
+0040b800 b COMRAM3_BEGIN
+0040b800 D tCmdHead	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/driver/dsata.c:67
+0040bc00 D tScsiCmdHead	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/scsi/scsi.c:18
+0040be00 D tScsiDataHead	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/scsi/scsi.c:19
+0040c000 D tSyncBuffer	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/sata_protocol/sata_define.c:29
+0040c200 D tAsyncBuffer	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/sata_protocol/sata_define.c:30
+0040c400 D unAtaIdentify	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/ata_cmd/ata_identify.c:57
+0040c600 D tPrdTbls	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/driver/dsata.c:74
+0040c800 D arrunHWD2HFS	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/driver/dsata.c:69
+0040d000 D unFsmBuff	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/driver/dsata.c:76
+0040d020 D tSataDC	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/sata_protocol/sata_define.c:31
+0040d4b0 D tScsiCtl	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/scsi/scsi.c:17
+0040d4e0 D tTQC	/cygdrive/D/development/Automation/9086BB/9086/Sata/src/sata_protocol/sata_define.c:32
+00410000 d COMRAM1_BEGIN
+00410000 D __data_start
+00410000 D gFdlTskStatus	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_task_op.c:15
+00410004 D Bit_Selecter	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:86
+0041000c D pid	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:52
+0041001c D SlowStartThreshold	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:47
+0041001e D LinearPeriod	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:46
+00410020 S __bss_start
+00410020 S _edata
+00410020 S bTaskType	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/interface.c:22
+00410021 S bIsDummyRWEn	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/interface.c:23
+00410024 S bCqTimeoutFlag	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_common.c:17
+00410028 S bPhyToLogChan	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_read_retry.c:45
+0041002c S bPhyCeToLogLun	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_read_retry.c:46
+00410030 S g_dPAD_dTSEL_CTRL	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/flash_driver.c:20
+00410034 S dResultBuff	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_pmcp.c:19
+00410038 S g_tPendingCmdList	/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc/CmdHandle.h:53
+00410040 S FaRsIndx	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:37
+00410048 S uCapacity	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/interface.c:21
+00410050 B bFlashInitFail	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_read_retry.c:44
+00410054 B bRetryPersistence	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_read_retry.c:28
+00410064 b time.8402
+00410068 B bG_OffsetStep	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/fdl_test.c:5765
+0041006c B bpCQFIFODeep	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/fdl_test.c:27
+00410084 b bSetReadRetry.11759
+00410085 b bCBBuffIdx	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/fdl_test.c:3833
+00410088 B Offline_RSBlkIndex	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:81
+0041008a B Offline_RSRecIndex	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:80
+0041008c B Offline_RSBlkCnt	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:79
+0041008d B Offline_RSRecord	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:77
+0041008e B Offline_RBMode	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:76
+0041008f B Offline_Program_StartSeed	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:75
+00410090 B Offline_OperationStage	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:74
+00410091 B Offline_PlaneCnt	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:73
+00410092 B Offline_OperationMode	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:72
+00410093 B Offline_Chip	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:71
+00410094 B Offline_Chan	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:70
+00410095 B Offline_Program_Type	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:69
+00410096 B Offline_PE_Stage_counter	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:68
+00410098 B Offline_PE_counter	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:67
+0041009c B IsManualHeating	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:51
+0041009d B IsUpdating	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:50
+0041009e B CurTempSensor2	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:49
+004100a0 B CurTempSensor1	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:48
+004100a2 B IsFanOn	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:45
+004100a3 B IsHeaterOn	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:44
+004100a4 B HTCtrlCnt	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:43
+004100a6 B IsHeating	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:42
+004100a7 B IsHTControlling	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:41
+004100a8 B SysCallCounter	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:40
+004100ac b cnt.9068
+004100b0 b num_bk.9069
+004100b4 B flag_ReadDisturb_offline	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/main.c:46
+004100b5 B flag_PE_offline	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/main.c:45
+004100b8 B _NDS32_REENT__errno
+004100c0 B bStateMachine	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_read_retry.c:30
+004100d0 B tRetryCtrl	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_read_retry.c:16
+004101d0 B bBestOption	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_read_retry.c:31
+004101e0 B bClstExcpInfo	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_read_retry.c:42
+004101f0 B tRetryInfor	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_read_retry.c:17
+00410cb4 B tRetryVar	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_read_retry.c:15
+00410ce8 B pFdlParam	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_task_op.c:12
+00410d38 B HAL_JCBufff	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_task_op.c:9
+00410dc8 B tChTaskQueue	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_task_op.c:11
+00411760 W _FP_BASE_
+00411760 W _SDA_BASE_
+004120e8 B tFtlTask	/cygdrive/D/development/Automation/9086BB/9086/FlashDriver/FDL/src/fdl_task_op.c:13
+00412220 B gHalVar	/cygdrive/D/development/Automation/9086BB/9086/APP_HAL_Lib/HAL_Lib/src/hal_define.c:6
+00412238 B aDebugInfoBuffer	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/debug.c:32
+004122b8 B UART_TX_FIFO	/cygdrive/D/development/Automation/9086BB/9086/SysCfg/src/platform/uart.c:15
+004124b8 B g_tCmdQueInfo	/cygdrive/D/development/Automation/9086BB/9086/APP_SDK_G3CODE/inc/CmdHandle.h:51
+00412788 B tHalADMReg	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/fdl_test.c:122
+00412814 B tUdpFdl	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/fdl_test.c:118
+00412b68 B tHalFCReg	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/fdl_test.c:121
+00412c68 B tFdlParam	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/fdl_test.c:119
+00412cb4 B ProgramMap	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:62
+00412d54 B Offline_BlockList	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:64
+00412e1c B Offline_RSRecBlkList	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:78
+00412e28 B Offline_OperationCntList	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:65
+00412e48 B NANDFlash	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/hal_test.c:60
+00412ea8 B tPrivCMD	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/pri_cmd.c:12
+00412ec4 B _end
+0041f000 a _stackSlave
+00420000 d COMRAM2_BEGIN
+00420000 A _stack
+00420000 D gScan	/cygdrive/d/development/Automation/9086BB/9086/APP_SDK_G3CODE/Debug/../src/main.c:49
+00470000 d RAIDRAM_BEGIN
